@@ -1,0 +1,55 @@
+#betterDesk{
+    position: relative;
+    width: 1439px;
+    height: 4483px;
+    background-color: #ffffff;
+}
+#header{
+    position:absolute;
+    width: 1442px;
+    height: 686px;
+    left: 0px;
+    top: 0px;
+    
+}
+#betterDesk #header h1{
+
+    position: absolute;
+    width: 343px;
+    height: 162px;
+    left: 231px;
+    top:182px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 54px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.0441667em;
+    color: black;
+}
+
+input[type="mail"]{
+    position: absolute;
+    width: 302px;
+    height: 52px;
+    left: 231px;
+    top:391px;
+    background-color: #ffffff;
+    min-blend-mode:normal;
+    opacity: 0.2;
+    box-shadow: 0px 0px 8px rgba(177,177,177,0.5); 
+}
+
+input[type="submit"]{
+    box-sizing: border-box;
+    position: absolute;
+    width: 120px;
+    height: 56px;
+    left: 541px;
+    top: 391px;
+    background: #3DBDB6;
+    box-shadow: 0px 1px 6px #4449A2;
+}
