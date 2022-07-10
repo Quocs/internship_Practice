@@ -5,6 +5,7 @@
     width: 1439px;
     height: 4483px;
     background-color: #ffffff;
+    font-family: 'Roboto';
 }
 
 
@@ -57,11 +58,12 @@ input[type="submit"]{
     position: absolute;
     width: 120px;
     height: 56px;
-    left: 541px;
+    left: 540px;
     top: 391px;
     background: #3DBDB6;
     box-shadow: 0px 1px 6px #4449A2;
     font-weight: bold;
+    border-radius: 5px;
 }
 /*Group Logo*/
 .group{
@@ -103,7 +105,6 @@ top:35px;
     left: 825px;
     top:35px;
 }
-
 .pocket_img{
     position: absolute;
     width: 108px;
@@ -112,9 +113,38 @@ top:35px;
     top:35px;
 }
 
-.nav .nav_link ul {
-    list-style-type: none;
+
+.nav {
+    
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 20px 50px;
+        position: absolute;
+        width: 973px;
+        height: 45px;
+        left: 231px;
+        top: 27px;
 }
+
+.logo_text{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 38px;
+    left: 256px;
+    color: #FFFFFF;
+}
+.nav .nav_link li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+.nav_link ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .nav .nav_link ul li a {
     text-decoration: none;
     color: #fff;
@@ -125,4 +155,31 @@ top:35px;
     line-height: 14px;
     min-blend-mode : normal;
     opacity: 0.5;
+}
+
+
+.active {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #ffff;
+    padding-bottom: 10px;
+    border-bottom:1px solid #3DBDB6 ;
+}
+
+button{
+    box-sizing: border-box;
+    width: 90px;
+    height: 38px;
+    border: 1px solid #9797;
+    border-radius: 4px;
+    background-color: #3e3e58;
+    color : #ffff;
+    opacity: 0.5;
+}
+
+.logo_img{
+    position: absolute;
 }
