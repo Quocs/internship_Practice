@@ -190,3 +190,12 @@ button{
     border-radius: 9px;
     
 }
+
+.logo_img .logo_eye1{
+    position: absolute;
+    width: 2.51px;
+    height: 2.53px;
+    left:6px;
+    top:5px;
+    background-color: #dadada;
+}
