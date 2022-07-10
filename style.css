@@ -195,7 +195,28 @@ button{
     position: absolute;
     width: 2.51px;
     height: 2.53px;
-    left:6px;
-    top:5px;
+    left:7px;
+    top:8px;
     background-color: #dadada;
+    border-radius: 50%;
+}
+
+.logo_img .logo_eye2 {
+    background-color:#dadada;
+    width: 2.51px;
+    height: 2.53px;
+    left: 15.5px;
+    top:8px;
+    position: absolute;
+    border-radius: 50%;
+}
+.logo_img .logo_smile{
+    position: absolute;
+    width: 11.72px;
+    height: 4.21px;
+    left: 7px;
+    top: 15px;
+
+    background: #DADADA;
+    border-radius:0px 0px 85% 85%;
 }
