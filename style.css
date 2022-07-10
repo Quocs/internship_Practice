@@ -131,7 +131,7 @@ top:35px;
     font-size: 1.5rem;
     position: absolute;
     top: 38px;
-    left: 256px;
+    left: 262px;
     color: #FFFFFF;
 }
 .nav .nav_link li{
@@ -182,4 +182,11 @@ button{
 
 .logo_img{
     position: absolute;
+    width: 25px;
+    height: 24px;
+    left: 231px;
+    top:65px;
+    background-color: #3DBDB6;
+    border-radius: 9px;
+    
 }
