@@ -271,7 +271,7 @@ button{
     background: linear-gradient(131.99deg, #3DBDB6 5.64%, #0089CE 100%);
     width: 100px;
     height: 88px;
-    border-radius: 50%;
+    border-radius: 60%;
     padding: auto;
 }
 
@@ -279,14 +279,14 @@ button{
     width: 100px;
     height: 88px;   
     background: linear-gradient(308.7deg,#7a86cc 8.85%,#9facf8 100%);
-    border-radius: 50%;
+    border-radius: 60%;
     padding: auto;
 }
 .container_img > .right{
     background: linear-gradient(180deg, #F3778F 0%, #F26A95 44.25%, #F15A9D 100%);
     width: 100px;
     height: 88px;
-    border-radius: 50%;
+    border-radius: 60%;
     padding: auto;
 }
 .container_img  p{
@@ -329,4 +329,21 @@ button{
     height: 50px;
     text-align: center;
     color: #72808E;
+}
+
+.Container_link{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.Container_link >p a {
+    font-family: "Roboto";
+    font-style:normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2d8cff;
+    text-decoration: none;
+    
 }
