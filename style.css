@@ -359,3 +359,32 @@ input[type="submit"]:hover{
     color:#2d8cff;
     text-decoration: none;
 }
+
+/* -- BODY 2 -- */
+
+#body2{
+    box-sizing: border-box;
+    position: absolute;
+    width: 1442px;
+    height: 825px;
+    left:1px ;
+    top:1209px;
+    background: linear-gradient(131.99deg, #3DBDB6 5.64%, #0089CE 100%);;
+}
+.body2_title{
+    display: flex;
+    justify-content: center;
+}
+.body2_title h3{
+    width: 282px;
+    height: 47px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    color :#ffff;
+    position: absolute;
+    top:50px;
+}
