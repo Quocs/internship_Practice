@@ -236,3 +236,29 @@ button{
     z-index: 1;
 }
 
+/* TASK 2 */
+
+.body_1{
+    position: absolute;
+    width: 764px;
+    height: 349px;
+    left: 335px;
+    top:750px;
+    background-color: #3DBDB6;
+}
+
+.body_1 h2 {
+    position: absolute;
+    width: 589px;
+    height: 88px;
+    left: 190px;
+    top:-40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.00625em;
+    color: #333;
+    text-align: center;
+}
