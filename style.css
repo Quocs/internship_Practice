@@ -379,3 +379,47 @@ button{
 .footer_content >p a {
     color: #fff;
 }
+
+/* CSS BODY2*/
+.body_2{
+    position: absolute;
+    width: 1442px;
+    height: 825px;
+    left: 1px;
+    top:1209px;
+    background: linear-gradient(131.99deg, #3DBDB6 5.64%, #0089CE 100%);
+}
+
+.body2_title{
+    display: flex;
+    justify-content: center;
+}
+
+.body2_title > h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+/* identical to box height */
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.body2_content{
+    display: flex;
+    justify-content: center;
+    width: 1020px;
+    margin-left: 175px;
+}
+
+.body2_content>p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #ffff;
+    text-align: center;
+}
