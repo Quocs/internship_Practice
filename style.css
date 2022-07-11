@@ -245,7 +245,7 @@ button{
     height: 349px;
     left: 335px;
     top:750px;
-    background-color: #3DBDB6;
+    /*background-color: #3DBDB6;*/
 }
 
 .body_1 h2 {
@@ -278,12 +278,41 @@ button{
     box-sizing: border-box;
     width: 99px;
     height: 99px;
-    left: 393px;
-    top:907px;
     background: linear-gradient(131.99deg,#3DBDB6 5.64%, #0089CE 100%);
+    border-radius: 50%;
 }
 
-.center_logo{   
-
+.center_logo{ 
+    width: 99px;
+    height: 99px;
+    background: linear-gradient(308.7deg,#7A86CC 8.85%, #9facf8 100%);
+    border-radius: 50%;
+}
+.right_logo{
+    width: 99px;
+    height: 99px;
+    background: linear-gradient(180deg, #f3778f 0%, #f26a95 44.25%,#f15a9d 100%);
+    border-radius: 50%;
 }
 
+.left_img{
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    left: 104px;
+    top:31px;
+    
+    background-image: url(img/body1/phone-call-regular-24.png);
+    background-repeat: no-repeat;
+}
+
+.center_img{
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    left: 340px;
+    top:31px;
+    background-image: url(img/body1/color-regular-24.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
