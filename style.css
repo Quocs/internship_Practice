@@ -242,9 +242,9 @@ button{
 .body_1{
     position: absolute;
     width: 764px;
-    height: 349px;
+    height: 500px;
     left: 335px;
-    top:780px;
+    top:700px;
     background-color: #3DBDB6;
 }
 .title{
@@ -265,4 +265,64 @@ button{
 .container_img{
     display: flex;
     justify-content: space-around;
+}
+
+.container_img >.left{
+    background: linear-gradient(131.99deg, #3DBDB6 5.64%, #0089CE 100%);
+    width: 100px;
+    height: 88px;
+    border-radius: 50%;
+    padding: auto;
+}
+
+.container_img >.center {
+    width: 100px;
+    height: 88px;   
+    background: linear-gradient(308.7deg,#7a86cc 8.85%,#9facf8 100%);
+    border-radius: 50%;
+    padding: auto;
+}
+.container_img > .right{
+    background: linear-gradient(180deg, #F3778F 0%, #F26A95 44.25%, #F15A9D 100%);
+    width: 100px;
+    height: 88px;
+    border-radius: 50%;
+    padding: auto;
+}
+.container_img  p{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.Container_title{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.Container_title >p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.025em;
+}
+
+.Container_content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Container_content >p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
 }
