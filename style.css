@@ -423,3 +423,40 @@ button{
     color: #ffff;
     text-align: center;
 }
+.body2_group{
+    position: absolute;
+    width: 502px;
+    height: 164px;
+    left: 156px;
+    top:320px;
+    background: rgba(21,144,164,0.5);
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.0965523);
+    border-radius: 3px;
+}
+
+.body2_group_title{
+    display: flex;
+    flex-direction: column;
+    margin-left: 34px;
+}
+
+.body2_group_title > h4{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 56px;
+    color: #ffff;
+
+}
+.body2_group_title > p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color:#fff;
+    margin-top: -30px;
+    width: 423px;
+}
+
