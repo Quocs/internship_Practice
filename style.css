@@ -24,25 +24,25 @@
     position: absolute;
     width: 343px;
     height: 162px;
-    left: 231px;
+    left: 190px;
     top:182px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 48px;
     line-height: 54px;
-
     display: flex;
     align-items: center;
     letter-spacing: -0.0441667em;
-    color: black;
+    color: #fff;
+    z-index: 2;
 }
 
 input[type="mail"]{
     position: absolute;
     width: 302px;
     height: 52px;
-    left: 231px;
+    left: 190px;
     top:391px;
     background-color: #ffffff;
     min-blend-mode:normal;
@@ -51,6 +51,7 @@ input[type="mail"]{
     text-indent: 10px;
     text-transform: uppercase;
     font-weight: bold;
+    z-index: 2;
 }
 
 input[type="submit"]{
@@ -58,12 +59,16 @@ input[type="submit"]{
     position: absolute;
     width: 120px;
     height: 56px;
-    left: 540px;
+    left: 501px;
     top: 391px;
     background: #3DBDB6;
-    box-shadow: 0px 1px 6px #4449A2;
+    box-shadow: 0px 1px 1px #4449A2;
     font-weight: bold;
     border-radius: 5px;
+    z-index: 2;
+}
+input[type="submit"]:hover{
+    background: #dadada;
 }
 /*Group Logo*/
 .group{
@@ -220,3 +225,14 @@ button{
     background: #DADADA;
     border-radius:0px 0px 85% 85%;
 }
+.img_header{
+    background-image: url('img/Header_img.png');
+    width: 80%;
+    height: 500px;
+    position: absolute;
+    left: 509px;
+    top:92px;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
