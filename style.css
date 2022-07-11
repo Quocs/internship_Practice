@@ -244,75 +244,25 @@ button{
     width: 764px;
     height: 349px;
     left: 335px;
-    top:750px;
-    /*background-color: #3DBDB6;*/
+    top:780px;
+    background-color: #3DBDB6;
 }
-
-.body_1 h2 {
-    position: absolute;
-    width: 589px;
+.title{
+    display: flex;
+    justify-content: center;
+}
+.title p {
+    letter-spacing: 0.00625px;
+    width: 509px;
     height: 88px;
-    left: 190px;
-    top:-40px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    display: flex;
-    align-items: flex-end;
-    letter-spacing: 0.00625em;
-    color: #333;
+    font-size: 32px;
+    line-height: 44px;
     text-align: center;
 }
-
-.Group_body1{
+.container_img{
     display: flex;
     justify-content: space-around;
-    width: 713px;
-    height: 222px;
-    position: absolute;
-    left: 32px;
-    top:80px;
-}
-
-.left_logo{
-    box-sizing: border-box;
-    width: 99px;
-    height: 99px;
-    background: linear-gradient(131.99deg,#3DBDB6 5.64%, #0089CE 100%);
-    border-radius: 50%;
-}
-
-.center_logo{ 
-    width: 99px;
-    height: 99px;
-    background: linear-gradient(308.7deg,#7A86CC 8.85%, #9facf8 100%);
-    border-radius: 50%;
-}
-.right_logo{
-    width: 99px;
-    height: 99px;
-    background: linear-gradient(180deg, #f3778f 0%, #f26a95 44.25%,#f15a9d 100%);
-    border-radius: 50%;
-}
-
-.left_img{
-    position: absolute;
-    width: 33px;
-    height: 33px;
-    left: 104px;
-    top:31px;
-    
-    background-image: url(img/body1/phone-call-regular-24.png);
-    background-repeat: no-repeat;
-}
-
-.center_img{
-    position: absolute;
-    width: 33px;
-    height: 33px;
-    left: 340px;
-    top:31px;
-    background-image: url(img/body1/color-regular-24.png);
-    background-repeat: no-repeat;
-    background-size: contain;
 }
