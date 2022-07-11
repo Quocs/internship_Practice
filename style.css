@@ -228,10 +228,10 @@ button{
 }
 .img_header{
     background-image: url('img/Header_img.png');
-    width: 80%;
+    width:1260px;
     height: 500px;
     position: absolute;
-    left: 509px;
+    left: 508px;
     top:92px;
     background-repeat: no-repeat;
     z-index: 1;
@@ -346,4 +346,36 @@ button{
     color: #2d8cff;
     text-decoration: none;
     
+}
+
+.footer{
+    position:absolute;
+    width: 1442px;
+    height: 120px;
+    left: 0px;
+    top: 4363px;
+    box-sizing: border-box;
+    background: #3E3E58;
+}
+.footer_content{
+    display: flex;
+    align-items: flex-end;
+    /*text-align: center;*/
+    position: absolute;
+    width: 820px;
+    height: 48px;
+    left: 268px;
+    top: 55px;
+}
+.footer_content>p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+}
+.footer_content >p a {
+    color: #fff;
 }
