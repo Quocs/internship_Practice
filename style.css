@@ -6,6 +6,7 @@
     height: 4483px;
     background-color: #ffffff;
     font-family: 'Roboto';
+    
 }
 
 
@@ -262,3 +263,27 @@ button{
     color: #333;
     text-align: center;
 }
+
+.Group_body1{
+    display: flex;
+    justify-content: space-around;
+    width: 713px;
+    height: 222px;
+    position: absolute;
+    left: 32px;
+    top:80px;
+}
+
+.left_logo{
+    box-sizing: border-box;
+    width: 99px;
+    height: 99px;
+    left: 393px;
+    top:907px;
+    background: linear-gradient(131.99deg,#3DBDB6 5.64%, #0089CE 100%);
+}
+
+.center_logo{   
+
+}
+
