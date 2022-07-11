@@ -84,18 +84,18 @@ input[type="submit"]:hover{
     
 }
 .basecam_img{
-position: absolute;
-width: 123px;
-height: 29px;
-left: 369px;
-top:35px;
+    position: absolute;
+    width: 123px;
+    height: 29px;
+    left: 369px;
+    top:35px;
 }
 .grubhub_img{
-position: absolute;
-width: 81px;
-height: 29px;
-left: 538px;
-top:35px;
+    position: absolute;
+    width: 81px;
+    height: 29px;
+    left: 538px;
+    top:35px;
 }
 .trello_img{
     position:absolute;
@@ -239,7 +239,7 @@ button{
 
 /* TASK 2 */
 
-.body_1{
+.body_1{    /*BACKGROUND*/
     position: absolute;
     width: 764px;
     height: 500px;
@@ -247,11 +247,11 @@ button{
     top:700px;
     /*background-color: #3DBDB6;*/
 }
-.title{
+.title{ /*SETTING TITLE TO FLEX*/
     display: flex;
     justify-content: center;
 }
-.title p {
+.title p { /*FORMAT TITLE*/
     letter-spacing: 0.00625px;
     width: 509px;
     height: 88px;
@@ -262,12 +262,12 @@ button{
     line-height: 44px;
     text-align: center;
 }
-.container_img{
+.container_img{ /*SETTING LOGO TO FLEX*/
     display: flex;
     justify-content: space-around;
 }
 
-.container_img >.left{
+.container_img >.left{ /* LEFT LOGO */
     background: linear-gradient(131.99deg, #3DBDB6 5.64%, #0089CE 100%);
     width: 100px;
     height: 88px;
