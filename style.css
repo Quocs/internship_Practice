@@ -342,3 +342,20 @@ input[type="submit"]:hover{
     letter-spacing: 0.00625em;
     color: #72808e;
 }
+
+.img_link{
+    display: flex;
+    justify-content: space-around;
+}
+
+.img_link a{
+    width: 71px;
+    height: 17px;
+    font-family: 'Roboto';
+    font-size: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color:#2d8cff;
+    text-decoration: none;
+}
