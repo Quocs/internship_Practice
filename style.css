@@ -439,3 +439,18 @@ input[type="submit"]:hover{
     height: 60px;
     margin-bottom: 32px;
 }
+.BetterDesk_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    left:190px;
+    top:510px;
+}
+.BetterDesk_list >p{
+    font-family:'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color:#fff;
+}
