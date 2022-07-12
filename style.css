@@ -1,4 +1,4 @@
-#Better_Desk{
+#Better-Desk{
     position: relative;
     width: 1439px;
     height: 4483px;
@@ -242,8 +242,8 @@ input[type="submit"]:hover{
     border-radius: 50%;
 }
 
-/* -- BODY1 -- */
-#Body1{
+/* -- Customer Support -- */
+#Customer_Support{
     position: absolute;
     width: 764px;
     height: 349px;
@@ -252,11 +252,11 @@ input[type="submit"]:hover{
     /*background-color: #0089ce;*/
 }
 
-.body1_title{
+.Customer_Support_title{
     display: flex;
     justify-content: center;
 }
-.body1_title p {
+.Customer_Support_title p {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -268,13 +268,13 @@ input[type="submit"]:hover{
     width: 589px;
     height: 88px;
 }
-.body1_img{
+.Customer_Support_img{
     display: flex;
     justify-content: space-around;
     
 }
 
-.body1_img .left{
+.Customer_Support_img .left{
     box-sizing: border-box;
     width: 99px;
     height: 99px;
@@ -283,14 +283,14 @@ input[type="submit"]:hover{
     
    
 }
-.body1_img .center {
+.Customer_Support_img .center {
     width: 99px;
     height: 99px;
     background: linear-gradient(308.7deg, #7A86CC 8.85%, #9FACF8 100%);
     border-radius: 60%;
     
 }
-.body1_img .right{
+.Customer_Support_img .right{
     width: 99px;
     height: 99px;
     background: linear-gradient(180deg, #F3778F 0%, #F26A95 44.25%, #F15A9D 100%);
@@ -310,11 +310,11 @@ input[type="submit"]:hover{
     margin-left:33.31px;
     margin-top:33.31px;
 }
-.img_title{
+.Customer_Support_img_title{
     display: flex;
     justify-content: space-around;
 }
-.img_title p {
+.Customer_Support_img_title p {
     width: 76px;
     height: 19px;
     font-family: 'Roboto';
@@ -326,11 +326,11 @@ input[type="submit"]:hover{
     color: #333333;
     text-align: center;
 }
-.img_content{
+.Customer_Support_img_content{
     display: flex;
     justify-content: space-around;
 }
-.img_content p{
+.Customer_Support_img_content p{
     width: 202px;
     height: 50px;
     font-family: 'Roboto';
@@ -343,12 +343,12 @@ input[type="submit"]:hover{
     color: #72808e;
 }
 
-.img_link{
+.Customer_Support_img_link{
     display: flex;
     justify-content: space-around;
 }
 
-.img_link a{
+.Customer_Support_img_link a{
     width: 71px;
     height: 17px;
     font-family: 'Roboto';
@@ -362,7 +362,7 @@ input[type="submit"]:hover{
 
 /* -- BODY 2 -- */
 
-#body2{
+#BetterDesk{
     box-sizing: border-box;
     position: absolute;
     width: 1442px;
@@ -371,11 +371,11 @@ input[type="submit"]:hover{
     top:1209px;
     background: linear-gradient(131.99deg, #3DBDB6 5.64%, #0089CE 100%);;
 }
-.body2_title{
+.BetterDesk_title{
     display: flex;
     justify-content: center;
 }
-.body2_title h3{
+.BetterDesk_title h3{
     width: 282px;
     height: 47px;
     font-family: 'Roboto';
@@ -387,11 +387,11 @@ input[type="submit"]:hover{
     color :#ffff;
     
 }
-.body2_content{
+.BetterDesk_content{
     display: flex;
     justify-content: center;
 }
-.body2_content >p {
+.BetterDesk_content >p {
     width: 1089px;
     height: 56px;
     font-family: 'Roboto';
@@ -401,4 +401,41 @@ input[type="submit"]:hover{
     line-height: 28px;
     text-align: center;
     color: #ffff;
+}
+
+.BetterDesk_group{
+    width: 502px;
+    height: 164px;
+    background: rgba(24, 144, 164, 0.5);
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.0965523);
+    border-radius: 3px;
+    position: absolute;
+    top:320px;
+    left: 156px;
+}
+.BetterDesk_group_title{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.BetterDesk_group_title > h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color:#ffff;
+    margin-left: 34px;
+}
+.BetterDesk_group_title > p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffff;
+    margin-left: 34px;
+    width: 443px;
+    height: 60px;
+    margin-bottom: 32px;
 }
