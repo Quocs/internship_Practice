@@ -464,3 +464,241 @@ input[type="submit"]:hover{
     background: #fff;
     border-radius: 8px;
 }
+.todolist_head{
+    width: 520px;
+    height: 70px;
+    box-sizing: border-box;
+    background-color: grey;
+    position: absolute;
+    
+   
+}
+.todolist_head_title{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top:3px;
+    left:40.79px;
+}
+.todolist_head_title >p {
+    width: 90px;
+    height: 24px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #3d4d65;
+}
+
+.todolist_nofication {
+    position: absolute;
+    width: 51px;
+    height: 32px;
+    top:19px;
+    left: 144px;
+    background: #20BBEF;
+    border-radius: 40px;
+}
+
+.todolist_number{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top:-15px;
+    left:20px;
+}
+
+.todolist_number >p {
+    width: 12px;
+    height: 24px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #fff;
+}
+
+.todolist_button {
+    position: absolute;
+    width: 90px;
+    height: 40px;
+    background: #20BBEF;
+    border: 1px solid #DADFE5;
+    border-radius: 5px;
+    top:15.09px;
+    left:391px;
+}
+
+.todolist_button_text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top:-5px;
+    left:16px;
+}
+.todolist_button_text p {
+    width: 32px;
+    height: 19px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size : 16px;
+    line-height: 19px;
+    text-align: center;
+    color : #ffff;
+    margin-left: 6px;
+    text-decoration: none;
+}
+.todolist_body {
+    position: absolute;
+    width: 474px;
+    height: 322px;
+    top:98px;
+    left:35px;
+    /*background: #0089CE;*/
+}
+/*
+.todolist_body .todolist_timeline{
+    position: absolute;
+    width: 15px;
+    height: 293px;
+    top:6px;
+   
+    z-index: 2;
+}
+.line{
+    position: absolute;
+    top:10px;
+    left:7px;
+}
+
+.Oval_red {
+    position: absolute;
+    top: 69px;
+    left: 0px;
+    z-index: 3;
+}
+.line2{
+    position: absolute;
+    top:70px;
+    left:7px;
+
+}
+.Oval_orange{
+    position: absolute;
+    left: 0px;
+    top:138px;
+    z-index: 3;
+}
+.Line3{
+    position: absolute;
+    left: 7px;
+    top:150px;
+}
+.Oval_orange2{
+    position: absolute;
+    left: 0px;
+    top:207px;
+    z-index: 3;
+}
+.line4{
+    position: absolute;
+    left: 7px;
+    top:210px;
+}
+.Oval_blue {
+    position: absolute;
+    left: 0px;
+    top:278px;
+    z-index: 3;
+}
+.todolist_task{
+    position: absolute;
+    width: 415px;
+    height: 322px;
+    background: #20BBEF;
+    left: 26px;
+}*/
+.list{
+    position: absolute;
+    width: 415px;
+    height: 350px;
+    left:55px;
+    /*top:-25px;*/
+}
+.list ul {
+    position: relative;
+    padding:20px;
+}
+.list ul li {
+    position: relative;
+    list-style-type: none;
+    padding: 18px 0px;
+    
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.list ul li :last-child {
+    border-bottom: none;
+}
+.list ul li label {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.list ul li label input {
+    visibility: hidden;
+    appearance: none;
+}
+.list ul li label  h3 {
+    position: absolute;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+.list ul li label  p {
+    margin-top: 50px;
+    position: absolute;
+    
+}
+.list ul li label span{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list ul li label span::before {
+    content: '';
+    position: absolute;
+    top:5px;
+    width: 10px;
+    height: 5px;
+    border-left: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    transform: rotate(-40deg);
+}
+.list ul li label input:checked ~h3{
+    text-decoration: line-through;
+    color: #ccc;
+}
+.list ul li label input:checked ~p{
+    text-decoration: line-through;
+    color: #ccc;
+}
+.list ul li label input:checked ~span{
+    background: #03a9f4;
+    border: 1px solid #03a9f4;
+}
+.list ul li label input:checked ~span::before{
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
