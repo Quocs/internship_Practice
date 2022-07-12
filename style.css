@@ -385,6 +385,20 @@ input[type="submit"]:hover{
     line-height: 47px;
     text-align: center;
     color :#ffff;
-    position: absolute;
-    top:50px;
+    
+}
+.body2_content{
+    display: flex;
+    justify-content: center;
+}
+.body2_content >p {
+    width: 1089px;
+    height: 56px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #ffff;
 }
