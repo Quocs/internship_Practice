@@ -851,3 +851,48 @@ input[type="submit"]:hover{
 	border-bottom: 13px solid transparent;
     cursor: pointer;
 }
+
+.subcribe_title{
+    display: flex;
+    justify-content: center;
+    width: 1446px;
+    height: 48px;
+}
+
+.subcribe_title h4{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.subcribe_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:100px;
+}
+.subcribe_form input[type="email"]{
+    box-sizing: border-box;
+    width: 302px;
+    height: 50px;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(177, 177, 177, 0.5);
+    text-indent: 10px;
+    border-radius: 5px;
+}
+
+.subcribe_form input[type = "submit"]{
+    box-sizing: border-box;
+    width: 120px;
+    height: 52px;
+    background: #FFFFFF;
+    color:#3DBDB6;
+    border: 0px solid #fff;
+    border-radius: 5px;
+    margin-left:-3px;
+}
