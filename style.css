@@ -18,7 +18,7 @@
     height: 349px;
     left:335px;
     top:780px;
-   background: #3e3e58;
+   
 }
 #Why_BetterDesk{
     position: absolute;
@@ -356,3 +356,51 @@ input[type="submit"]:hover{
     margin-top:33.31px;
 }
 
+
+.Featureimg_title{
+    display: flex;
+    justify-content: space-around;
+}
+.Featureimg_title p{
+    width: 76px;
+    height: 19px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.025em;
+    color: #333333;
+    text-align: center;
+}
+.Featureimg_content{
+    display: flex;
+    justify-content: space-around;
+}
+.Featureimg_content p{
+    width: 202px;
+    height: 50px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.00625em;
+    color: #72808e;
+}
+.Featureimg_link{
+    display: flex;
+    justify-content: space-around;
+}
+.Featureimg_link a{
+    width: 71px;
+    height: 17px;
+    font-family: 'Roboto';
+    font-size: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color:#2d8cff;
+    text-decoration: none;
+}
