@@ -223,3 +223,116 @@ input[type="submit"]:hover{
     background: #dadada;
     border-radius: 50%;
 }
+
+
+
+#feature {
+    position: absolute;
+    width: 764px;
+    height: 349px;
+    left:335px;
+    top:780px;
+   /* background: #3e3e58;*/
+}
+.feature_title{
+    display: flex;
+    justify-content: center;
+    
+}
+.feature_title p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: 0.00625em;
+    text-align: center;
+    color: #333333;
+    width: 589px;
+    height: 88px;
+    margin-top:0px;
+}
+.feature_img{
+    display: flex;
+    justify-content: space-around;
+}
+.feature_img .left{
+    box-sizing: border-box;
+    width: 99px;
+    height: 99px;
+    background: linear-gradient(131.99deg, #3DBDB6 5.64%, #0089CE 100%);
+    border-radius: 60%;
+}
+.feature_img .center{
+    width: 99px;
+    height: 99px;
+    background: linear-gradient(308.7deg, #7A86CC 8.85%, #9FACF8 100%);
+    border-radius: 60%;
+}
+.feature_img .right{
+    width: 99px;
+    height: 99px;
+    background: linear-gradient(180deg, #F3778F 0%, #F26A95 44.25%, #F15A9D 100%);
+    border-radius: 60%;
+}
+.left .Phone{
+    margin-left :33.31px;
+    margin-top:33.31px;
+}
+.center .Color_colum{
+    margin-left: 33.31px;
+    margin-top: 33.31px;
+}
+.right .Message {
+    margin-left:33.31px;
+    margin-top:33.31px;
+}
+
+
+.Featureimg_title{
+    display: flex;
+    justify-content: space-around;
+}
+.Featureimg_title p{
+    width: 76px;
+    height: 19px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.025em;
+    color: #333333;
+    text-align: center;
+}
+.Featureimg_content{
+    display: flex;
+    justify-content: space-around;
+}
+.Featureimg_content p{
+    width: 202px;
+    height: 50px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.00625em;
+    color: #72808e;
+}
+.Featureimg_link{
+    display: flex;
+    justify-content: space-around;
+}
+.Featureimg_link a{
+    width: 71px;
+    height: 17px;
+    font-family: 'Roboto';
+    font-size: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color:#2d8cff;
+    text-decoration: none;
+}
