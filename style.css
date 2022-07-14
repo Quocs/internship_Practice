@@ -66,7 +66,7 @@
     top:2891px;
     /*background: #081941;*/
     min-blend-mode:darken;
-    background-image: url(gartner/woman-690036_1280.png);
+    background-image: url(img/gartner/woman-690036_1280.png);
     background-size: auto;
     background-repeat: no-repeat;
     opacity: 1;
@@ -747,4 +747,107 @@ input[type="submit"]:hover{
     line-height: 16px;
     text-decoration: none;
     color: #2D8CFF;
+}
+
+.Ad_text{
+    position: absolute;
+    width: 687px;
+    height: 100px;
+    left:176px;
+    top:40px;
+    display: flex;
+    flex-direction: column;
+   /* background-color: #081941;*/
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.Ad_text p {
+    font-family: "Roboto";
+    font-size: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    color: #fff;;
+}
+.Ad_text a {
+    width: 88px;
+    height: 19px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffff;
+}
+.img_gartner{
+    position: absolute;
+    width: 240px;
+    height: 54.14px;
+    left: 1036px;
+    top: 60px;
+
+}
+
+
+.testimonial_group{
+    position: absolute;
+    width: 826px;
+    height: 251px;
+    left:311px;
+    top:393px; 
+    /*background: #1D98D6;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.testimonial_group  h4{
+    width: 826px;
+    height: 86px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 43px;
+    color: #ffff;
+    text-align: center;
+    margin-top:-61px;
+    /*background-color:red;*/
+}
+
+.testimonial_group  p {
+    width: 195px;
+    height: 22px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top:-10px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.btn_testimonial {
+    box-sizing: border-box;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(131.99deg, #3DBDB6 5.64%, #0089CE 100%);
+    border-radius: 100px;
+    top:571px;
+    left:693px;
+    cursor: pointer;
+}
+.btn_testimonial .btn_circle{
+    position: absolute;
+    left: 27.5px;
+    top:22.5px;
+	width: 26px;
+	border-top: 13px solid transparent;
+	border-left: 26px solid #3D3F6D;
+	border-bottom: 13px solid transparent;
+    cursor: pointer;
 }
