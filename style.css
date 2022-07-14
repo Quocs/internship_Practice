@@ -256,7 +256,7 @@ input[type="submit"]:hover{
     left: 725px;
     top:110px;
     background: #3DBDB6;
-    background-image: url(/Header_img.png);
+    background-image: url(img/Header_img.png);
     background-size: cover;
 }
 
