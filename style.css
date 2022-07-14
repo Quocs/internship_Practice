@@ -896,3 +896,140 @@ input[type="submit"]:hover{
     border-radius: 5px;
     margin-left:-3px;
 }
+
+
+.foot_bg{
+    box-sizing: border-box;
+    position: absolute;
+    width: 1446px;
+    height: 120px;
+    left: 0px;
+    top: 285px;
+    background: #3E3E58;
+    display: flex;
+    justify-content: center;
+}
+.foot_bg a {
+    width: 903px;
+    height: 48px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffff;
+    margin-top: 38px;
+}
+.foot_bg p {
+    width: 903px;
+    height: 48px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffff;
+    margin-top: 38px;
+}
+
+.foot_link{
+    position: absolute;
+    width: 683px;
+    height: 165px;
+    left: 266px;
+    top:72px;
+    /*background-color: #0089CE;*/
+    display: flex;
+
+}
+.foot_link .group_logo{
+    position: absolute;
+    width: 196px;
+    height: 95px;
+    left:0;
+    top:0;
+    /*background: pink;*/
+}
+.foot_link .foot_task_link{
+    position: absolute;
+    width: 487px;
+    height: 165px;
+    top:0;
+    right:0;
+    left:300px;
+    /*background-color: red;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    
+}
+.foot_link .foot_task_link div{
+    margin-top: -20px;
+}
+
+.foot_task_link h4{
+    width: 42px;
+    height: 14px;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+.foot_link .foot_task_link .link_about{
+    display: flex;
+    flex-direction: column;
+    height: 112px;
+    margin-top:-20px;
+}
+
+.foot_task_link p {
+    margin-top: -1px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 28px;
+    /* or 233% */
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.6
+}
+.group_logo .logo_box{
+    left: 0;
+    top:0;
+}
+.group_logo .logo_text h2{
+    top:-20px;
+    left:0;
+    margin-left: 30px;
+}
+.group_logo p {
+    width: 196px;
+    height: 57px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    margin-top:39px;
+}
+.foot_task_link_img{
+    position: absolute;
+    width: 75px;
+    height: 17px;
+    left: 950px;
+    top:4px;
+    /*background-color: #0089CE;*/
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
