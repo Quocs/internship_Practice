@@ -34,7 +34,7 @@
     height: 515.18px;
     left: 170px;
     top:2114px;
-    background-color: #0089CE;
+    
 }
 #Ad{
     position: absolute;
@@ -688,4 +688,63 @@ input[type="submit"]:hover{
 #style-1::-webkit-scrollbar-thumb {
     background-color: #E9EDF2;
     border-radius: 5px;
+}
+.AboutUs_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.AboutUs_title >h3 {
+    width: 376px;
+    height: 47px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    color: #4a4a4a;
+}
+.group_aboutus{
+    position: absolute;
+    width: 1100px;
+    height: 397.18px;
+    top:118px;
+    /*background: #1D98D6;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.group_aboutus > div {
+    width: 350px;
+    height: 396.18px;
+   /* background-color: #f1f1f1;*/
+    margin-left: 10px;
+    text-align: center;
+    
+}
+
+.group_aboutus p {
+    width: 250px;
+    height: 44px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: black;
+    text-align: center;
+    margin-left:50px;
+}
+
+.group_aboutus a {
+    width: 71px;
+    height: 17px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    color: #2D8CFF;
 }
