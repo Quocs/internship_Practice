@@ -37,7 +37,7 @@
 
 ## ESTIMATION DETAILS
 
-- [Here]()
+- [Here](https://docs.google.com/document/d/1D-2Zqu7-Bdpmg5eNEC_qhv7XycixcWgxTpqa7c_dUMw/edit)
 
 ## How to run the project
 
