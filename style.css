@@ -12,7 +12,7 @@
     top:0;
     background: #3e3e58;
 }
-#feature {
+#customer_support {
     position: absolute;
     width: 764px;
     height: 349px;
@@ -20,7 +20,7 @@
     top:780px;
    
 }
-#Why_BetterDesk{
+#BetterDesk{
     position: absolute;
     width: 1446px;
     height: 825px;
@@ -36,7 +36,7 @@
     top:2114px;
     
 }
-#Ad{
+#gartner_top{
     position: absolute;
     width: 1446px;
     height: 180px;
@@ -58,7 +58,7 @@
     
 }
 
-#video_testimonial{
+#gartnet_body{
     position: absolute;
     width: 1446px;
     height: 726px;
@@ -200,7 +200,7 @@ button{
     opacity: 0.5;
 }
 
-.Heading_Text{
+.Header_Text{
     display: flex;
     align-items: Center;
     position: absolute;
@@ -210,7 +210,7 @@ button{
     left:231px;
 }
 
-.Heading_Text>h1{
+.Header_Text>h1{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -219,7 +219,7 @@ button{
     color: #fff;
 }
 
-.sign_up {
+.Header_form {
     display: flex;
     flex-direction: row;
     position: absolute;
@@ -227,7 +227,7 @@ button{
     top: 391px;
 }
 
-.sign_up input[type="email"]{
+.Header_form input[type="email"]{
     width: 302px;
     height: 52px;
     background: #fff;
@@ -237,7 +237,7 @@ button{
     font-weight: bold;
     text-indent: 10px;
 }
-.sign_up input[type="submit"]{
+.Header_form input[type="submit"]{
     width: 120px;
     height: 52px;
     background-color: #3DBDB6;
@@ -249,7 +249,7 @@ input[type="submit"]:hover{
     background: #dadada;
 }
 
-.Img_Heading{
+.Header_img{
     position: absolute;
     width: 721px;
     height: 482px;
@@ -271,7 +271,7 @@ input[type="submit"]:hover{
     border-radius: 9px; 
 }
 
-.logo_box .smile {
+.logo_box .logo_smile {
     position: absolute;
     width: 11.72px;
     height: 4.21px;
@@ -281,7 +281,7 @@ input[type="submit"]:hover{
     
 }
 
-.logo_box .eye1{
+.logo_box .logo_eye1{
     position: absolute;
     width: 2.51px;
     height: 2.53px;
@@ -292,7 +292,7 @@ input[type="submit"]:hover{
 
 }
 
-.logo_box .eye2{
+.logo_box .logo_eye2{
     position: absolute;
     width: 2.51px;
     height: 2.53px;
@@ -302,12 +302,14 @@ input[type="submit"]:hover{
     border-radius: 50%;
 }
 
-.feature_title{
+/* --- CUSTOMER_SUPPORT ---*/
+
+.support_title{
     display: flex;
     justify-content: center;
     
 }
-.feature_title p{
+.support_title p{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -320,48 +322,48 @@ input[type="submit"]:hover{
     height: 88px;
     margin-top:0px;
 }
-.feature_img{
+.support_img{
     display: flex;
     justify-content: space-around;
 }
-.feature_img .left{
+.support_img .support_img_left{
     box-sizing: border-box;
     width: 99px;
     height: 99px;
     background: linear-gradient(131.99deg, #3DBDB6 5.64%, #0089CE 100%);
     border-radius: 60%;
 }
-.feature_img .center{
+.support_img .support_img_center{
     width: 99px;
     height: 99px;
     background: linear-gradient(308.7deg, #7A86CC 8.85%, #9FACF8 100%);
     border-radius: 60%;
 }
-.feature_img .right{
+.support_img .support_img_right{
     width: 99px;
     height: 99px;
     background: linear-gradient(180deg, #F3778F 0%, #F26A95 44.25%, #F15A9D 100%);
     border-radius: 60%;
 }
-.left .Phone{
+.support_img_left .Phone{
     margin-left :33.31px;
     margin-top:33.31px;
 }
-.center .Color_colum{
+.support_img_center .Color_colum{
     margin-left: 33.31px;
     margin-top: 33.31px;
 }
-.right .Message {
+.support_img_right .Message {
     margin-left:33.31px;
     margin-top:33.31px;
 }
 
 
-.Featureimg_title{
+.support_img_title{
     display: flex;
     justify-content: space-around;
 }
-.Featureimg_title p{
+.support_img_title p{
     width: 76px;
     height: 19px;
     font-family: 'Roboto';
@@ -373,11 +375,11 @@ input[type="submit"]:hover{
     color: #333333;
     text-align: center;
 }
-.Featureimg_content{
+.support_img_content{
     display: flex;
     justify-content: space-around;
 }
-.Featureimg_content p{
+.support_img_content p{
     width: 202px;
     height: 50px;
     font-family: 'Roboto';
@@ -389,11 +391,11 @@ input[type="submit"]:hover{
     letter-spacing: 0.00625em;
     color: #72808e;
 }
-.Featureimg_link{
+.support_img_link{
     display: flex;
     justify-content: space-around;
 }
-.Featureimg_link a{
+.support_img_link a{
     width: 71px;
     height: 17px;
     font-family: 'Roboto';
@@ -404,13 +406,13 @@ input[type="submit"]:hover{
     color:#2d8cff;
     text-decoration: none;
 }
+/* -- BETTER DESK -- */
 
-
-.Why_Desk_title{
+.BetterDesk_title{
     display: flex;
     justify-content: center;
 }
-.Why_Desk_title h3{
+.BetterDesk_title h3{
     width: 282px;
     height: 47px;
     font-family: 'Roboto';
@@ -421,12 +423,12 @@ input[type="submit"]:hover{
     text-align: center;
     color :#ffff;
 }
-.Why_Desk_content{
+.BetterDesk_content{
     display: flex;
     justify-content: center;
 
 }
-.Why_Desk_content >p {
+.BetterDesk_content >p {
     width: 1089px;
     height: 56px;
     font-family: 'Roboto';
@@ -447,7 +449,7 @@ input[type="submit"]:hover{
     /*background: #0089CE;*/
 }
 
-.support{
+.GroupDesk_support{
     position: absolute;
     width: 502px;
     height: 164px;
@@ -496,7 +498,7 @@ input[type="submit"]:hover{
     color:#fff;
 }
 
-.todolist{
+.GroupDesk_todolist{
     box-sizing: border-box;
     position: absolute;
     width: 520px;
@@ -689,6 +691,8 @@ input[type="submit"]:hover{
     background-color: #E9EDF2;
     border-radius: 5px;
 }
+
+/* -- About-us -- */
 .AboutUs_title{
     display: flex;
     justify-content: center;
@@ -705,7 +709,7 @@ input[type="submit"]:hover{
     line-height: 47px;
     color: #4a4a4a;
 }
-.group_aboutus{
+.AboutUs_group{
     position: absolute;
     width: 1100px;
     height: 397.18px;
@@ -715,7 +719,7 @@ input[type="submit"]:hover{
     justify-content: center;
     align-items: center;
 }
-.group_aboutus > div {
+.AboutUs_group > div {
     width: 350px;
     height: 396.18px;
    /* background-color: #f1f1f1;*/
@@ -724,7 +728,7 @@ input[type="submit"]:hover{
     
 }
 
-.group_aboutus p {
+.AboutUs_group p {
     width: 250px;
     height: 44px;
     font-family: 'Roboto';
@@ -737,7 +741,7 @@ input[type="submit"]:hover{
     margin-left:50px;
 }
 
-.group_aboutus a {
+.AboutUs_group a {
     width: 71px;
     height: 17px;
     font-family: 'Roboto';
@@ -749,7 +753,10 @@ input[type="submit"]:hover{
     color: #2D8CFF;
 }
 
-.Ad_text{
+/*--GARTNER --*/
+
+    /* --gartner-top -- */
+.gartner_top_text{
     position: absolute;
     width: 687px;
     height: 100px;
@@ -761,7 +768,7 @@ input[type="submit"]:hover{
     justify-content: flex-end;
     align-items: flex-start;
 }
-.Ad_text p {
+.gartner_top_text p {
     font-family: "Roboto";
     font-size: normal;
     font-weight: 400;
@@ -769,7 +776,7 @@ input[type="submit"]:hover{
     line-height: 33px;
     color: #fff;;
 }
-.Ad_text a {
+.gartner_top_text a {
     width: 88px;
     height: 19px;
     font-family: 'Roboto';
@@ -779,7 +786,7 @@ input[type="submit"]:hover{
     line-height: 19px;
     color: #ffff;
 }
-.img_gartner{
+.gartner_top_logo{
     position: absolute;
     width: 240px;
     height: 54.14px;
@@ -788,8 +795,8 @@ input[type="submit"]:hover{
 
 }
 
-
-.testimonial_group{
+    /*-- gartnet_Body -- */
+.gartnet_body_text{
     position: absolute;
     width: 826px;
     height: 251px;
@@ -803,7 +810,7 @@ input[type="submit"]:hover{
     
 }
 
-.testimonial_group  h4{
+.gartnet_body_text  h4{
     width: 826px;
     height: 86px;
     font-family: 'Roboto';
@@ -817,7 +824,7 @@ input[type="submit"]:hover{
     /*background-color:red;*/
 }
 
-.testimonial_group  p {
+.gartnet_body_text  p {
     width: 195px;
     height: 22px;
     font-family: 'Roboto';
@@ -830,7 +837,7 @@ input[type="submit"]:hover{
     color: #FFFFFF;
 }
 
-.btn_testimonial {
+.gartnet_body_btn {
     box-sizing: border-box;
     position: absolute;
     width: 70px;
@@ -841,7 +848,7 @@ input[type="submit"]:hover{
     left:693px;
     cursor: pointer;
 }
-.btn_testimonial .btn_circle{
+.gartnet_body_btn .btn_circle{
     position: absolute;
     left: 27.5px;
     top:22.5px;
@@ -988,7 +995,7 @@ input[type="submit"]:hover{
     margin-top:-20px;
 }
 
-.foot_task_link p {
+.foot_task_link a {
     margin-top: -1px;
     font-family: 'Roboto';
     font-style: normal;
@@ -998,7 +1005,9 @@ input[type="submit"]:hover{
     /* or 233% */
     color: #FFFFFF;
     mix-blend-mode: normal;
-    opacity: 0.6
+    opacity: 0.6;
+    margin-top:10px;
+    text-decoration: none;
 }
 .group_logo .logo_box{
     left: 0;
