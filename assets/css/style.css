@@ -28,7 +28,7 @@ header{
     top:1209px;
     background:linear-gradient(131.99deg, #3DBDB6 5.64%, #0089CE 100%);;
 }
-#AboutUs{
+#Aboutus{
     position: absolute;
     width: 1100px;
     height: 515.18px;
@@ -36,7 +36,7 @@ header{
     top:2114px;
     
 }
-#gartner_top{
+.gartner-top{
     position: absolute;
     width: 1446px;
     height: 180px;
@@ -52,13 +52,12 @@ header{
     height: 80px;
     left:171px;
     top: 3651px;
-   /* background-color: #1172D0;*/
     display: flex;
     justify-content:space-between;
     
 }
 
-#gartnet_body{
+.gartner-body{
     position: absolute;
     width: 1446px;
     height: 726px;
@@ -66,7 +65,7 @@ header{
     top:2891px;
     /*background: #081941;*/
     min-blend-mode:darken;
-    background-image: url(img/gartner/woman-690036_1280.png);
+    background-image: url(../img/gartner/woman-690036_1280.png);
     background-size: auto;
     background-repeat: no-repeat;
     opacity: 1;
@@ -458,12 +457,12 @@ input[type="submit"]:hover{
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.0965523);
     border-radius: 3px;
 }
-.Support_content{
+.Better-Desk-group-support-content{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
 }
-.Support_content >h3{
+.Better-Desk-group-support-content  h3{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -471,7 +470,7 @@ input[type="submit"]:hover{
     color:#ffff;
     margin-left: 34px;
 }
-.Support_content > p {
+.Better-Desk-group-support-content  p {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -482,14 +481,14 @@ input[type="submit"]:hover{
     height: 60px;
     margin-bottom: 32px;
 }
-.Support_list{
+.Better-Desk-group-support-list{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     position: absolute;
     left:34px;
 }
-.Support_list > p{
+.Better-Desk-group-support-list > p{
     font-family:'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -497,7 +496,7 @@ input[type="submit"]:hover{
     color:#fff;
 }
 
-.GroupDesk_todolist{
+.Better-Desk-group-todolist{
     box-sizing: border-box;
     position: absolute;
     width: 520px;
@@ -507,7 +506,7 @@ input[type="submit"]:hover{
     background: #fff;
     border-radius: 8px;
 }
-.top_panel{
+.Better-Desk-group-todolist-toppanel{
     box-sizing: border-box;
     position: absolute;
     width: 520px;
@@ -516,14 +515,14 @@ input[type="submit"]:hover{
     left:0;
     background-color: #f5f9fc;
 }
-.panel_text{
+.toppanel-paneltext{
     display: flex;
     align-items: center;
     justify-content: flex-start;
     margin-left: 40.79px;
     margin-top:3px;
 }
-.panel_text >p {
+.toppanel-paneltext >p {
     width: 90px;
     height: 24px;
     font-family: "Roboto";
@@ -534,7 +533,7 @@ input[type="submit"]:hover{
     color: #3d4d65;
 }
 
-.nofication{
+.toppanel-nofication{
     position: absolute;
     width: 51px;
     height: 32px;
@@ -543,14 +542,14 @@ input[type="submit"]:hover{
     background: #20BBEF;
     border-radius: 40px;
 }
-.nofication_number{
+.toppanel-nofication-number{
     display: flex;
     align-items: center;
     position:absolute;
     left:19.5px;
     top:-15px;
 }
-.nofication_number p{
+.toppanel-nofication-number p{
     width: 12px;
     height: 24px;
     font-family: 'Roboto';
@@ -560,7 +559,7 @@ input[type="submit"]:hover{
     line-height: 23px;
     color: #fff;
 }
-.add_new{
+.toppanel-button-addtext{
     position: absolute;
     width: 90px;
     height: 40px;
@@ -569,16 +568,20 @@ input[type="submit"]:hover{
     /*background: #0089CE;*/
     
 }
-.add_new button{
+.toppanel-button-addtext button{
     background: #20BBEF;
     border: 1px solid #DADFE5;
     border-radius: 5px;
     color : #ffff;
     cursor: pointer;
     opacity: 1;
+    width: 90px;
+    height: 40px;
 }
-
-.Tasks{
+.toppanel-button-addtext button:hover{
+    background: #1D98D6;
+}
+.Better-Desk-group-todolist-tasks{
     position: absolute;
     width: 474px;
     height: 322px;
@@ -589,7 +592,7 @@ input[type="submit"]:hover{
     
 }
 
-.task_list{
+.todolist-tasks-tasklist{
     position: absolute;
     width: 425px;
     height: 322px;
@@ -598,40 +601,40 @@ input[type="submit"]:hover{
     background-color: #fff;
 }
 
-.task_list ul {
+.todolist-tasks-tasklist ul {
     position: relative;
     padding: 20px;
 }
-.task_list ul li {
+.todolist-tasks-tasklist ul li {
     position: relative;
     list-style-type: none;
     padding: 18px 0px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.task_list ul li:last-child{
+.todolist-tasks-tasklist ul li:last-child{
     border-bottom: none;
 }
-.task_list ul li label{
+.todolist-tasks-tasklist ul li label{
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
 }
-.task_list ul li label input{
+.todolist-tasks-tasklist ul li label input{
     visibility: hidden;
     appearance: none;
 }
-.task_list ul li label  h3 {
+.todolist-tasks-tasklist ul li label  h3 {
     position: absolute;
     margin-bottom: 50px;
     font-weight: 300;
 }
-.task_list ul li label p {
+.todolist-tasks-tasklist ul li label p {
     margin-top: 40px;
     position: absolute;
 }
-.task_list ul li label span{
+.todolist-tasks-tasklist ul li label span{
     position: relative;
     width: 20px;
     height: 20px;
@@ -641,7 +644,7 @@ input[type="submit"]:hover{
     justify-content: center;
     align-items: center;
 }
-.task_list ul li label span::before {
+.todolist-tasks-tasklist ul li label span::before {
     content: '';
     position: absolute;
     top:5px;
@@ -651,19 +654,19 @@ input[type="submit"]:hover{
     border-bottom: 2px solid #ccc;
     transform: rotate(-40deg);
 }
-.task_list ul li label input:checked ~h3{
+.todolist-tasks-tasklist ul li label input:checked ~h3{
     text-decoration: line-through;
     color: #ccc;
 }
-.task_list ul li label input:checked ~p{
+.todolist-tasks-tasklist ul li label input:checked ~p{
     text-decoration: line-through;
     color: #ccc;
 }
-.task_list ul li label input:checked ~span{
+.todolist-tasks-tasklist ul li label input:checked ~span{
     background: #03a9f4;
     border: 1px solid #03a9f4;
 }
-.task_list ul li label input:checked ~span::before{
+.todolist-tasks-tasklist ul li label input:checked ~span::before{
     border-left: 2px solid #fff;
     border-bottom: 2px solid #fff;
 }
@@ -682,23 +685,23 @@ input[type="submit"]:hover{
 .force-overflow {
     min-height: 450px;
 }
-#style-1::-webkit-scrollbar {
+#scrollbar::-webkit-scrollbar {
     width: 6px;
     background-color: #0089CE;
 } 
-#style-1::-webkit-scrollbar-thumb {
+#scrollbar::-webkit-scrollbar-thumb {
     background-color: #E9EDF2;
     border-radius: 5px;
 }
 
 /* -- About-us -- */
-.AboutUs_title{
+.Aboutus-title{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.AboutUs_title >h3 {
+.Aboutus-title >h3 {
     width: 376px;
     height: 47px;
     font-family: 'Roboto';
@@ -708,7 +711,7 @@ input[type="submit"]:hover{
     line-height: 47px;
     color: #4a4a4a;
 }
-.AboutUs_group{
+.Aboutus-group{
     position: absolute;
     width: 1100px;
     height: 397.18px;
@@ -718,7 +721,7 @@ input[type="submit"]:hover{
     justify-content: center;
     align-items: center;
 }
-.AboutUs_group > div {
+.Aboutus-group > div {
     width: 350px;
     height: 396.18px;
    /* background-color: #f1f1f1;*/
@@ -727,7 +730,7 @@ input[type="submit"]:hover{
     
 }
 
-.AboutUs_group p {
+.Aboutus-group p {
     width: 250px;
     height: 44px;
     font-family: 'Roboto';
@@ -740,7 +743,7 @@ input[type="submit"]:hover{
     margin-left:50px;
 }
 
-.AboutUs_group a {
+.Aboutus-group a {
     width: 71px;
     height: 17px;
     font-family: 'Roboto';
@@ -755,7 +758,7 @@ input[type="submit"]:hover{
 /*--GARTNER --*/
 
     /* --gartner-top -- */
-.gartner_top_text{
+.gartner-top-text{
     position: absolute;
     width: 687px;
     height: 100px;
@@ -767,7 +770,7 @@ input[type="submit"]:hover{
     justify-content: flex-end;
     align-items: flex-start;
 }
-.gartner_top_text p {
+.gartner-top-text p {
     font-family: "Roboto";
     font-size: normal;
     font-weight: 400;
@@ -775,7 +778,7 @@ input[type="submit"]:hover{
     line-height: 33px;
     color: #fff;;
 }
-.gartner_top_text a {
+.gartner-top-text a {
     width: 88px;
     height: 19px;
     font-family: 'Roboto';
@@ -785,7 +788,7 @@ input[type="submit"]:hover{
     line-height: 19px;
     color: #ffff;
 }
-.gartner_top_logo{
+.gartner-top-logo{
     position: absolute;
     width: 240px;
     height: 54.14px;
@@ -795,7 +798,7 @@ input[type="submit"]:hover{
 }
 
     /*-- gartnet_Body -- */
-.gartnet_body_text{
+.gartner-body-text{
     position: absolute;
     width: 826px;
     height: 251px;
@@ -809,7 +812,7 @@ input[type="submit"]:hover{
     
 }
 
-.gartnet_body_text  h4{
+.gartner-body-text  h4{
     width: 826px;
     height: 86px;
     font-family: 'Roboto';
@@ -823,7 +826,7 @@ input[type="submit"]:hover{
     /*background-color:red;*/
 }
 
-.gartnet_body_text  p {
+.gartner-body-text  p {
     width: 195px;
     height: 22px;
     font-family: 'Roboto';
@@ -836,7 +839,7 @@ input[type="submit"]:hover{
     color: #FFFFFF;
 }
 
-.gartnet_body_btn {
+.gartner-body-button-video {
     box-sizing: border-box;
     position: absolute;
     width: 70px;
@@ -847,7 +850,7 @@ input[type="submit"]:hover{
     left:693px;
     cursor: pointer;
 }
-.gartnet_body_btn .btn_circle{
+.gartner-body-button-video .button-circle{
     position: absolute;
     left: 27.5px;
     top:22.5px;
@@ -858,14 +861,14 @@ input[type="submit"]:hover{
     cursor: pointer;
 }
 
-.subcribe_title{
+.subcribe-title{
     display: flex;
     justify-content: center;
     width: 1446px;
     height: 48px;
 }
 
-.subcribe_title h4{
+.subcribe-title h4{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -874,13 +877,13 @@ input[type="submit"]:hover{
     text-align: center;
     color: #FFFFFF;
 }
-.subcribe_form {
+.subcribe-form {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top:100px;
 }
-.subcribe_form input[type="email"]{
+.subcribe-form input[type="email"]{
     box-sizing: border-box;
     width: 302px;
     height: 50px;
@@ -892,7 +895,7 @@ input[type="submit"]:hover{
     border-radius: 5px;
 }
 
-.subcribe_form input[type = "submit"]{
+.subcribe-form input[type = "submit"]{
     box-sizing: border-box;
     width: 120px;
     height: 52px;
@@ -1042,7 +1045,7 @@ input[type="submit"]:hover{
     cursor: pointer;
 }
 
-.Actor_group {
+.Actor-group {
     /* background: #0089CE;*/
      width: 224px;
      height: 80px;
@@ -1051,16 +1054,16 @@ input[type="submit"]:hover{
      cursor: pointer;
      
  }
- .Actor_img{
+ .Actor-group-img{
      position:relative;
      left: 0;
  }
- .Actor_content{
+ .Actor-group-content{
      margin-left: 23px;
  }
  
  
- .Actor_content p {
+ .Actor-group-content p {
      width: 121px;
      height: 22px;
      font-family: 'Roboto';
@@ -1071,14 +1074,14 @@ input[type="submit"]:hover{
      color: #39394D;
      
  }
- .Actor_content img {
+ .Actor-group-content img {
      width: 90px;
      height: 20px;
      margin-top: -10px;
      
  }
  
- .Actor_group:hover{
+ .Actor-group:hover{
      opacity: 1;
  }
  
@@ -1093,7 +1096,6 @@ input[type="submit"]:hover{
      position: absolute;
      z-index: 555;
    }
- 
    .triangel_right:hover{
      display: none;
    }
