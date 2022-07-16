@@ -1,3 +1,4 @@
+/*--FORMAT--*/
 body{
     position: relative;
     width: 1446px;
@@ -45,7 +46,6 @@ header{
     background:linear-gradient(138.41deg, #1172D0 6.2%, #1D98D6 99.82%);
     border: 1px solid #E1E1E1;
 }
-
 #Actor{
     position: absolute;
     width: 1121px;
@@ -56,7 +56,6 @@ header{
     justify-content:space-between;
     
 }
-
 .gartner-body{
     position: absolute;
     width: 1446px;
@@ -79,7 +78,6 @@ header{
     top:3771px;
     background-color: #3DBDB6;
 }
-
 footer{
     position: absolute;
     width: 1446px;
@@ -88,6 +86,8 @@ footer{
     top:4078px;
     background:#1F2532;
 }
+
+/*HEADER-STAKEHOLDER*/
 
 .Header-stakeholder{
     box-sizing: border-box;
@@ -124,6 +124,7 @@ footer{
     left:595px;
 }
 
+/*--HEADER-LOGO--*/
 
 .logo-text h2{
     font-size: 1.5rem;
@@ -139,6 +140,48 @@ footer{
     justify-content: flex-start;
     padding:20px 50px;
 }
+.Header-logo-icon{
+    box-sizing: border-box;
+    position: absolute;
+    width: 25px;
+    height: 24px;
+    left: 231px;
+    top:60px;
+    background: #3DBDB6;
+    border-radius: 9px; 
+}
+
+.Header-logo-icon .icon-smile {
+    position: absolute;
+    width: 11.72px;
+    height: 4.21px;
+    background: #dadada;
+    top: 13.36px;
+    left: 7px;
+}
+
+.Header-logo-icon .icon-eye1{
+    position: absolute;
+    width: 2.51px;
+    height: 2.53px;
+    top: 7.25px;
+    left: 8.05px;
+    background:#dadada;
+    border-radius: 50%;
+
+}
+
+.Header-logo-icon .icon-eye2{
+    position: absolute;
+    width: 2.51px;
+    height: 2.53px;
+    top:  7.25px;
+    right: 7.23px;
+    background: #dadada;
+    border-radius: 50%;
+}
+
+/*--NAVIGATION--*/
 
 .nav{
     display: flex;
@@ -173,8 +216,8 @@ footer{
     font-size:14px;
     line-height: 14px;
     opacity: 0.5;
+    padding: 14px 16px;
 }
-
 
 .active {
     font-family: 'Roboto';
@@ -186,19 +229,8 @@ footer{
     padding-bottom: 10px;
     border-bottom:1px solid #3DBDB6 ;
 }
-
-.nav .nav-right ul li button{
-    box-sizing: border-box;
-    width: 90px;
-    height: 38px;
-    border: 1px solid #9797;
-    border-radius: 4px;
-    background-color: #3e3e58;
-    color : #ffff;
-    opacity: 0.5;
-}
-
-.Header-Text{
+/*HEADER TITLE,FORM,IMG*/
+.Header-title{
     display: flex;
     align-items: Center;
     position: absolute;
@@ -208,7 +240,7 @@ footer{
     left:231px;
 }
 
-.Header-Text>h1{
+.Header-title>h1{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -258,46 +290,7 @@ input[type="submit"]:hover{
     background-size: cover;
 }
 
-.logo-icon{
-    box-sizing: border-box;
-    position: absolute;
-    width: 25px;
-    height: 24px;
-    left: 231px;
-    top:60px;
-    background: #3DBDB6;
-    border-radius: 9px; 
-}
 
-.logo-icon .icon-smile {
-    position: absolute;
-    width: 11.72px;
-    height: 4.21px;
-    background: #dadada;
-    top: 13.36px;
-    left: 7px;
-}
-
-.logo-icon .icon-eye1{
-    position: absolute;
-    width: 2.51px;
-    height: 2.53px;
-    top: 7.25px;
-    left: 8.05px;
-    background:#dadada;
-    border-radius: 50%;
-
-}
-
-.logo-icon .icon-eye2{
-    position: absolute;
-    width: 2.51px;
-    height: 2.53px;
-    top:  7.25px;
-    right: 7.23px;
-    background: #dadada;
-    border-radius: 50%;
-}
 
 /* --- CUSTOMER_SUPPORT ---*/
 
@@ -404,6 +397,8 @@ input[type="submit"]:hover{
     color:#2d8cff;
     text-decoration: none;
 }
+
+
 /* -- BETTER DESK -- */
 
 .Better-Desk-title{
@@ -506,7 +501,7 @@ input[type="submit"]:hover{
     background: #fff;
     border-radius: 8px;
 }
-.Better-Desk-group-todolist-toppanel{
+.todolist-toppanel{
     box-sizing: border-box;
     position: absolute;
     width: 520px;
@@ -670,7 +665,8 @@ input[type="submit"]:hover{
     border-left: 2px solid #fff;
     border-bottom: 2px solid #fff;
 }
-.scrollbar {
+
+.todolist-tasks-scrollbar {
     background-color: #E9EDF2;
     float: left;
     height: 322px;
@@ -907,7 +903,7 @@ input[type="submit"]:hover{
 }
 
 
-.foot_bg{
+.foot-body{
     box-sizing: border-box;
     position: absolute;
     width: 1446px;
@@ -918,7 +914,7 @@ input[type="submit"]:hover{
     display: flex;
     justify-content: center;
 }
-.foot_bg a {
+.foot-body a {
     width: 903px;
     height: 48px;
     font-family: 'Roboto';
@@ -930,7 +926,7 @@ input[type="submit"]:hover{
     color: #ffff;
     margin-top: 38px;
 }
-.foot_bg p {
+.foot-body p {
     width: 903px;
     height: 48px;
     font-family: 'Roboto';
@@ -943,7 +939,7 @@ input[type="submit"]:hover{
     margin-top: 38px;
 }
 
-.foot_link{
+.foot-header{
     position: absolute;
     width: 683px;
     height: 165px;
@@ -953,15 +949,58 @@ input[type="submit"]:hover{
     display: flex;
 
 }
-.foot_link .group_logo{
+.foot-header .foot-header-logo-text{
     position: absolute;
     width: 196px;
-    height: 95px;
+    height: 130px;
     left:0;
     top:0;
     /*background: pink;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-sizing: border-box;
+    
 }
-.foot_link .foot_task_link{
+.foot-header .foot-header-logo-text div{
+    margin-bottom: 10px;
+}
+
+.foot-header-logo-text .Header-logo-icon{
+    box-sizing: border-box;
+    position: absolute;
+    width: 25px;
+    height: 24px;
+    left: 0px;
+    top:0px;
+    background: #3DBDB6;
+    border-radius: 9px; 
+}
+.foot-header-logo .logo-text h2{
+    font-size: 1.5rem;
+    position: absolute;
+    color: #FFFFFF;
+    top:-20px;
+    left:20px;
+}
+.foot-header-logo-text .foot-header-text{
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size:12px;
+    line-height: 19px;
+    color: #fff;
+    width: 196px;
+    height: 57px;
+    opacity: 0.6;
+}
+.foot-header-logo-text .foot-header-text a{
+    color: #fff;
+    opacity: 0.6;
+}
+.foot-header .foot-header-tasklist{
     position: absolute;
     width: 487px;
     height: 165px;
@@ -975,11 +1014,11 @@ input[type="submit"]:hover{
     
     
 }
-.foot_link .foot_task_link div{
+.foot-header .foot-header-tasklist div{
     margin-top: -20px;
 }
 
-.foot_task_link h4{
+.foot-header .foot-header-tasklist h4{
     width: 42px;
     height: 14px;
     color: #FFFFFF;
@@ -990,14 +1029,14 @@ input[type="submit"]:hover{
     line-height: 14px;
     text-transform: uppercase;
 }
-.foot_link .foot_task_link .link_about{
+.foot-header-tasklist .foot-header-tasklist-task{
     display: flex;
     flex-direction: column;
     height: 112px;
     margin-top:-20px;
 }
 
-.foot_task_link a {
+.foot-header-tasklist a {
     margin-top: -1px;
     font-family: 'Roboto';
     font-style: normal;
@@ -1011,29 +1050,8 @@ input[type="submit"]:hover{
     margin-top:10px;
     text-decoration: none;
 }
-.group_logo .logo_box{
-    left: 0;
-    top:0;
-}
-.group_logo .logo_text h2{
-    top:-20px;
-    left:0;
-    margin-left: 30px;
-}
-.group_logo p {
-    width: 196px;
-    height: 57px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 19px;
-    color: #FFFFFF;
-    mix-blend-mode: normal;
-    opacity: 0.6;
-    margin-top:39px;
-}
-.foot_task_link_img{
+
+.foot-header-iconlink{
     position: absolute;
     width: 75px;
     height: 17px;
@@ -1043,6 +1061,7 @@ input[type="submit"]:hover{
     display: flex;
     justify-content: space-between;
     cursor: pointer;
+    opacity: 0.6;
 }
 
 .Actor-group {
