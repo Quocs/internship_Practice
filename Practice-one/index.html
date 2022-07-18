@@ -12,16 +12,17 @@
 <body>
     <!--HEADER-->
     <header>
-        <!--header logo-->
+        <section class="header-top">
+            <!--header logo-->
             <div class="Header-logo">
                 <div class="Header-logo-icon">
-                        <div class="icon-eye1"></div>
-                        <div class="icon-eye2"></div>
-                        <div class="icon-smile"></div>
+                    <div class="icon-eye-left"></div>
+                    <div class="icon-eye-right"></div>
+                    <div class="icon-smile"></div>
                 </div>
                 <div class="logo-text"><h2>Better Desk</h2></div> 
             </div>
-        <!--NAVIGATION-->
+            <!--NAVIGATION-->
             <nav class="nav">
                 <div class="nav-right">
                     <ul>
@@ -34,24 +35,29 @@
                     </ul>
                 </div>
             </nav>
-        <!--TITLE HEADER-->
-            <div class="Header-title">
-                <h1>Build a <br>
-                    company your
-                    customers love.
-                </h1>
+        </section> 
+        <section class="header-body">
+            <div class="header-body-left">
+                <!--TITLE HEADER-->
+                <div class="Header-title">
+                    <h1>Build a <br>
+                        company your
+                        customers love.
+                    </h1>
+                </div>
+                <!--FORM HEADER-->
+                <div class="Header-form">
+                    <form action="">
+                        <input type="email" name="Email" id="" placeholder="Enter your work email">
+                        <input type="submit" value="Sign up">
+                    </form>
+                </div>
             </div>
-        <!--FORM HEADER-->
-            <div class="Header-form">
-                <form action="">
-                    <input type="email" name="Email" id="" placeholder="Enter your work email">
-                    <input type="submit" value="Sign up">
-                </form>
+            <div class="Header-body-right">
             </div>
-        <!--HEADER IMAGE-->
-            <div class="Header-img">
-            </div>
-        <!--HEADER STAKEHOLDER-->
+        </section>
+        <section class="header-bottom">
+            <!--HEADER STAKEHOLDER-->
             <div class="Header-stakeholder">
                 <span>
                     <img src="assets/img/group/basecamp-img.png" alt="basecamp-img" height="29px" class="basecamp">
@@ -61,16 +67,14 @@
                     <img src="assets/img/group/pocket-img.png" alt="pocket-img" height="29px" class="pocket">
                 </span>
             </div>
+        </section> 
     </header>
     <!--MAIN-->
     <main>
-        <!--CUSTOMER SUPPORT-->
-        <section id="customer-support">
-            <!--CUSTOMER SUPPORT TITLE-->
+        <section class="customer-support">
             <div class="customer-support-title">
                 <h4>Let's make customer support interaction more human & more reliable</h4>
             </div>
-            <!--CUSTOMER SUPPORT IMG-->
             <div class="customer-support-img">
                 <div class="customer-support-img-left">
                     <div class="Phone"><img src="assets/img/body1/phone-call-regular-24.png" alt="Phone-img" height="32.37px" width="32.37px"></div>
@@ -82,27 +86,24 @@
                     <div class="Message"><img src="assets/img/body1/message-rounded-dots-regular-24.png" alt="message-img" height="32.37px" width="32.37px" ></div>
                 </div>
             </div>
-            <!--CUSTOMER SUPPORT IMG TITLE-->
             <div class="customer-support-img-title">
                 <p>Support</p>
                 <p>Help Desk</p>
                 <p>Chat</p>
             </div>
-            <!--CUSTOMER SUPPORT IMG CONTENT-->
             <div class="customer-support-img-content">
                 <p>Vestibulum rutrum quam vitae fringilla tincid.</p>
                 <p>Cras quis nulla commodo, aliquam lectus sed.</p>
                 <p>Fusce vehicula dolor arcu, sit amet blandit dolor.</p>
             </div>
-            <!--CUSTOMER SUPPORT IMG LINK-->
             <div class="customer-support-img-link">
                 <a href="javascript:void(0)">Learn More</a>
                 <a href="javascript:void(0)">Learn More</a>
                 <a href="javascript:void(0)">Learn More</a>
             </div>
         </section>
-        <!--BETTERDESK-->
-        <section id="Better-Desk">
+        
+        <section class="Better-Desk">
             <div class="Better-Desk-title">
                 <h3>Why BetterDesk</h3>
             </div>
@@ -116,8 +117,8 @@
                 </p>
             </div>
             <div class="Better-Desk-group">
-                <div class="Better-Desk-group-support">
-                    <div class="Better-Desk-group-support-content">
+                <div class="group-support">
+                    <div class="group-support-content">
                         <h3>Support for growing business</h3>
                         <p>
                             Donec facilisis tortor ut augue lacinia, at viverra est semper. 
@@ -125,80 +126,82 @@
                             Pellentesque non dignissim neque. Ut porta.
                         </p>
                     </div>
-                    <div class="Better-Desk-group-support-list">
+                    <div class="group-support-list">
                         <p>1 bilion interaction per year</p>
                         <p>Minimal effort</p>
                         <p>Maximum knowledge</p>
                     </div>
                 </div>
-                <div class="Better-Desk-group-todolist">
+                <div class="group-todolist">
                     <div class="todolist-toppanel">
                         <div class="toppanel-paneltext">
-                                <p>To Do List</p> 
+                            <p>To Do List</p> 
                         </div>
                         <div class="toppanel-nofication">
-                                <div class="toppanel-nofication-number">
-                                    <p>6</p>
-                                </div>
+                            <div class="toppanel-nofication-number">
+                            <p>6</p>
+                            </div>
                         </div>
                         <div class="toppanel-button-addtext">
-                                <button><i class='bx bx-plus'></i>New</button>
+                            <button><i class='bx bx-plus'></i>New</button>
                         </div>
                     </div>
-                    <div class="Better-Desk-group-todolist-tasks">
-                            <div class="todolist-tasks-tasklist">
-                                <ul>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox">
-                                            <h3>Today, 21 Oct </h3>
-                                            <p>Prepare for presentation</p>
-                                            <span></span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox">
-                                            <h3>Today, 21 Oct </h3>
-                                            <p>Prepare for presentation</p>
-                                            <span></span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox">
-                                            <h3>Today, 21 Oct </h3>
-                                            <p>Prepare for presentation</p>
-                                            <span></span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox">
-                                            <h3>Today, 21 Oct </h3>
-                                            <p>Prepare for presentation</p>
-                                            <span></span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox">
-                                            <h3>Today, 21 Oct </h3>
-                                            <p>Prepare for presentation</p>
-                                            <span></span>
-                                        </label>
-                                    </li>
-                                </ul>    
-                            </div>
-                            <div class="todolist-tasks-scrollbar" id="scrollbar">
-                                <div class="force-overflow"></div>
-                            </div> 
+                    <div class="todolist-tasks">
+                        <div class="todolist-tasks-tasklist">
+                            <ul>
+                                <li>
+                                    <label>
+                                        <input type="checkbox">
+                                        <h3>Today, 21 Oct </h3>
+                                        <p>Prepare for presentation</p>
+                                        <span></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox">
+                                        <h3>Today, 21 Oct </h3>
+                                        <p>Prepare for presentation</p>
+                                        <span></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox">
+                                        <h3>Today, 21 Oct </h3>
+                                        <p>Prepare for presentation</p>
+                                        <span></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox">
+                                        <h3>Today, 21 Oct </h3>
+                                        <p>Prepare for presentation</p>
+                                        <span></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox">
+                                        <h3>Today, 21 Oct </h3>
+                                        <p>Prepare for presentation</p>
+                                        <span></span>
+                                    </label>
+                                </li>
+                            </ul>    
+                        </div>
+                        <div class="todolist-tasks-scrollbar" id="scrollbar">
+                            <div class="force-overflow"></div>
+                        </div> 
                     </div>
+                
                 </div>
             </div>
         </section>
+    
         <!-- ABOUT US -->
-        <section id="Aboutus">
+        <section class="Aboutus">
             <div class="Aboutus-title">
                 <h3>Learn More About Us</h3>
             </div>
@@ -220,8 +223,32 @@
                 </div>
             </div>
         </section>
+    
+        <!--GARTNER-->
+        <section class="gartner">
+            <div class="gartner-top">
+                <div class="gartner-top-text">
+                    <p><b>BetterDesk</b> is recognized as top Unified Communications provider in 2016 Magic Quandrant</p>
+                    <a href="javascript:void(0)">Read Report</a>
+                </div>
+                <div class="gartner-top-logo">
+                    <img src="assets/img/gartner/Gartner_logo.svg.png" alt="gartner-logo" width="240px;"
+                    height="54.14px;">
+                </div>
+            </div>
+            <div class="gartner-body">
+                <div class="gartner-body-text">
+                    <h4>“When BetterDesk was introduced, our business grows a lot — Strongly recommend.”</h4>
+                    <p>Sharon Herrera at Buffer</p>
+                </div> 
+                <div class="gartner-body-button-video">
+                    <div class="button-circle"></div>
+                </div>
+            </div>
+        </section>
+
         <!--ACTOR -->
-        <section id="Actor">
+        <section class="Actor">
             <div class="Actor-group">
                 <div class="Actor-group-img">
                     <img src="assets/img/Actor/Placeholder.png" alt="placeholder-img" height="80px;" width="80px;">
@@ -263,30 +290,9 @@
                 </div>
             </div>
         </section>
-        <!--GARTNER-->
-        <section id="gartner">
-        <div class="gartner-top">
-            <div class="gartner-top-text">
-                <p><b>BetterDesk</b> is recognized as top Unified Communications provider in 2016 Magic Quandrant</p>
-                <a href="javascript:void(0)">Read Report</a>
-            </div>
-            <div class="gartner-top-logo">
-                <img src="assets/img/gartner/Gartner_logo.svg.png" alt="gartner-logo" width="240px;"
-                height="54.14px;">
-            </div>
-        </div>
-        <div class="gartner-body">
-            <div class="gartner-body-text">
-                <h4>“When BetterDesk was introduced, our business grows a lot — Strongly recommend.”</h4>
-                <p>Sharon Herrera at Buffer</p>
-            </div> 
-            <div class="gartner-body-button-video">
-                    <div class="button-circle"></div>
-            </div>
-        </div>
-        </section>
+
         <!--SUBCRIBE-->
-        <section id="subcribe">
+        <section class="subcribe">
             <div class="subcribe-title">
                 <h4>Great Products Deliver Happiness to Users</h4>
             </div>
@@ -297,20 +303,21 @@
                 </form>
             </div>
         </section>
+    
     </main>
     <!--FOOTER-->
     <footer>
         <!--FOOT HEADER-->
             <div class="foot-header">
-               <div class="foot-header-logo-text">
-                    <div class="foot-header-logo">       
+               <div class="foot-header-logo">
+                        
                         <div class="Header-logo-icon">
-                            <div class="icon-eye1"></div>
-                            <div class="icon-eye2"></div>
+                            <div class="icon-eye-left"></div>
+                            <div class="icon-eye-right"></div>
                             <div class="icon-smile"></div>
                         </div>
                         <div class="logo-text"><h2>Better Desk</h2></div> 
-                    </div>
+        
                     <div class="foot-header-text">
                         <p>This template is created by @iamjoannajiang. UX Designer @ <a href="javascript:void(0)">www.betterdesign.io</a></p>
                     </div>
