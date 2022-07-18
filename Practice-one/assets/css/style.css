@@ -1,147 +1,40 @@
-/*--FORMAT--*/
+*{
+    box-sizing: border-box;
+}
+
 body{
     position: relative;
-    width: 1446px;
+    width: 100%;
     height: 4483px;
     background: #ffff;
 }
+
 header{
     position: absolute;
-    width: 1446px;
+    width: 100%;
     height: 686px;
     left: 0;
     top:0;
     background: #3e3e58;
 }
-#customer-support{
-    position: absolute;
-    width: 764px;
-    height: 349px;
-    left:335px;
-    top:780px;
-   
-}
-#Better-Desk{
-    position: absolute;
-    width: 1446px;
-    height: 825px;
-    left:0px;
-    top:1209px;
-    background:linear-gradient(131.99deg, #3DBDB6 5.64%, #0089CE 100%);;
-}
-#Aboutus{
-    position: absolute;
-    width: 1100px;
-    height: 515.18px;
-    left: 170px;
-    top:2114px;
-    
-}
-.gartner-top{
-    position: absolute;
-    width: 1446px;
-    height: 180px;
-    left:0;
-    top:2710px;
-    background:linear-gradient(138.41deg, #1172D0 6.2%, #1D98D6 99.82%);
-    border: 1px solid #E1E1E1;
-}
-#Actor{
-    position: absolute;
-    width: 1121px;
-    height: 80px;
-    left:171px;
-    top: 3651px;
+
+/* -- Header-top --*/
+.header-top{
     display: flex;
-    justify-content:space-between;
-    
+    padding:20px 50px;  
 }
-.gartner-body{
-    position: absolute;
-    width: 1446px;
-    height: 726px;
-    left:0;
-    top:2891px;
-    /*background: #081941;*/
-    min-blend-mode:darken;
-    background-image: url(../img/gartner/woman-690036_1280.png);
-    background-size: auto;
-    background-repeat: no-repeat;
-    opacity: 1;
+.header-top .Header-logo{
+    flex:40%;
+    /*background-color: #3DBDB6;*/
+    box-sizing: border-box;
+}
+.header-top .nav{
+    flex: 60%;
+    margin-top:29px;
+    z-index: 3;
+}
+.Header-logo .Header-logo-icon{
    
-}
-#subcribe{
-    position: absolute;
-    width: 1446px;
-    height: 307px;
-    left:0;
-    top:3771px;
-    background-color: #3DBDB6;
-}
-footer{
-    position: absolute;
-    width: 1446px;
-    height: 405px;
-    left:0;
-    top:4078px;
-    background:#1F2532;
-}
-
-/*HEADER-STAKEHOLDER*/
-
-.Header-stakeholder{
-    box-sizing: border-box;
-    position: absolute;
-    width: 1446px;
-    height: 105px;
-    left: 0;
-    top:592px;
-    background-color: #f9fafa;
-    border: 1px solid #eee;
-}
-.Header-stakeholder span{
-    position: absolute;
-    width: 703px;
-    height: 29px;
-    left: 369px;
-    top:39px;
-    /*background-color: #0089CE;*/
-}
-.Header-stakeholder span img{
-    position: absolute;
-    width: 95px;
-}
-.grubhub{
-    left:169px;
-}
-.trello{
-    left:311px;
-}
-.buffer{
-    left:456px;
-}
-.pocket{
-    left:595px;
-}
-
-/*--HEADER-LOGO--*/
-
-.logo-text h2{
-    font-size: 1.5rem;
-    position: absolute;
-    top: 38px;
-    left:248px;
-    color: #FFFFFF;
-    margin-left: 10px;
-}
-
-.Header-logo{
-    display: flex;
-    justify-content: flex-start;
-    padding:20px 50px;
-}
-.Header-logo-icon{
-    box-sizing: border-box;
     position: absolute;
     width: 25px;
     height: 24px;
@@ -149,6 +42,14 @@ footer{
     top:60px;
     background: #3DBDB6;
     border-radius: 9px; 
+}
+.Header-logo .logo-text h2{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 38px;
+    left:248px;
+    color: #FFFFFF;
+    margin-left: 30px;
 }
 
 .Header-logo-icon .icon-smile {
@@ -160,7 +61,7 @@ footer{
     left: 7px;
 }
 
-.Header-logo-icon .icon-eye1{
+.Header-logo-icon .icon-eye-left{
     position: absolute;
     width: 2.51px;
     height: 2.53px;
@@ -171,7 +72,7 @@ footer{
 
 }
 
-.Header-logo-icon .icon-eye2{
+.Header-logo-icon .icon-eye-right{
     position: absolute;
     width: 2.51px;
     height: 2.53px;
@@ -179,20 +80,6 @@ footer{
     right: 7.23px;
     background: #dadada;
     border-radius: 50%;
-}
-
-/*--NAVIGATION--*/
-
-.nav{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 20px 50px;
-    position: absolute;
-    width: 973px;
-    height: 45px;
-    left: 231px;
-    top: 27px;
 }
 
 .nav .nav-right li{
@@ -229,9 +116,16 @@ footer{
     padding-bottom: 10px;
     border-bottom:1px solid #3DBDB6 ;
 }
-/*HEADER TITLE,FORM,IMG*/
-.Header-title{
+
+/* -- Header-body -- */
+.header-body{
     display: flex;
+}
+.header-body-left{
+    flex:50%;
+    flex-direction: column;
+}
+.Header-title{
     align-items: Center;
     position: absolute;
     width: 343px;
@@ -239,7 +133,6 @@ footer{
     top:182px;
     left:231px;
 }
-
 .Header-title>h1{
     font-family: 'Roboto';
     font-style: normal;
@@ -248,13 +141,12 @@ footer{
     line-height: 54px;
     color: #fff;
 }
-
 .Header-form {
-    display: flex;
+    
     flex-direction: row;
     position: absolute;
     left: 231px;
-    top: 391px;
+    top: 400px;
 }
 
 .Header-form input[type="email"]{
@@ -279,21 +171,69 @@ input[type="submit"]:hover{
     background: #dadada;
 }
 
-.Header-img{
+.Header-body-right{
+    flex: 50%;
     position: absolute;
     width: 721px;
-    height: 482px;
-    left: 725px;
-    top:110px;
+    height: 540px;
+    right: 0px;
+    top:53px;
+    max-width: 100%;
     background: #3DBDB6;
     background-image: url(../img/Header_img.png);
     background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+    
+}
+
+/* -- Header-bottom -- */
+
+.Header-stakeholder{
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 105px;
+    left: 0;
+    top:592px;
+    background-color: #f9fafa;
+    border: 1px solid #eee;
+}
+.Header-stakeholder span{
+    position: absolute;
+    width: 703px;
+    height: 29px;
+    left: 369px;
+    top:39px;
+    /*background-color: #0089CE;*/
+}
+.Header-stakeholder span img{
+    position: absolute;
+    width: 95px;
+}
+.grubhub{
+    left:169px;
+}
+.trello{
+    left:311px;
+}
+.buffer{
+    left:456px;
+}
+.pocket{
+    left:595px;
 }
 
 
+/* -- Customer-support -- */
 
-/* --- CUSTOMER_SUPPORT ---*/
-
+.customer-support{
+    position: absolute;
+    width: 60%;
+    height: 349px;
+    left:360px;
+    top:780px;
+}
 .customer-support-title{
     display: flex;
     justify-content: center;
@@ -397,15 +337,21 @@ input[type="submit"]:hover{
     text-decoration: none;
 }
 
-
-/* -- BETTER DESK -- */
-
+/* -- BetterDesk -- */
+.Better-Desk{
+    position: absolute;
+    width: 100%;
+    height: 825px;
+    left:0px;
+    top:1209px;
+    background:linear-gradient(131.99deg, #3DBDB6 5.64%, #0089CE 100%);;
+}
 .Better-Desk-title{
     display: flex;
     justify-content: center;
 }
 .Better-Desk-title h3{
-    width: 282px;
+    width: 100%;
     height: 47px;
     font-family: 'Roboto';
     font-style: normal;
@@ -418,6 +364,7 @@ input[type="submit"]:hover{
 .Better-Desk-content{
     display: flex;
     justify-content: center;
+    
 
 }
 .Better-Desk-content p {
@@ -434,15 +381,16 @@ input[type="submit"]:hover{
 
 .Better-Desk-group{
     position: absolute;
-    width: 1113px;
+    width: 100%;
     height: 461px;
     left:156px;
     top:274px;
     /*background: #0089CE;*/
+    display: flex;
 }
 
-.Better-Desk-group-support{
-    position: absolute;
+.group-support{
+   position: absolute;
     width: 502px;
     height: 164px;
     left: 0px;
@@ -450,13 +398,27 @@ input[type="submit"]:hover{
     background: rgba(24, 144, 164, 0.5);
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.0965523);
     border-radius: 3px;
+    flex: 50%;
 }
-.Better-Desk-group-support-content{
+.group-todolist{
+   position: absolute;
+    width: 520px;
+    height: 461px;
+    left:592px;
+    top:0px;
+    background: #fff;
+    border-radius: 8px;
+    flex: 50%;
+    margin-right:5px;
+}
+
+
+.group-support-content{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
 }
-.Better-Desk-group-support-content  h3{
+.group-support-content  h3{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -464,7 +426,7 @@ input[type="submit"]:hover{
     color:#ffff;
     margin-left: 34px;
 }
-.Better-Desk-group-support-content  p {
+.group-support-content  p {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -475,14 +437,14 @@ input[type="submit"]:hover{
     height: 60px;
     margin-bottom: 32px;
 }
-.Better-Desk-group-support-list{
+.group-support-list{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     position: absolute;
     left:34px;
 }
-.Better-Desk-group-support-list > p{
+.group-support-list > p{
     font-family:'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -490,20 +452,10 @@ input[type="submit"]:hover{
     color:#fff;
 }
 
-.Better-Desk-group-todolist{
-    box-sizing: border-box;
-    position: absolute;
-    width: 520px;
-    height: 461px;
-    left:592px;
-    top:0px;
-    background: #fff;
-    border-radius: 8px;
-}
 .todolist-toppanel{
     box-sizing: border-box;
     position: absolute;
-    width: 520px;
+    width: 100%;
     height: 70px;
     top:0;
     left:0;
@@ -575,7 +527,7 @@ input[type="submit"]:hover{
 .toppanel-button-addtext button:hover{
     background: #1D98D6;
 }
-.Better-Desk-group-todolist-tasks{
+.todolist-tasks{
     position: absolute;
     width: 474px;
     height: 322px;
@@ -689,7 +641,15 @@ input[type="submit"]:hover{
     border-radius: 5px;
 }
 
-/* -- About-us -- */
+/* -- AboutUs -- */
+.Aboutus{
+    position: absolute;
+    width: 80%;
+    height: 515.18px;
+    left: 160px;
+    top: 2114px;
+    
+}
 .Aboutus-title{
     display: flex;
     justify-content: center;
@@ -708,7 +668,7 @@ input[type="submit"]:hover{
 }
 .Aboutus-group{
     position: absolute;
-    width: 1100px;
+    width: 100%;
     height: 397.18px;
     top:118px;
     /*background: #1D98D6;*/
@@ -750,20 +710,39 @@ input[type="submit"]:hover{
     color: #2D8CFF;
 }
 
-/*--GARTNER --*/
-
+/* -- Gartner -- */
+.gartner-top{
+    position: absolute;
+    width: 100%;
+    height: 180px;
+    left:0;
+    top:2710px;
+    background:linear-gradient(138.41deg, #1172D0 6.2%, #1D98D6 99.82%);
+    border: 1px solid #E1E1E1;
+    display: flex;
+}
+.gartner-body{
+    position: absolute;
+    width: 100%;
+    height: 726px;
+    left:0;
+    top:2891px;
+    /*background: #081941;*/
+    min-blend-mode:darken;
+    background-image: url(../img/gartner/woman-690036_1280.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 1;
+   
+}
 
 .gartner-top-text{
-    position: absolute;
+    flex: 70%;
+    /*background-color: #333333;*/
     width: 687px;
     height: 100px;
-    left:176px;
-    top:40px;
-    display: flex;
-    flex-direction: column;
-   /* background-color: #081941;*/
-    justify-content: flex-end;
-    align-items: flex-start;
+    margin-left:176px;
+    margin-top:10px;
 }
 .gartner-top-text p {
     font-family: "Roboto";
@@ -784,30 +763,26 @@ input[type="submit"]:hover{
     color: #ffff;
 }
 .gartner-top-logo{
-    position: absolute;
+    /*background-color: #3DBDB6;*/
+    flex: 30%;
     width: 240px;
     height: 54.14px;
-    left: 1036px;
-    top: 60px;
-
+    margin-left: 20px;
+    margin-top:40px;
 }
-
-
 .gartner-body-text{
-    position: absolute;
-    width: 826px;
+   
+    width: 100%;
     height: 251px;
-    left:311px;
-    top:393px; 
     /*background: #1D98D6;*/
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    margin-top: 290px;
 }
 
-.gartner-body-text  h4{
+.gartner-body-text h4{
     width: 826px;
     height: 86px;
     font-family: 'Roboto';
@@ -836,7 +811,7 @@ input[type="submit"]:hover{
 
 .gartner-body-button-video {
     box-sizing: border-box;
-    position: absolute;
+    margin: auto;
     width: 70px;
     height: 70px;
     background: linear-gradient(131.99deg, #3DBDB6 5.64%, #0089CE 100%);
@@ -846,7 +821,7 @@ input[type="submit"]:hover{
     cursor: pointer;
 }
 .gartner-body-button-video .button-circle{
-    position: absolute;
+    position: relative;
     left: 27.5px;
     top:22.5px;
 	width: 26px;
@@ -857,7 +832,139 @@ input[type="submit"]:hover{
 }
 
 
-/*--SUBCRIBE--*/
+/* -- ACTOR -- */
+
+.Actor{
+    position: absolute;
+    width: 85%;
+    height: 80px;
+    left:171px;
+    top: 3651px;
+    display: flex;
+    justify-content:space-between;
+    
+}
+.Actor-group {
+    /* background: #0089CE;*/
+     width: 224px;
+     height: 80px;
+     display: flex;
+     opacity: 0.75;
+     cursor: pointer;
+     
+ }
+ .Actor-group-img{
+     position:relative;
+     left: 0;
+ }
+ .Actor-group-content{
+     margin-left: 23px;
+ }
+ 
+ 
+ .Actor-group-content p {
+     width: 121px;
+     height: 22px;
+     font-family: 'Roboto';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 18px;
+     line-height: 21px;
+     color: #39394D;
+     
+ }
+ .Actor-group-content img {
+     width: 90px;
+     height: 20px;
+     margin-top: -10px;
+     
+ }
+ 
+ .Actor-group:hover{
+     opacity: 1;
+ }
+ 
+ .triangel_right {
+     width: 0;
+     height: 0;
+     left: 33.42px;
+     top:30.58px;
+     border-top: 8px solid transparent;
+     border-left: 18px solid #fff;
+     border-bottom: 8px solid transparent;
+     position: absolute;
+     z-index: 555;
+   }
+   .triangel_right:hover{
+     display: none;
+   }
+
+/* -- Subcribe --*/
+.subcribe{
+    position: absolute;
+    width: 100%;
+    height: 307px;
+    left:0;
+    top:3771px;
+    background-color: #3DBDB6;
+}
+
+.subcribe-title{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 48px;
+    margin:auto;
+}
+
+.subcribe-title h4{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.subcribe-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:100px;
+}
+.subcribe-form input[type="email"]{
+    box-sizing: border-box;
+    width: 302px;
+    height: 50px;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(177, 177, 177, 0.5);
+    text-indent: 10px;
+    border-radius: 5px;
+}
+
+.subcribe-form input[type = "submit"]{
+    box-sizing: border-box;
+    width: 120px;
+    height: 52px;
+    background: #FFFFFF;
+    color:#3DBDB6;
+    border: 0px solid #fff;
+    border-radius: 5px;
+    margin-left:-3px;
+}
+
+/* footer */
+
+footer{
+    position: absolute;
+    width: 100%;
+    height: 405px;
+    left:0;
+    top:4078px;
+    background:#1F2532;
+}
 .subcribe-title{
     display: flex;
     justify-content: center;
@@ -907,7 +1014,7 @@ input[type="submit"]:hover{
 .foot-body{
     box-sizing: border-box;
     position: absolute;
-    width: 1446px;
+    width: 100%;
     height: 120px;
     left: 0px;
     top: 285px;
@@ -950,7 +1057,7 @@ input[type="submit"]:hover{
     display: flex;
 
 }
-.foot-header .foot-header-logo-text{
+.foot-header .foot-header-logo{
     position: absolute;
     width: 196px;
     height: 130px;
@@ -964,11 +1071,11 @@ input[type="submit"]:hover{
     box-sizing: border-box;
     
 }
-.foot-header .foot-header-logo-text div{
+.foot-header .foot-header-logo div{
     margin-bottom: 10px;
 }
 
-.foot-header-logo-text .Header-logo-icon{
+.foot-header-logo .Header-logo-icon{
     box-sizing: border-box;
     position: absolute;
     width: 25px;
@@ -985,7 +1092,7 @@ input[type="submit"]:hover{
     top:-20px;
     left:20px;
 }
-.foot-header-logo-text .foot-header-text{
+.foot-header-logo .foot-header-text{
     box-sizing: border-box;
     font-family: 'Roboto';
     font-style: normal;
@@ -996,8 +1103,9 @@ input[type="submit"]:hover{
     width: 196px;
     height: 57px;
     opacity: 0.6;
+    margin-top:20px;
 }
-.foot-header-logo-text .foot-header-text a{
+.foot-header-logo .foot-header-text a{
     color: #fff;
     opacity: 0.6;
 }
@@ -1064,58 +1172,3 @@ input[type="submit"]:hover{
     cursor: pointer;
     opacity: 0.6;
 }
-
-.Actor-group {
-    /* background: #0089CE;*/
-     width: 224px;
-     height: 80px;
-     display: flex;
-     opacity: 0.75;
-     cursor: pointer;
-     
- }
- .Actor-group-img{
-     position:relative;
-     left: 0;
- }
- .Actor-group-content{
-     margin-left: 23px;
- }
- 
- 
- .Actor-group-content p {
-     width: 121px;
-     height: 22px;
-     font-family: 'Roboto';
-     font-style: normal;
-     font-weight: 400;
-     font-size: 18px;
-     line-height: 21px;
-     color: #39394D;
-     
- }
- .Actor-group-content img {
-     width: 90px;
-     height: 20px;
-     margin-top: -10px;
-     
- }
- 
- .Actor-group:hover{
-     opacity: 1;
- }
- 
- .triangel_right {
-     width: 0;
-     height: 0;
-     left: 33.42px;
-     top:30.58px;
-     border-top: 8px solid transparent;
-     border-left: 18px solid #fff;
-     border-bottom: 8px solid transparent;
-     position: absolute;
-     z-index: 555;
-   }
-   .triangel_right:hover{
-     display: none;
-   }
