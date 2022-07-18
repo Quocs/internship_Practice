@@ -338,7 +338,7 @@ input[type="submit"]:hover{
 }
 
 /* -- BetterDesk -- */
-.Better-Desk{
+.desk{
     position: absolute;
     width: 100%;
     height: 825px;
@@ -346,11 +346,11 @@ input[type="submit"]:hover{
     top:1209px;
     background:linear-gradient(131.99deg, #3DBDB6 5.64%, #0089CE 100%);;
 }
-.Better-Desk-title{
+.desk-title{
     display: flex;
     justify-content: center;
 }
-.Better-Desk-title h3{
+.desk-title h3{
     width: 100%;
     height: 47px;
     font-family: 'Roboto';
@@ -361,13 +361,13 @@ input[type="submit"]:hover{
     text-align: center;
     color :#ffff;
 }
-.Better-Desk-content{
+.desk-content{
     display: flex;
     justify-content: center;
     
 
 }
-.Better-Desk-content p {
+.desk-content p {
     width: 1089px;
     height: 56px;
     font-family: 'Roboto';
@@ -379,7 +379,7 @@ input[type="submit"]:hover{
     color: #ffff;
 }
 
-.Better-Desk-group{
+.desk-container{
     position: absolute;
     width: 100%;
     height: 461px;
@@ -389,7 +389,7 @@ input[type="submit"]:hover{
     display: flex;
 }
 
-.group-support{
+.desk-container-support{
    position: absolute;
     width: 502px;
     height: 164px;
@@ -400,7 +400,7 @@ input[type="submit"]:hover{
     border-radius: 3px;
     flex: 50%;
 }
-.group-todolist{
+.desk-container-todolist{
    position: absolute;
     width: 520px;
     height: 461px;
@@ -412,13 +412,12 @@ input[type="submit"]:hover{
     margin-right:5px;
 }
 
-
-.group-support-content{
+.desk-container-support-title{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
 }
-.group-support-content  h3{
+.desk-container-support-title  h3{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -426,7 +425,7 @@ input[type="submit"]:hover{
     color:#ffff;
     margin-left: 34px;
 }
-.group-support-content  p {
+.desk-container-support-title  p {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -437,14 +436,14 @@ input[type="submit"]:hover{
     height: 60px;
     margin-bottom: 32px;
 }
-.group-support-list{
+.desk-container-support-list-text{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     position: absolute;
     left:34px;
 }
-.group-support-list > p{
+.desk-container-support-list-text > p{
     font-family:'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -452,7 +451,7 @@ input[type="submit"]:hover{
     color:#fff;
 }
 
-.todolist-toppanel{
+.desk-container-todolist-toppanel{
     box-sizing: border-box;
     position: absolute;
     width: 100%;
@@ -461,14 +460,14 @@ input[type="submit"]:hover{
     left:0;
     background-color: #f5f9fc;
 }
-.toppanel-paneltext{
+.desk-container-todolist-toppanel-text{
     display: flex;
     align-items: center;
     justify-content: flex-start;
     margin-left: 40.79px;
     margin-top:3px;
 }
-.toppanel-paneltext >p {
+.desk-container-todolist-toppanel-text >p {
     width: 90px;
     height: 24px;
     font-family: "Roboto";
@@ -479,7 +478,7 @@ input[type="submit"]:hover{
     color: #3d4d65;
 }
 
-.toppanel-nofication{
+.desk-container-todolist-toppanel-text-nofication{
     position: absolute;
     width: 51px;
     height: 32px;
@@ -488,14 +487,14 @@ input[type="submit"]:hover{
     background: #20BBEF;
     border-radius: 40px;
 }
-.toppanel-nofication-number{
+.desk-container-todolist-toppanel-text-nofication-number{
     display: flex;
     align-items: center;
     position:absolute;
     left:19.5px;
     top:-15px;
 }
-.toppanel-nofication-number p{
+.desk-container-todolist-toppanel-nofication-number p{
     width: 12px;
     height: 24px;
     font-family: 'Roboto';
@@ -505,7 +504,7 @@ input[type="submit"]:hover{
     line-height: 23px;
     color: #fff;
 }
-.toppanel-button-addtext{
+.desk-container-todolist-toppanel-button-addtext{
     position: absolute;
     width: 90px;
     height: 40px;
@@ -514,7 +513,7 @@ input[type="submit"]:hover{
     /*background: #0089CE;*/
     
 }
-.toppanel-button-addtext button{
+.desk-container-todolist-toppanel-button-addtext button{
     background: #20BBEF;
     border: 1px solid #DADFE5;
     border-radius: 5px;
@@ -524,7 +523,7 @@ input[type="submit"]:hover{
     width: 90px;
     height: 40px;
 }
-.toppanel-button-addtext button:hover{
+.desk-container-todolist-toppanel-button-addtext button:hover{
     background: #1D98D6;
 }
 .todolist-tasks{
@@ -642,7 +641,7 @@ input[type="submit"]:hover{
 }
 
 /* -- AboutUs -- */
-.Aboutus{
+.aboutus{
     position: absolute;
     width: 80%;
     height: 515.18px;
@@ -650,13 +649,13 @@ input[type="submit"]:hover{
     top: 2114px;
     
 }
-.Aboutus-title{
+.aboutus-title{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.Aboutus-title >h3 {
+.aboutus-title >h3 {
     width: 376px;
     height: 47px;
     font-family: 'Roboto';
@@ -666,7 +665,7 @@ input[type="submit"]:hover{
     line-height: 47px;
     color: #4a4a4a;
 }
-.Aboutus-group{
+.aboutus-group{
     position: absolute;
     width: 100%;
     height: 397.18px;
@@ -676,7 +675,7 @@ input[type="submit"]:hover{
     justify-content: center;
     align-items: center;
 }
-.Aboutus-group > div {
+.aboutus-group > div {
     width: 350px;
     height: 396.18px;
    /* background-color: #f1f1f1;*/
@@ -685,7 +684,7 @@ input[type="submit"]:hover{
     
 }
 
-.Aboutus-group p {
+.aboutus-group p {
     width: 250px;
     height: 44px;
     font-family: 'Roboto';
@@ -698,7 +697,7 @@ input[type="submit"]:hover{
     margin-left:50px;
 }
 
-.Aboutus-group a {
+.aboutus-group a {
     width: 71px;
     height: 17px;
     font-family: 'Roboto';
