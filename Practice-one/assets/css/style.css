@@ -594,3 +594,132 @@ input[type="submit"]:hover {
     text-align: center;
     color: #FFFFFF;
 }
+
+.actor{
+    margin-top: 10px;
+    width: 100%x;
+    height: 80px;
+    top: 3651px;
+    display: flex;
+    justify-content: space-around;
+}
+.actor-container {
+    /* background: #0089CE;*/
+    width: 224px;
+    height: 80px;
+    display: flex;
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.actor-container-img {
+    position: relative;
+    left: 0;
+}
+
+.actor-container-name {
+    margin-left: 23px;
+}
+ 
+.actor-container-name p {
+    width: 121px;
+    height: 22px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #39394D;
+}
+
+.actor-container-name img {
+    width: 90px;
+    height: 20px;
+    margin-top: -10px;
+     
+ }
+ 
+.actor-container:hover {
+    opacity: 1;
+ }
+ 
+.triangel_right {
+    width: 0;
+    height: 0;
+    left: 33.42px;
+    top: 30.58px;
+    border-top: 8px solid transparent;
+    border-left: 18px solid #fff;
+    border-bottom: 8px solid transparent;
+    position: absolute;
+    z-index: 555;
+}
+
+.triangel_right:hover {
+    display: none;
+}
+
+.subcribe{
+    margin-top: 20px;
+    width: 1500px;
+    height: 307px;
+    background-color: #3DBDB6;
+}
+.subcribe-title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 48px;
+    margin: auto;
+}
+
+.subcribe-title h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.subcribe-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+}
+.subcribe-form input[type="email"] {
+    box-sizing: border-box;
+    width: 302px;
+    height: 50px;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(177, 177, 177, 0.5);
+    text-indent: 10px;
+    border-radius: 5px;
+}
+
+.subcribe-form input[type = "submit"] {
+    box-sizing: border-box;
+    width: 120px;
+    height: 52px;
+    background: #FFFFFF;
+    color: #3DBDB6;
+    border: 0px solid #fff;
+    border-radius: 5px;
+    margin-left:-3px;
+}
+
+footer{
+    width: 100%;
+    height: 405px;
+}
+.footer-header{
+    width: 100%;
+    height: 285px;
+    background: #1F2532;
+}
+.foot-main{
+    width: 1440px;
+    height: 120px;
+    background: #3E3E58;
+}
