@@ -815,3 +815,70 @@ input[type="submit"]:hover {
 	border-bottom: 13px solid transparent;
     cursor: pointer;
 }
+
+/*----*/
+
+.actor{
+    position: absolute;
+    width: 1300px;
+    height: 80px;
+    left:100px;
+    top: 3651px;
+    display: flex;
+    justify-content:space-between;
+    
+}
+.actor-container {
+    /* background: #0089CE;*/
+     width: 224px;
+     height: 80px;
+     display: flex;
+     opacity: 0.75;
+     cursor: pointer;
+     
+ }
+ .actor-container-img{
+     position:relative;
+     left: 0;
+ }
+ .actor-container-name{
+     margin-left: 23px;
+ }
+ 
+ 
+ .actor-container-name p {
+     width: 121px;
+     height: 22px;
+     
+     font-style: normal;
+     font-weight: 400;
+     font-size: 18px;
+     line-height: 21px;
+     color: #39394D;
+     
+ }
+ .actor-container-name img {
+     width: 90px;
+     height: 20px;
+     margin-top: -10px;
+     
+ }
+ 
+ .actor-container:hover{
+     opacity: 1;
+ }
+ 
+ .triangel_right {
+     width: 0;
+     height: 0;
+     left: 33.42px;
+     top:30.58px;
+     border-top: 8px solid transparent;
+     border-left: 18px solid #fff;
+     border-bottom: 8px solid transparent;
+     position: absolute;
+     z-index: 555;
+   }
+   .triangel_right:hover{
+     display: none;
+   }
