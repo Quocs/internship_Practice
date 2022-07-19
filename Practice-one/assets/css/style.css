@@ -713,7 +713,6 @@ input[type="submit"]:hover {
     left:0;
     top:2891px;
     /*background: #081941;*/
-    min-blend-mode:darken;
     background-image: url('../img/gartner/woman-img.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -882,3 +881,247 @@ input[type="submit"]:hover {
    .triangel_right:hover{
      display: none;
    }
+
+/*----*/
+.subcribe{
+    position: absolute;
+    width: 1500px;
+    height: 307px;
+    left:0;
+    top:3771px;
+    background-color: #3DBDB6;
+}
+
+.subcribe-title{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 48px;
+    margin:auto;
+}
+
+.subcribe-title h4{
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.subcribe-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:100px;
+}
+.subcribe-form input[type="email"]{
+    box-sizing: border-box;
+    width: 302px;
+    height: 50px;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(177, 177, 177, 0.5);
+    text-indent: 10px;
+    border-radius: 5px;
+}
+
+.subcribe-form input[type = "submit"]{
+    box-sizing: border-box;
+    width: 120px;
+    height: 52px;
+    background: #FFFFFF;
+    color:#3DBDB6;
+    border: 0px solid #fff;
+    border-radius: 5px;
+    margin-left:-3px;
+}
+
+/*----*/
+footer{
+    position: absolute;
+    width: 1500px;
+    height: 405px;
+    left:0;
+    top:4078px;
+    background:#1F2532;
+}
+
+.foot-body{
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    left: 0px;
+    top: 285px;
+    background: #3E3E58;
+    display: flex;
+    justify-content: center;
+}
+.foot-body a {
+    width: 903px;
+    height: 48px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffff;
+    margin-top: 38px;
+}
+.foot-body p {
+    width: 903px;
+    height: 48px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffff;
+    margin-top: 38px;
+}
+
+.foot-header{
+    position: absolute;
+    width: 683px;
+    height: 165px;
+    left: 266px;
+    top:72px;
+    /*background-color: #0089CE;*/
+    display: flex;
+
+}
+.foot-header-logo{
+    display: flex;
+    flex-direction: column;
+}
+
+.foot-header-logo .foot-header-text{
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: 400;
+    font-size:12px;
+    line-height: 19px;
+    color: #fff;
+    width: 196px;
+    height: 57px;
+    opacity: 0.6;
+    margin-top:20px;
+}
+.foot-header-logo .foot-header-text a{
+    color: #fff;
+    opacity: 0.6;
+}
+.foot-header .foot-header-tasklist{
+    position: absolute;
+    width: 487px;
+    height: 165px;
+    top:0;
+    right:0;
+    left:300px;
+    /*background-color: red;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    
+}
+.foot-header .foot-header-tasklist div{
+    margin-top: -20px;
+}
+
+.foot-header .foot-header-tasklist h4{
+    width: 42px;
+    height: 14px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+.foot-header-tasklist .foot-header-tasklist-task{
+    display: flex;
+    flex-direction: column;
+    height: 112px;
+    margin-top:-20px;
+}
+
+.foot-header-tasklist a {
+    margin-top: -1px;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 28px;
+    /* or 233% */
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    margin-top:10px;
+    text-decoration: none;
+}
+
+.foot-header-iconlink{
+    position: absolute;
+    width: 75px;
+    height: 17px;
+    left: 950px;
+    top:4px;
+    /*background-color: #0089CE;*/
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.foot-header-top-logo .foot-header-top-logo-icon {
+   
+    position: relative;
+    width: 25px;
+    height: 24px;
+    left: 0px;
+    top:20px;
+    background: #3DBDB6;
+    border-radius: 9px; 
+    
+}
+.foot-header-top-logo .foot-header-top-logo-text h2 {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0px;
+    left:15px;
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+
+.foot-header-top-logo-icon .icon-smile {
+    position: absolute;
+    width: 11.72px;
+    height: 4.21px;
+    background: #dadada;
+    top: 13.36px;
+    left: 7px;
+}
+
+.foot-header-top-logo-icon .icon-eye-left {
+    position: absolute;
+    width: 2.51px;
+    height: 2.53px;
+    top: 7.25px;
+    left: 8.05px;
+    background:#dadada;
+    border-radius: 50%;
+
+}
+
+.foot-header-top-logo-icon .icon-eye-right {
+    position: absolute;
+    width: 2.51px;
+    height: 2.53px;
+    top:  7.25px;
+    right: 7.23px;
+    background: #dadada;
+    border-radius: 50%;
+}
