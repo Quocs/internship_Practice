@@ -15,14 +15,14 @@ header {
     width: 1500px;
     height: 686px;
     left: 0;
-    top:0;
+    top: 0;
     background: #3e3e58;
 }
 
 /* -- Header-top --*/
 .header-top {
     display: flex;
-    padding:20px 50px;  
+    padding: 20px 50px;  
 }
 
 .header-top .header-top-logo {
@@ -34,7 +34,7 @@ header {
 
 .header-top .header-top-nav {
     flex: 60%;
-    margin-top:29px;
+    margin-top: 29px;
     z-index: 3;
     /*background-color: #3DBDB6;*/
 }
@@ -44,7 +44,7 @@ header {
     width: 25px;
     height: 24px;
     left: 231px;
-    top:60px;
+    top: 60px;
     background: #3DBDB6;
     border-radius: 9px; 
 }
@@ -53,7 +53,7 @@ header {
     font-size: 1.5rem;
     position: absolute;
     top: 38px;
-    left:248px;
+    left: 248px;
     color: #FFFFFF;
     margin-left: 20px;
 }
@@ -82,7 +82,7 @@ header {
     position: absolute;
     width: 2.51px;
     height: 2.53px;
-    top:  7.25px;
+    top: 7.25px;
     right: 7.23px;
     background: #dadada;
     border-radius: 50%;
@@ -105,7 +105,7 @@ header {
     color: #fff;
     font-weight: 400;
     font-style: normal;
-    font-size:14px;
+    font-size: 14px;
     line-height: 14px;
     padding: 14px 16px;
 }
@@ -118,7 +118,7 @@ header {
     line-height: 14px;
     color: #ffff;
     padding-bottom: 10px;
-    border-bottom:1px solid #3DBDB6 ;
+    border-bottom: 1px solid #3DBDB6 ;
 }
 
 /* -- Header-body -- */
@@ -131,7 +131,7 @@ header {
     flex-direction: column;
     /*background-color: #4449a4;*/
     padding-left: 231px;
-    padding-top:70px;
+    padding-top: 70px;
 }
 
 .header-body-left-title {
@@ -151,7 +151,6 @@ header {
 }
 
 .header-body-left-form {
-    
     flex-direction: row;
     left: 231px;
     top: 80px;
@@ -209,8 +208,8 @@ input[type="submit"]:hover {
 .header-bottom-stakeholder span {
    
     height: 109px;
-    margin-left:70px;
-    margin-top:39px;
+    margin-left: 70px;
+    margin-top: 39px;
     
 }
 
@@ -244,8 +243,8 @@ input[type="submit"]:hover {
     position: absolute;
     width: 900px;
     height: 349px;
-    left:300px;
-    top:780px;
+    left: 300px;
+    top: 780px;
 }
 
 .customer-support-title {
@@ -263,7 +262,7 @@ input[type="submit"]:hover {
     color: #333333;
     width: 589px;
     height: 88px;
-    margin-top:0px;
+    margin-top: 0px;
 }
 
 .customer-support-img {
@@ -281,8 +280,8 @@ input[type="submit"]:hover {
 }
 
 .customer-support-img-left .Phone {
-    margin-left :33.31px;
-    margin-top:33.31px;
+    margin-left: 33.31px;
+    margin-top: 33.31px;
 }
 
 .customer-support-img .customer-support-img-center {
@@ -305,8 +304,8 @@ input[type="submit"]:hover {
 }
 
 .customer-support-img-right .Message {
-    margin-left:33.31px;
-    margin-top:33.31px;
+    margin-left: 33.31px;
+    margin-top: 33.31px;
 }
 
 .customer-support-img-title {
@@ -355,7 +354,7 @@ input[type="submit"]:hover {
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    color:#2d8cff;
+    color: #2d8cff;
     text-decoration: none;
 }
 
@@ -364,9 +363,9 @@ input[type="submit"]:hover {
     position: absolute;
     width: 1500px;
     height: 825px;
-    left:0px;
-    top:1209px;
-    background:linear-gradient(131.99deg, #3DBDB6 5.64%, #0089CE 100%);;
+    left: 0px;
+    top: 1209px;
+    background: linear-gradient(131.99deg, #3DBDB6 5.64%, #0089CE 100%);;
 }
 
 .desk-title {
@@ -376,13 +375,12 @@ input[type="submit"]:hover {
 .desk-title h3 {
     width: 1500px;
     height: 47px;
-   
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 47px;
     text-align: center;
-    color :#ffff;
+    color: #ffff;
 }
 
 .desk-content {
@@ -411,13 +409,14 @@ input[type="submit"]:hover {
     flex: 50%;
     width: 502px;
     height: 164px;
-    margin-top:50px;
-    margin-left:50px;
+    margin-top: 50px;
+    margin-left: 50px;
     margin-right: 80px;
     background: rgba(24, 144, 164, 0.5);
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.0965523);
     border-radius: 3px;
 }
+
 .desk-container .desk-container-right {
     flex: 50%;
     margin-right: 50px;
@@ -429,13 +428,15 @@ input[type="submit"]:hover {
     align-items: flex-start;
     flex-direction: column;
 }
+
 .desk-container-left-title h3 { 
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    color:#ffff;
+    color: #ffff;
     margin-left: 34px;
 }
+
 .desk-container-left-title p {
     font-style: normal;
     font-weight: 400;
@@ -446,18 +447,20 @@ input[type="submit"]:hover {
     height: 60px;
     margin-bottom: 32px; 
 }
+
 .desk-container-left-text {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin-left: 34px;
 }
+
 .desk-container-left-text > p{
     font-family:'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    color:#54657E;
+    color: #54657E;
 }
 
 .desk-container-right-header {
@@ -642,12 +645,14 @@ input[type="submit"]:hover {
     top: 2110px;
     
 }
+
 .aboutus-title {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
+
 .aboutus-title >h3 {
     width: 376px;
     height: 47px;
@@ -657,6 +662,7 @@ input[type="submit"]:hover {
     line-height: 47px;
     color: #4a4a4a;
 }
+
 .aboutus-container {
     position: absolute;
     width: 100%;
@@ -667,6 +673,7 @@ input[type="submit"]:hover {
     justify-content: center;
     align-items: center;
 }
+
 .aboutus-container > div {
     width: 350px;
     height: 396.18px;
@@ -710,12 +717,13 @@ input[type="submit"]:hover {
     border: 1px solid #E1E1E1;
     display: flex;
 }
+
 .gartner-body {
     position: absolute;
     width: 100%;
     height: 726px;
-    left:0;
-    top:2891px;
+    left: 0;
+    top: 2891px;
     /*background: #081941;*/
     background-image: url('../img/gartner/woman-img.png');
     background-size: contain;
@@ -729,35 +737,37 @@ input[type="submit"]:hover {
     /*background-color: #333333;*/
     width: 687px;
     height: 100px;
-    margin-left:176px;
-    margin-top:10px;
+    margin-left: 176px;
+    margin-top: 10px;
 }
+
 .gartner-top-title p {
-   
     font-size: normal;
     font-weight: 400;
     font-size: 28px;
     line-height: 33px;
     color: #fff;;
 }
+
 .gartner-top-title a {
     width: 88px;
     height: 19px;
-    
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: #ffff;
 }
+
 .gartner-top-logo {
     /*background-color: #3DBDB6;*/
     flex: 30%;
     width: 240px;
     height: 54.14px;
     margin-left: 20px;
-    margin-top:40px;
+    margin-top: 40px;
 }
+
 .gartner-body-title {
     width: 100%;
     height: 251px;
@@ -772,14 +782,13 @@ input[type="submit"]:hover {
 .gartner-body-title h4 {
     width: 826px;
     height: 86px;
-   
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 43px;
     color: #ffff;
     text-align: center;
-    margin-top:-61px;
+    margin-top: -61px;
     /*background-color:red;*/
 }
 
@@ -791,7 +800,7 @@ input[type="submit"]:hover {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    margin-top:-10px;
+    margin-top: -10px;
     text-align: center;
     color: #FFFFFF;
 }
@@ -803,14 +812,15 @@ input[type="submit"]:hover {
     height: 70px;
     background: linear-gradient(131.99deg, #3DBDB6 5.64%, #0089CE 100%);
     border-radius: 100px;
-    top:571px;
-    left:693px;
+    top: 571px;
+    left: 693px;
     cursor: pointer;
 }
+
 .gartner-body-button-video .button-circle {
     position: relative;
     left: 27.5px;
-    top:22.5px;
+    top: 22.5px;
 	width: 26px;
 	border-top: 13px solid transparent;
 	border-left: 26px solid #3D3F6D;
@@ -824,65 +834,66 @@ input[type="submit"]:hover {
     position: absolute;
     width: 1300px;
     height: 80px;
-    left:100px;
+    left: 100px;
     top: 3651px;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     
 }
+
 .actor-container {
     /* background: #0089CE;*/
-     width: 224px;
-     height: 80px;
-     display: flex;
-     opacity: 0.75;
-     cursor: pointer;
+    width: 224px;
+    height: 80px;
+    display: flex;
+    opacity: 0.75;
+    cursor: pointer;
      
- }
- .actor-container-img {
-     position:relative;
-     left: 0;
- }
- .actor-container-name {
-     margin-left: 23px;
- }
+}
+
+.actor-container-img {
+    position: relative;
+    left: 0;
+}
+
+.actor-container-name {
+    margin-left: 23px;
+}
  
- 
- .actor-container-name p {
-     width: 121px;
-     height: 22px;
-     
-     font-style: normal;
-     font-weight: 400;
-     font-size: 18px;
-     line-height: 21px;
-     color: #39394D;
-     
- }
- .actor-container-name img {
-     width: 90px;
-     height: 20px;
-     margin-top: -10px;
+.actor-container-name p {
+    width: 121px;
+    height: 22px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #39394D;
+}
+
+.actor-container-name img {
+    width: 90px;
+    height: 20px;
+    margin-top: -10px;
      
  }
  
  .actor-container:hover {
-     opacity: 1;
+    opacity: 1;
  }
  
  .triangel_right {
-     width: 0;
-     height: 0;
-     left: 33.42px;
-     top:30.58px;
-     border-top: 8px solid transparent;
-     border-left: 18px solid #fff;
-     border-bottom: 8px solid transparent;
-     position: absolute;
-     z-index: 555;
+    width: 0;
+    height: 0;
+    left: 33.42px;
+    top: 30.58px;
+    border-top: 8px solid transparent;
+    border-left: 18px solid #fff;
+    border-bottom: 8px solid transparent;
+    position: absolute;
+    z-index: 555;
    }
    .triangel_right:hover {
-     display: none;
+    display: none;
    }
 
 /*----*/
@@ -890,8 +901,8 @@ input[type="submit"]:hover {
     position: absolute;
     width: 1500px;
     height: 307px;
-    left:0;
-    top:3771px;
+    left: 0;
+    top: 3771px;
     background-color: #3DBDB6;
 }
 
@@ -900,11 +911,10 @@ input[type="submit"]:hover {
     justify-content: center;
     width: 100%;
     height: 48px;
-    margin:auto;
+    margin: auto;
 }
 
 .subcribe-title h4 {
-    
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
@@ -916,7 +926,7 @@ input[type="submit"]:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top:100px;
+    margin-top: 100px;
 }
 .subcribe-form input[type="email"] {
     box-sizing: border-box;
@@ -935,7 +945,7 @@ input[type="submit"]:hover {
     width: 120px;
     height: 52px;
     background: #FFFFFF;
-    color:#3DBDB6;
+    color: #3DBDB6;
     border: 0px solid #fff;
     border-radius: 5px;
     margin-left:-3px;
@@ -946,9 +956,9 @@ footer {
     position: absolute;
     width: 1500px;
     height: 405px;
-    left:0;
-    top:4078px;
-    background:#1F2532;
+    left: 0;
+    top: 4078px;
+    background: #1F2532;
 }
 
 .foot-body {
@@ -1004,13 +1014,13 @@ footer {
     box-sizing: border-box;
     font-style: normal;
     font-weight: 400;
-    font-size:12px;
+    font-size: 12px;
     line-height: 19px;
     color: #fff;
     width: 196px;
     height: 57px;
     opacity: 0.6;
-    margin-top:20px;
+    margin-top: 20px;
 }
 .foot-header-logo .foot-header-text a {
     color: #fff;
@@ -1020,9 +1030,9 @@ footer {
     position: absolute;
     width: 487px;
     height: 165px;
-    top:0;
-    right:0;
-    left:300px;
+    top: 0;
+    right: 0;
+    left: 300px;
     /*background-color: red;*/
     display: flex;
     justify-content: space-between;
