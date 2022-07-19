@@ -505,3 +505,92 @@ input[type="submit"]:hover {
     text-decoration: none;
     color: #2D8CFF;
 }
+
+.gartner-top {
+    width: 100%;
+    height: 180px;
+    margin-top: 50px;
+    background:linear-gradient(138.41deg, #1172D0 6.2%, #1D98D6 99.82%);
+    border: 1px solid #E1E1E1;
+    display: flex;
+}
+
+.gartner-top-title {
+    flex: 70%;
+    
+    width: 687px;
+    height: 100px;
+    margin-left: 176px;
+    margin-top: 10px;
+}
+.gartner-top-title p {
+    font-size: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    color: #fff;;
+}
+
+.gartner-top-title a {
+    width: 88px;
+    height: 19px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffff;
+}
+
+.gartner-top-logo {
+    /*background-color: #3DBDB6;*/
+    flex: 30%;
+    width: 240px;
+    height: 54.14px;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.gartner-body{
+    width: 100%;
+    background-image: url(../img/gartner/woman-img.png);
+    height: 726px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 1;
+    margin-top: -19px;
+}
+
+.gartner-body-title {
+    width: 100%;
+    height: 251px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.gartner-body-title h3 {
+    width: 826px;
+    height: 86px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 43px;
+    color: #ffff;
+    text-align: center;
+    margin-top: 450px;
+    /*background-color:red;*/
+}
+
+.gartner-body-title p {
+    width: 195px;
+    height: 22px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: -10px;
+    text-align: center;
+    color: #FFFFFF;
+}
