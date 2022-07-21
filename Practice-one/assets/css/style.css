@@ -33,7 +33,6 @@ header {
 
 .navigation-left {
     flex: 40%;
-    
 }
 
 .navigation-left h1 {
@@ -44,12 +43,10 @@ header {
     line-height: 16px;
     color: #fff;
     margin-left: 170px;
-    
 }
 
 .navigation-right {
     flex: 60%;
-    
 }
 
 .navigation-right li {
@@ -90,7 +87,6 @@ header {
 
 .header-body-left {
     flex: 40%;
-    
     flex-direction: column;
     padding-left: 170px;
     padding-top: 70px;
