@@ -796,10 +796,11 @@ a {
   font-size: 12px;
   line-height: 19px;
   color: #fff;
-  width: 196px;
+  width: 170px;
   height: 57px;
   opacity: 0.6;
   margin-top: -20px;
+  text-decoration: none;
 }
 .footer-header-logo h1 {
   width: 300px;
