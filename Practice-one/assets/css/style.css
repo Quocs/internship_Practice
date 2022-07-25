@@ -11,6 +11,7 @@
 * {
   box-sizing: border-box;
   font-family: "Roboto";
+  margin: 5 auto;
 }
 
 body {
@@ -43,7 +44,8 @@ header {
   font-size: 30px;
   line-height: 16px;
   color: #fff;
-  margin-left: 170px;
+  margin-left: 120px;
+  padding: 20px 40px;
 }
 
 .navigation-right {
@@ -95,7 +97,7 @@ header {
 
 .header-body-left-title {
   align-items: Center;
-  width: 343px;
+  width: 499;
   height: 162px;
   margin-bottom: 47px;
 }
@@ -113,7 +115,7 @@ header {
 }
 
 .header-body-left-form input[type="email"] {
-  width: 302px;
+  width: 300px;
   height: 52px;
   background: #fff;
   opacity: 0.2;
@@ -614,7 +616,7 @@ input[type="submit"]:hover {
 
 .gartner-body {
   width: 100%;
-  background-image: url(../img/gartner/woman-img.png);
+  background-image: url("../img/gartner/woman-img.png");
   height: 726px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -652,7 +654,7 @@ input[type="submit"]:hover {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  margin-top: -10px;
+  margin-top: -1px;
   text-align: center;
   color: #ffffff;
 }
