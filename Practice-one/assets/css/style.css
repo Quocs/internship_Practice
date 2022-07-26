@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Roboto";
-  src: url(../fonts/roboto-medium-regular.ttf);
+  src: url('../fonts/roboto-medium-regular.ttf');
 }
 
 @font-face {
   font-family: "Arial Rounded MT Bold";
-  src: url(../fonts/kanit-medium-regular.ttf);
+  src: url('../fonts/kanit-medium-regular.ttf');
 }
 
 * {
