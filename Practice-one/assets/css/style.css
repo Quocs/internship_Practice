@@ -1,16 +1,17 @@
 @font-face {
   font-family: "Roboto";
-  src: url('../fonts/roboto-medium-regular.ttf');
+  src: url("../fonts/roboto-medium-regular.ttf");
 }
 
 @font-face {
   font-family: "Arial Rounded MT Bold";
-  src: url('../fonts/kanit-medium-regular.ttf');
+  src: url("../fonts/kanit-medium-regular.ttf");
 }
 
 * {
   box-sizing: border-box;
   font-family: "Roboto";
+  margin: 10 auto;
 }
 
 body {
@@ -91,14 +92,14 @@ header {
   flex: 40%;
   flex-direction: column;
   padding-left: 170px;
-  padding-top: 70px;
+  padding-top: 90px;
 }
 
 .header-body-left-title {
   align-items: Center;
   width: 499;
   height: 162px;
-  margin-bottom: 47px;
+  margin-bottom: 30px;
 }
 
 .header-body-left-title h2 {
@@ -119,10 +120,10 @@ header {
   background: #fff;
   opacity: 0.2;
   box-shadow: 0px 0px 8px rgba(177, 177, 177, 0.5);
-  text-transform: uppercase;
-  font-weight: bold;
+  text-transform: capitalize;
   text-indent: 10px;
   transition: opacity 1s;
+  border-radius: 5px;
 }
 
 .header-body-left-form input[type="email"]:focus {
@@ -135,6 +136,7 @@ header {
   background-color: #3dbdb6;
   box-shadow: 0px 1px 6px #4449a4;
   transition: background 1s;
+  margin-left: -4px;
 }
 
 input[type="submit"]:hover {
@@ -166,7 +168,7 @@ input[type="submit"]:hover {
 /* ***CUSTOMER SUPPORT*** */
 
 .customer-support {
-  width: 764px;
+  width: 700px;
   height: 349px;
   margin-left: 390px;
   margin-top: 110px;
@@ -189,25 +191,43 @@ input[type="submit"]:hover {
   letter-spacing: 0.00625em;
   text-align: center;
   color: #333333;
-  width: 589px;
+  width: 590px;
   height: 88px;
 }
 
 .customer-support-body {
   flex: 70%;
-  justify-content: space-around;
-}
-
-.customer-support-body-img {
+  width: 589px;
+  height: 88px;
   display: flex;
   justify-content: space-around;
-  cursor: pointer;
 }
 
-.customer-support-body-img-left {
+.customer-support-body-left-img {
   width: 99px;
   height: 99px;
   background-image: url("../img/customer-support/oval-green-background.png");
+}
+
+.customer-support-body-center-img {
+  width: 99px;
+  height: 99px;
+  background-image: url("../img/customer-support/oval-puple-background.png");
+}
+
+.customer-support-body-right-img {
+  width: 99px;
+  height: 99px;
+  background-image: url("../img/customer-support/oval-pink-background.png");
+}
+
+.customer-support-body-center,
+.customer-support-body-left,
+.customer-support-body-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
 }
 
 .customer-support-body img {
@@ -216,51 +236,28 @@ input[type="submit"]:hover {
   left: 30px;
 }
 
-.customer-support-body-img-center {
-  width: 99px;
-  height: 99px;
-  background-image: url("../img/customer-support/oval-puple-background.png");
-}
-
-.customer-support-body-img-right {
-  width: 99px;
-  height: 99px;
-  background-image: url("../img/customer-support/oval-pink-background.png");
-}
-
-.customer-support-body-title,
-.customer-support-body-link,
-.customer-support-body-text {
-  display: flex;
-  justify-content: space-around;
-}
-
-.customer-support-body-title p {
-  width: 202px;
-  height: 50px;
-  font-style: normal;
+.customer-support-body h3{
+  width: 80px;
+  height: 10px;
+  text-align: center;
   font-weight: 400;
   font-size: 16px;
-  line-height: 25px;
-  text-align: center;
-  letter-spacing: 0.00625em;
-  color: #72808e;
+  line-height: 19px;
+  letter-spacing: 0.025em;
+  color: #333;
+  margin-bottom: 10px;
 }
-
-.customer-support-body-text p {
-  width: 202px;
-  height: 50px;
-  font-style: normal;
+.customer-support-body p{
+  width: 215px;
+  height: 10px;
+  text-align: center;
   font-weight: 400;
   font-size: 16px;
-  line-height: 25px;
-  text-align: center;
-  letter-spacing: 0.00625em;
-  color: #72808e;
-  margin-top: -30px;
+  line-height: 19px;
+  letter-spacing: 0.025em;
+  color: #333;
 }
-
-.customer-support-body-link a {
+.customer-support-body a {
   width: 71px;
   height: 17px;
   font-size: normal;
@@ -269,7 +266,7 @@ input[type="submit"]:hover {
   line-height: 16px;
   color: #2d8cff;
   text-decoration: none;
-  margin-top: -10px;
+  margin-top: 30px;
 }
 
 /* ***BETTER DESK*** */
@@ -296,6 +293,7 @@ input[type="submit"]:hover {
   line-height: 47px;
   text-align: center;
   color: #ffff;
+  margin-top: 50px;
 }
 
 .desk-header p {
@@ -308,8 +306,8 @@ input[type="submit"]:hover {
   text-align: center;
   color: #ffff;
   margin: auto;
+  margin-top: 30px;
 }
-
 .desk-body {
   display: flex;
   flex-direction: row;
@@ -321,7 +319,7 @@ input[type="submit"]:hover {
 .desk-body-left {
   height: 200px;
   width: 50%;
-  margin-top: 120px;
+  margin-top: 100px;
 }
 
 .desk-body-left-header {
@@ -330,19 +328,30 @@ input[type="submit"]:hover {
   background: rgba(24, 144, 164, 0.5);
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.0965523);
   border-radius: 3px;
-  margin-left: 30px;
   color: #fff;
-  padding-left: 30px;
-  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  padding-left: 10px;
+}
+.desk-body-left-header h3 {
+  font-size: 20px;
 }
 
+.desk-body-left-text ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 .desk-body-left-text ul li {
   list-style: none;
   line-height: 30px;
-  padding-left: 20px;
+  padding-left: 10px;
   font-size: 20px;
   line-height: 38px;
   opacity: 0.5;
+  margin-left: 0px;
 }
 
 .desk-body-right {
@@ -360,6 +369,7 @@ input[type="submit"]:hover {
   justify-content: flex-start;
   padding-left: 30px;
   background: #f5f9fc;
+  height: 50px;
 }
 
 .desk-body-right-header p {
@@ -430,7 +440,7 @@ input[type="submit"]:hover {
 
 .desk-body-right-main-tasks ul li label h3 {
   position: absolute;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 300;
 }
 
@@ -513,6 +523,8 @@ input[type="submit"]:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 .about-us-title > h3 {
@@ -536,11 +548,9 @@ input[type="submit"]:hover {
 .about-us-container > div {
   width: 340px;
   height: 396.18px;
-  /* background-color: #f1f1f1;*/
   margin-left: 20px;
   text-align: center;
 }
-
 .about-us-container p {
   width: 250px;
   height: 44px;
@@ -551,6 +561,8 @@ input[type="submit"]:hover {
   color: black;
   text-align: center;
   margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .about-us-container a {
@@ -579,18 +591,26 @@ input[type="submit"]:hover {
   flex: 70%;
   width: 687px;
   height: 100px;
-  margin-left: 176px;
-  margin-top: 10px;
+  margin-left: 165px;
+  margin-top: 30px;
 }
-.gartner-top-title p {
+.gartner-top-title h2 {
   font-size: normal;
   font-weight: 400;
   font-size: 28px;
   line-height: 33px;
   color: #fff;
+  margin-bottom: 10px;
+}
+.gartner-body-title,
+b {
+  font-size: 40px;
+  line-height: 35px;
+  font-weight: 800;
+  color: #fff;
 }
 
-.gartner-top-title a {
+.gartner-top-title > a {
   width: 88px;
   height: 19px;
   font-style: normal;
@@ -598,6 +618,7 @@ input[type="submit"]:hover {
   font-size: 16px;
   line-height: 19px;
   color: #ffff;
+  text-decoration: underline;
 }
 
 .gartner-top-logo {
@@ -610,7 +631,7 @@ input[type="submit"]:hover {
 }
 
 .gartner-body {
-  width: 100%;
+  width: 1500px;
   background-image: url("../img/gartner/woman-img.png");
   height: 726px;
   background-size: contain;
@@ -625,7 +646,7 @@ input[type="submit"]:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 20px;
 }
 
@@ -638,7 +659,8 @@ input[type="submit"]:hover {
   line-height: 43px;
   color: #ffff;
   text-align: center;
-  margin-top: 450px;
+  margin-top: 350px;
+  margin-bottom: 30px;
   /*background-color:red;*/
 }
 
@@ -652,13 +674,14 @@ input[type="submit"]:hover {
   margin-top: -1px;
   text-align: center;
   color: #ffffff;
+  margin-bottom: 30px;
 }
 
 /* ***ACTOR*** */
 
 .actor {
   margin-top: 20px;
-  width: 100%x;
+  width: 1500px;
   height: 100px;
   display: flex;
   justify-content: space-around;
@@ -689,12 +712,13 @@ input[type="submit"]:hover {
   font-size: 18px;
   line-height: 21px;
   color: #39394d;
+  margin-top: 19px;
 }
 
 .actor-container-name img {
   width: 90px;
   height: 20px;
-  margin-top: -10px;
+  margin-top: 10px;
 }
 
 .actor-container:hover {
@@ -715,7 +739,6 @@ input[type="submit"]:hover {
   justify-content: center;
   width: 100%;
   height: 48px;
-  margin: auto;
 }
 
 .subcribe-title h3 {
@@ -725,6 +748,7 @@ input[type="submit"]:hover {
   line-height: 47px;
   text-align: center;
   color: #ffffff;
+  margin-top: 40px;
 }
 
 .subcribe-form {
@@ -765,8 +789,6 @@ input[type="submit"]:hover {
   background: #3e3e58;
   color: #fff;
 }
-
-/* ***FOOTER*** */
 
 footer {
   width: 100%;
@@ -815,12 +837,14 @@ a {
 }
 
 .footer-header-container-row h4 {
-  text-align: center;
+  text-align: left;
   font-style: normal;
   font-weight: 400;
   line-height: 14px;
   color: #ffffff;
   text-transform: uppercase;
+  margin-left: -17px;
+  margin-bottom: 15px;
 }
 
 .footer-header-container {
