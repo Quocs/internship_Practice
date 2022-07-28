@@ -8,6 +8,16 @@
   src: url("../fonts/kanit-medium-regular.ttf");
 }
 
+:root{
+  --main-width:1500px;
+  --main-text:#fff;
+  --form-height: 52px;
+  --title-font-weight: 400;
+  --title-font-size: 40px;
+  --title-font-style: normal;
+  --title-line-height:47px;
+
+}
 * {
   box-sizing: border-box;
   font-family: "Roboto";
@@ -15,15 +25,15 @@
 }
 
 body {
-  width: 1500px;
+  width: var(--main-width);
   height: 4483px;
-  background-color: #fff;
+  background-color: var(--main-text);
 }
 
 /* ***HEADER*** */
 
 header {
-  width: 1500px;
+  width: var(--main-width);
   height: 648px;
   background-color: #3e3e58;
 }
@@ -67,7 +77,7 @@ header {
 .navigation ul li a {
   text-decoration: none;
   color: #fff;
-  font-weight: 400;
+  font-weight: var(--title-font-weight);
   font-style: normal;
   font-size: 15px;
   line-height: 14px;
@@ -107,7 +117,7 @@ header {
   font-weight: 400;
   font-size: 48px;
   line-height: 54px;
-  color: #fff;
+  color: var(--main-text);
 }
 
 .header-body-left-form {
@@ -116,7 +126,7 @@ header {
 
 .header-body-left-form input[type="email"] {
   width: 300px;
-  height: 52px;
+  height: var(--form-height);
   background: #fff;
   opacity: 0.2;
   box-shadow: 0px 0px 8px rgba(177, 177, 177, 0.5);
@@ -132,7 +142,7 @@ header {
 
 .header-body-left-form input[type="submit"] {
   width: 120px;
-  height: 52px;
+  height: var(--form-height);
   background-color: #3dbdb6;
   box-shadow: 0px 1px 6px #4449a4;
   transition: background 1s;
@@ -272,7 +282,7 @@ input[type="submit"]:hover {
 /* ***BETTER DESK*** */
 
 .desk {
-  width: 1500px;
+  width: var(--main-width);
   height: 825px;
   background: linear-gradient(131.99deg, #3dbdb6 5.64%, #0089ce 100%);
   margin-top: 50px;
@@ -285,14 +295,14 @@ input[type="submit"]:hover {
 }
 
 .desk-header h2 {
-  width: 1500px;
+  width: var(--main-width);
   height: 47px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 47px;
+  font-style: var(--title-font-style);
+  font-weight: var(--title-font-weight);
+  font-size: var(--title-font-size);
+  line-height: var(--title-line-height);
   text-align: center;
-  color: #ffff;
+  color: var(--main-text);
   margin-top: 50px;
 }
 
@@ -304,7 +314,7 @@ input[type="submit"]:hover {
   font-size: 18px;
   line-height: 28px;
   text-align: center;
-  color: #ffff;
+  color:var(--main-text);
   margin: auto;
   margin-top: 30px;
 }
@@ -328,7 +338,7 @@ input[type="submit"]:hover {
   background: rgba(24, 144, 164, 0.5);
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.0965523);
   border-radius: 3px;
-  color: #fff;
+  color: var(--main-text);
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -395,7 +405,7 @@ input[type="submit"]:hover {
   font-weight: 400;
   font-size: 17px;
   line-height: 19px;
-  color: #fff;
+  color: var(--main-text);
   margin-left: 230px;
 }
 
@@ -530,15 +540,15 @@ input[type="submit"]:hover {
 .about-us-title > h3 {
   width: 376px;
   height: 47px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 47px;
+  font-style: var(--title-font-style);
+  font-weight:var(--title-font-weight);
+  font-size: var(--title-font-size);
+  line-height: var(--title-line-height);
   color: #4a4a4a;
 }
 
 .about-us-container {
-  width: 100%;
+  width: var(--main-width);
   height: 397.18px;
   display: flex;
   justify-content: center;
@@ -579,7 +589,7 @@ input[type="submit"]:hover {
 /* ***GARTNER*** */
 
 .gartner-top {
-  width: 100%;
+  width: var(--main-width);
   height: 180px;
   margin-top: 50px;
   background: linear-gradient(138.41deg, #1172d0 6.2%, #1d98d6 99.82%);
@@ -599,7 +609,7 @@ input[type="submit"]:hover {
   font-weight: 400;
   font-size: 28px;
   line-height: 33px;
-  color: #fff;
+  color: var(--main-text);
   margin-bottom: 10px;
 }
 .gartner-body-title,
@@ -607,7 +617,7 @@ b {
   font-size: 40px;
   line-height: 35px;
   font-weight: 800;
-  color: #fff;
+  color: var(--main-text);
 }
 
 .gartner-top-title > a {
@@ -617,7 +627,7 @@ b {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: #ffff;
+  color: var(--main-text);
   text-decoration: underline;
 }
 
@@ -631,7 +641,7 @@ b {
 }
 
 .gartner-body {
-  width: 1500px;
+  width: var(--main-width);
   background-image: url("../img/gartner/woman-img.png");
   height: 726px;
   background-size: contain;
@@ -641,7 +651,7 @@ b {
 }
 
 .gartner-body-title {
-  width: 100%;
+  width: var(--main-width);
   height: 251px;
   display: flex;
   flex-direction: column;
@@ -653,11 +663,11 @@ b {
 .gartner-body-title h3 {
   width: 826px;
   height: 86px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
+  font-style: var(--title-font-style);
+  font-weight: var(--title-font-weight);
+  font-size: var(--title-font-size);
   line-height: 43px;
-  color: #ffff;
+  color: var(--main-text);
   text-align: center;
   margin-top: 350px;
   margin-bottom: 30px;
@@ -667,13 +677,13 @@ b {
 .gartner-body-title p {
   width: 195px;
   height: 22px;
-  font-style: normal;
-  font-weight: 400;
+  font-style: var(--title-font-style);
+  font-weight: var(--title-font-weight);
   font-size: 18px;
   line-height: 21px;
   margin-top: -1px;
   text-align: center;
-  color: #ffffff;
+  color: var(--main-text);
   margin-bottom: 30px;
 }
 
@@ -681,7 +691,7 @@ b {
 
 .actor {
   margin-top: 20px;
-  width: 1500px;
+  width:var(--main-width);
   height: 100px;
   display: flex;
   justify-content: space-around;
@@ -729,7 +739,7 @@ b {
 
 .subcribe {
   margin-top: 20px;
-  width: 1500px;
+  width: var(--main-width);
   height: 347px;
   background-color: #3dbdb6;
 }
@@ -747,7 +757,7 @@ b {
   font-size: 40px;
   line-height: 47px;
   text-align: center;
-  color: #ffffff;
+  color: var(--main-text);
   margin-top: 40px;
 }
 
@@ -761,7 +771,7 @@ b {
 .subcribe-form input[type="email"] {
   box-sizing: border-box;
   width: 302px;
-  height: 50px;
+  height: var(--form-height);
   mix-blend-mode: normal;
   opacity: 0.6;
   border: 1px solid #ffffff;
@@ -777,7 +787,7 @@ b {
 .subcribe-form input[type="submit"] {
   box-sizing: border-box;
   width: 120px;
-  height: 50px;
+  height: var(--form-height);
   background: #ffffff;
   color: #3dbdb6;
   border: 0px solid #fff;
@@ -787,15 +797,15 @@ b {
 
 .subcribe-form input[type="submit"]:hover {
   background: #3e3e58;
-  color: #fff;
+  color: var(--main-text);
 }
 
 footer {
-  width: 100%;
+  width: var(--main-width);
   height: 405px;
 }
 .footer-header {
-  width: 100%;
+  width: var(--main-width);
   height: 400px;
   background: #1f2532;
   display: flex;
@@ -814,7 +824,7 @@ a {
   font-weight: 400;
   font-size: 12px;
   line-height: 19px;
-  color: #fff;
+  color: var(--main-text);
   width: 170px;
   height: 57px;
   opacity: 0.6;
@@ -827,7 +837,7 @@ a {
   font-family: "Arial Rounded MT Bold";
   font-size: 30px;
   line-height: 16px;
-  color: #fff;
+  color: var(--main-text);
   margin-top: -11px;
 }
 
@@ -841,7 +851,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 14px;
-  color: #ffffff;
+  color: var(--main-text);
   text-transform: uppercase;
   margin-left: -17px;
   margin-bottom: 15px;
@@ -872,7 +882,7 @@ a {
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
-  color: #ffffff;
+  color: var(--main-text);
   mix-blend-mode: normal;
   opacity: 0.6;
   padding-bottom: 30px;
@@ -884,7 +894,7 @@ a {
 }
 
 .foot-main {
-  width: 100%;
+  width: var(--main-width);
   height: 140px;
   background: #3e3e58;
   display: flex;
@@ -900,6 +910,6 @@ a {
   font-weight: 400;
   font-size: 12px;
   line-height: 24px;
-  color: #fff;
+  color: var(--main-text);
   text-align: center;
 }
