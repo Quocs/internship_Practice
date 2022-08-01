@@ -1,0 +1,22 @@
+
+.container {
+    display:grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr;
+    grid-gap:10px;
+    grid-template-areas: 
+        "content content content"
+        "content content content";
+    margin-bottom: 10px;
+}
+div {
+    grid-area: "content";
+}
+
+@media screen and (min-width:700px) {
+    .container {
+        grid-template-columns: 0.3fr 0.3fr;
+        grid-template-areas: "content";
+    }
+}
