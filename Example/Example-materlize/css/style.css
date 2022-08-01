@@ -1,5 +1,5 @@
+
 .row {
-    
     text-align: center;
 }
 .col {
@@ -33,7 +33,7 @@
 
 @media screen and (min-width:993px){
     .side{
-        height: 300px;
+        height: 380px;
     }
     .text{
         height:200px;
