@@ -5,7 +5,6 @@
 .col {
     background-color: gray;
     height: 50px;
-    margin-top: 10px;
     text-align: center;
 }
 
@@ -19,7 +18,7 @@
 }
 
 .side {
-    height:70px;
+    height:80px;
     background-color: darkblue;
 }
 
@@ -30,4 +29,13 @@
 .foot{
     height: 80px;
     background-color: bisque ;
+}
+
+@media screen and (min-width:993px){
+    .side{
+        height: 300px;
+    }
+    .text{
+        height:200px;
+    }
 }
