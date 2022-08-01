@@ -1,0 +1,33 @@
+.row {
+    
+    text-align: center;
+}
+.col {
+    background-color: gray;
+    height: 50px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.main {
+    height: 100px;
+    background-color: brown;
+}
+.nav{
+    height: 80px;
+    background-color: cornflowerblue;
+}
+
+.side {
+    height:70px;
+    background-color: darkblue;
+}
+
+.text {
+    height: 65px;
+    background-color: pink;
+}
+.foot{
+    height: 80px;
+    background-color: bisque ;
+}
