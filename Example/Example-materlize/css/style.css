@@ -1,6 +1,10 @@
-
+body{
+    height: 100vh;
+    background-color: bisque;
+}
 .row {
     text-align: center;
+    
 }
 .col {
     background-color: gray;
@@ -8,28 +12,7 @@
     text-align: center;
 }
 
-.main {
-    height: 100px;
-    background-color: brown;
-}
-.nav{
-    height: 80px;
-    background-color: cornflowerblue;
-}
 
-.side {
-    height:80px;
-    background-color: darkblue;
-}
-
-.text {
-    height: 65px;
-    background-color: pink;
-}
-.foot{
-    height: 80px;
-    background-color: bisque ;
-}
 
 @media screen and (min-width:993px){
     .side{
