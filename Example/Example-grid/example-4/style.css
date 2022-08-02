@@ -1,0 +1,72 @@
+
+h1 {
+    color:pink;
+    text-align: center;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 90vh;
+    background-color: aquamarine;
+    padding-top:20px;
+    text-align: center;
+    grid-gap:10px;
+    text-transform: uppercase;
+    grid-template-areas: 
+        "anti"
+        "startups"
+        "consultations"
+        "marketing"
+        "stategy"
+        "investment"
+    ;
+}
+
+.anti {
+    background-color: blueviolet;
+    border-radius: 5px;
+    grid-area:anti;
+}
+
+.startups {
+    background-color: brown;
+    border-radius: 5px;
+    grid-area: startups;
+}
+.consultations{
+    background-color: blueviolet;
+    border-radius: 5px;
+    grid-area: consultations;
+}
+.marketings {
+    background-color: brown;
+    border-radius: 5px;
+    grid-area: marketing;
+}
+.strategy {
+    background-color: blueviolet;
+    border-radius: 5px;
+    grid-area: stategy;
+}
+.investment {
+    background-color: brown;
+    border-radius: 5px;
+    grid-area: investment;
+}
+
+@media screen and (min-width:992px) {
+    .container{
+        grid-template-columns: 0.5fr 0.5fr ;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        grid-template-areas: 
+        "anti startups"
+        "consultations marketing"
+        "stategy investment"
+        ;
+        align-content: center;
+        justify-content: center;
+        
+    }
+}
