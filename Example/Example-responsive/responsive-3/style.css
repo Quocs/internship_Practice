@@ -3,7 +3,7 @@
 }
 header {
   display: flex;
-  height: 80vh;
+  height: 70vh;
   background-color: aqua;
   flex-direction: column;
   text-align: center;
