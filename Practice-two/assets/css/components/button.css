@@ -1,0 +1,8 @@
+@import url('../base/refactor.css');
+
+button{
+    height: 21px;
+    width: 55px;
+    background-color: var(--button-background-color);
+    border-radius: var(--button-border-radius);
+}
