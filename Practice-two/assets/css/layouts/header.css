@@ -89,21 +89,21 @@ nav {
   }
 
   .header-body-title {
-    right: 20px;
+    right: 3px;
     bottom: 10px;
-    width: 160px;
+    width: 100px;
     height: 100px;
   }
   .header-body-title h2 {
-    font-size: 20px;
+    font-size: 12px;
     line-height: 27px;
   }
   .header-body-title p {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 19px;
   }
   .header-body-title button {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 15px;
     width: 89px;
     height: 25px;
@@ -153,8 +153,8 @@ nav {
     padding-left: 121px;
   }
   .header-body-title {
-    right: 80px;
-    bottom: 50px;
+    right: 150px;
+    bottom: 80px;
     height: 200px;
     width: 180px;
   }
