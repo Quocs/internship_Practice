@@ -2,89 +2,63 @@
 @import url(../bases/refactor.css);
 
 .header-top {
-    display: flex;
-    height: 31px;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 15px;
-    padding-right: 15px;
+  display: flex;
+  height: 31px;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .header-top-title {
-    flex-grow: 1;
+  flex-grow: 1;
 }
-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100px;
-    flex-grow: 2;
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100px;
+  flex-grow: 2;
 }
 .header-top-signed {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
 }
 .header-top h1 h2 {
-    font-family: var(--text-font-family);
-    font-style: var(--text-font-style);
-    font-weight: var(--text-font-weight);
-    font-size:var(--title-font-size);
-    line-height: var(--text-line-height);
-    color:var(--title-color);
+  font-family: var(--text-font-family);
+  font-style: var(--text-font-style);
+  font-weight: var(--text-font-weight);
+  font-size: var(--title-font-size);
+  line-height: var(--text-line-height);
+  color: var(--title-color);
 }
 .header-body{
+    height: 189px;
     background-image: url('../../imgs/header/banner-img.png');
-    height: 178px;
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    text-align: center;
+    background-size: contain;
     max-width: 100%;
     width: 100%;
-    background-size: contain;
+    position: relative;
 }
-.header-body-content {
-    display: flex;
-    width: 80px;
-    padding-right: 15px;
-    padding-bottom: 5px;
-    flex-direction: column;
-    align-items: center;
+.header-body-title{
     height: 80px;
-    justify-content: space-around;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right:0;
+    bottom: 10;
 }
-.header-body-content h2 {
-    font-family: var(--title-font-family);
-    font-style: var(--text-font-style);
-    font-weight: var(--text-font-weight);
-    font-size: var(--text-font-size);
-    line-height: var(--subtitle-line-height);
-    text-transform: capitalize;
-    color: #000;
-}
-.header-body-content p {
-    font-family: var(--text-font-family);
-    font-style: var(--text-font-style);
-    font-weight: var(--text-font-weight);
-    font-size: var(--text-font-size);
-    line-height: var(--text-line-height);
-    color: var(--title-color);
-}
-.header-body-content button{
-    width: 41px;
-    height: 12px;
-    font-size: 6px;
-}
+
 @media screen and (min-width: 415px) {
-    nav{
-        justify-content: space-around;
-        flex-grow: 1;
-    }
-    
+  nav {
+    justify-content: space-between;
+  }
+  .header-top-title {
+    flex: 60%;
+  }
+  
 }
 
-@media screen and (min-width:909px) {
-    
+@media screen and (min-width: 909px) {
 }
-
