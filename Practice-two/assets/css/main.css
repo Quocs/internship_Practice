@@ -1,4 +1,5 @@
-@import url(base/refactor.css);
-@import url(base/reset.css);
-@import url(components/button.css);
-@import url(base/fonts.css);
+@import url('./bases/fonts.css');
+@import url('./bases/reset.css');
+@import url('./bases/refactor.css');
+@import url('components/button.css');
+@import url('layouts/header.css');
