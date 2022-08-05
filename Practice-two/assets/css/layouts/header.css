@@ -32,30 +32,22 @@ nav {
   color: var(--title-color);
 }
 .header-body{
-    height: 200px;
-    background-image: url('../../imgs/header/banner-img.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    max-width: 100%;
-    width: 100%;
-    position: relative;
+  position: relative;
+}
+.header-body img {
+  width: 100%;
+  max-width: 100%;
+  
 }
 .header-body-title{
-    height: 80px;
-    width: 130px;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    right:0;
-    bottom: 10;
-}
-.header-body-title h2 {
-  font-family: var(--title-font-family);
-  font-weight: var(--text-font-weight);
-  font-size: var(--title-font-size);
-  line-height: var(--subtitle-line-height);
-  color: var(--title-color);
-  text-transform: capitalize;
+  position: absolute;
+  right:0;
+  bottom:4px;
+  width: 108px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 @media screen and (min-width: 415px) {
   nav {
@@ -66,6 +58,5 @@ nav {
   }
   
 }
-
 @media screen and (min-width: 909px) {
 }
