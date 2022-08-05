@@ -1,2 +1,57 @@
-@import url('../bases/fonts.css');
-@import url('../bases/refactor.css');
+@import url("../bases/fonts.css");
+@import url("../bases/refactor.css");
+
+.book-car {
+  height: 140px;
+  background-color: #c4c4c4;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 12px;
+  margin-left: 15px;
+  margin-right: 15px;
+  align-content: flex-start;
+}
+.book-car h2 {
+  font-family: var(--title-font-family);
+  font-style: var(--text-font-style);
+  font-size: var(--subtitle-line-height);
+  font-weight: var(--text-font-weight);
+  line-height: 19px;
+  text-transform: capitalize;
+  color: #081630;
+  height: 21px;
+  width: 195px;
+}
+.book-car p {
+  width: 289px;
+  height: 50px;
+  font-family: var(--text-font-family);
+  font-style: var(--text-font-style);
+  font-weight: var(--text-font-weight);
+  font-size: var(--text-font-size);
+  line-height: var(--text-line-height);
+  color: rgba(0, 0, 0, 0.6);
+}
+input {
+  width: var(--input-width);
+  height: var(--input-height);
+  background-color: var(--input-background);
+  border-radius: var(--input-radius);
+  border: var(--input-border);
+}
+.book-car-input img {
+  position: relative;
+  left: 70px;
+}
+.book-car-input button {
+  width: 43px;
+  height: var(--input-height);
+  font-size: 8px;
+  line-height: 9px;
+  font-family: var(--text-font-family);
+  font-style: var(--text-font-style);
+  font-weight: var(--text-font-weight);
+}
+
