@@ -32,7 +32,7 @@ nav {
   color: var(--title-color);
 }
 .header-body{
-    height: 189px;
+    height: 200px;
     background-image: url('../../imgs/header/banner-img.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -49,7 +49,14 @@ nav {
     right:0;
     bottom: 10;
 }
-
+.header-body-title h2 {
+  font-family: var(--title-font-family);
+  font-weight: var(--text-font-weight);
+  font-size: var(--title-font-size);
+  line-height: var(--subtitle-line-height);
+  color: var(--title-color);
+  text-transform: capitalize;
+}
 @media screen and (min-width: 415px) {
   nav {
     justify-content: space-between;
