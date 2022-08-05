@@ -76,8 +76,12 @@ nav{
     height: 12px;
     font-size: 6px;
 }
-@media screen and (min-width: 412px) {
-
+@media screen and (min-width: 415px) {
+    nav{
+        justify-content: space-around;
+        flex-grow: 1;
+    }
+    
 }
 
 @media screen and (min-width:909px) {
