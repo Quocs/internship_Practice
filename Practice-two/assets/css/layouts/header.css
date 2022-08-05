@@ -1,0 +1,29 @@
+@import url(../bases/fonts.css);
+@import url(../bases/refactor.css);
+
+.header-top {
+    display: flex;
+    height: 31px;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-top-signed {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+}
+.header-top h1 h2 {
+    font-family: var(--text-font-family);
+    font-style: var(--text-font-style);
+    font-weight: var(--text-font-weight);
+    font-size:var(--title-font-size);
+    line-height: var(--text-line-height);
+    color:var(--title-color);
+}
+@media screen and (min-width: 412px) {
+
+}
+
+@media screen and (min-width:909px) {
+    
+}
+
