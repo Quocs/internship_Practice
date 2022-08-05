@@ -12,4 +12,9 @@
     --button-color:#fff;
     --title-color:#000;
     --subtitle-line-height:14px;
+    --input-width:69px;
+    --input-height:16px;
+    --input-background:#fff9f9;
+    --input-radius:26px;
+    --input-border:1px solid black;
 }
