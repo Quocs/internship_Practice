@@ -1,0 +1,14 @@
+:root{
+    --text-font-family:'Roboto';
+    --title-font-family:"DM serif Display";
+    --text-font-size:10px;
+    --text-line-height:12px;
+    --text-font-style:"normal";
+    --text-font-weight:400;
+    --title-font-size:20px;
+    --title-line-height:27px;
+    --button-background-color:#21408e;
+    --button-border-radius:10px;
+    --button-color:#fff;
+    --title-color:#0000;
+}
