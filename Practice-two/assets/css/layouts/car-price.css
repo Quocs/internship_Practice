@@ -2,19 +2,61 @@
 @import url("../bases/refactor.css");
 
 * {
-    font-family: var(--text-font-family);
-    font-style: var(--text-font-style);
-    font-weight: var(--text-font-weight);
+  font-family: var(--text-font-family);
+  font-style: var(--text-font-style);
+  font-weight: var(--text-font-weight);
 }
-.car-price{
-    text-align: center;
-    margin-top:99px;
+.car-price {
+  text-align: center;
+  margin-top: 99px;
 }
 .car-price h2 {
+  font-family: var(--title-font-family);
+  font-size: var(--title-font-size);
+  line-height: var(--title-line-height);
+  text-transform: capitalize;
+  color: var(--title-color);
+  height: 30px;
+}
+.car-price-list {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.car-price-list-item {
+  margin-top: 29px;
+  height: 500px;
+  margin-left: 41px;
+  margin-right: 41px;
+  background-color: brown;
+}
+.car-price-list-item-header {
+  height: var(--item-header-height);
+  background: var(--item-header-background);
+  border-radius: var(--item-header-radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.car-price-list-item-header h3 {
+    height: 33px;
     font-family: var(--title-font-family);
-    font-size:var(--title-font-size);
+    font-size: var(--title-font-size);
     line-height: var(--title-line-height);
     text-transform: capitalize;
-    color: var(--title-color);
-    height: 30px;
+    color: var(--button-background-color);
+}
+.car-price-list-item-body{
+    height: 229.18px;
+    background-color: #C4C4C4;
+    position: relative;
+}
+.car-price-list-item-body img {
+    height: 285px;
+    position: absolute;
+    left:-50;
+}
+.car-price-list-item-footer {
+    height: 124.93px;
+    background: var(--button-color);
+    border-radius: var(--item-header-radius);
 }
