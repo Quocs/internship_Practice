@@ -1,0 +1,20 @@
+@import url("../bases/fonts.css");
+@import url("../bases/refactor.css");
+
+* {
+    font-family: var(--text-font-family);
+    font-style: var(--text-font-style);
+    font-weight: var(--text-font-weight);
+}
+.car-price{
+    text-align: center;
+    margin-top:99px;
+}
+.car-price h2 {
+    font-family: var(--title-font-family);
+    font-size:var(--title-font-size);
+    line-height: var(--title-line-height);
+    text-transform: capitalize;
+    color: var(--title-color);
+    height: 30px;
+}
