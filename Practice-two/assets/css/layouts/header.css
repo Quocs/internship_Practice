@@ -27,6 +27,9 @@ nav {
   grid-template-columns: 0.5fr 1fr;
   align-items: center;
 }
+.header-top-signed img {
+  height: 15.83px;
+}
 .header-top h1 h2 {
   font-family: var(--text-font-family);
   font-style: var(--text-font-style);
@@ -34,6 +37,9 @@ nav {
   font-size: var(--title-font-size);
   line-height: var(--text-line-height);
   color: var(--title-color);
+}
+.header-top-menu img {
+  height: 15px;
 }
 .banner {
   position: relative;
@@ -88,13 +94,8 @@ nav {
     line-height: 28px;
   }
   .header-top-signed img {
-    width: 33.26px;
     height: 35.79px;
     align-items: center;
-  }
-  .header-top-menu img {
-    width: 37.5px;
-    height: 25px;
   }
   .header-top {
     height: 60.26px;
@@ -106,7 +107,9 @@ nav {
   .header-top-title {
     flex: 60%;
   }
-
+  .header-top-menu img {
+    height: 25px;
+  }
   .banner-title {
     right: 24px;
     bottom: 95px;
@@ -145,8 +148,7 @@ nav {
     font-size: 24px;
     line-height: 28px;
   }
-  .header-top-sign img {
-    width: 33.33px;
+  .header-top-signed img {
     height: 33.33px;
   }
   .header-top {
