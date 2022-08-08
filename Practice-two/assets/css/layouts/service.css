@@ -1,0 +1,8 @@
+@import url("../bases/fonts.css");
+@import url("../bases/refactor.css");
+
+* {
+  font-family: var(--text-font-family);
+  font-style: var(--text-font-style);
+}
+
