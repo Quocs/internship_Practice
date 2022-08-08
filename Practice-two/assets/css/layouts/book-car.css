@@ -1,6 +1,11 @@
 @import url("../bases/fonts.css");
 @import url("../bases/refactor.css");
 
+*{
+  font-family: var(--text-font-family);
+  font-style: var(--text-font-style);
+
+}
 .book-car {
   height: 140px;
   background-color: #c4c4c4;
@@ -11,6 +16,7 @@
   padding-left: 12px;
   margin-left: 15px;
   margin-right: 15px;
+  margin-top:41px;
   align-content: flex-start;
 }
 .book-car h2 {
@@ -21,7 +27,6 @@
   line-height: 19px;
   text-transform: capitalize;
   color: #081630;
-  height: 21px;
   width: 195px;
 }
 .book-car p {
@@ -44,7 +49,18 @@ input {
 .book-car-input img {
   position: relative;
   left: 70px;
+  width: 5.83px;
+  height: 8.33px;
 }
+.book-car-input {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.book-car-input input{
+  margin-right:20px
+}
+
 .book-car-input button {
   width: 43px;
   height: var(--input-height);
@@ -53,5 +69,77 @@ input {
   font-family: var(--text-font-family);
   font-style: var(--text-font-style);
   font-weight: var(--text-font-weight);
+  font-family: var(--text-font-family);
+
 }
 
+@media screen and (min-width:908px) {
+  .book-car{
+    height: 248px;
+  }
+  .book-car h2 {
+    height: 43px;
+    font-size:28px;
+    line-height: 38px;
+    width: 358px;
+  }
+  .book-car p{
+    width: 692px;
+    height: 84px;
+    font-size: var(--title-font-size);
+    line-height: 23px;
+  }
+  .book-car-input input {
+    width: 146.68px;
+    height: 33.28px;
+  }
+  .book-car-input button{
+    height: 33.28px;
+    width: 85.81px;
+    border-radius: var(--input-radius);
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .book-car-input img {
+    left: 130.36px;
+    width: 11.67px;
+    height: 16.67px;
+  }
+}
+@media screen and (min-width:1440px) {
+  .book-car{
+    height: 315px;
+    padding-left:45px;
+  }
+  .book-car h2 {
+    font-size: 39px;
+    line-height: 53px;
+    height: 60px;
+    width: 100%;
+  }
+  .book-car p {
+    height:84px;
+    font-size:24px;
+    line-height: 28px;
+    width: 754.24px;
+  }
+  .book-car-input{
+    margin-top:10px;
+  }
+  .book-car-input input {
+    height: 60px;
+    width: 309.54px;
+  }
+  .book-car-input img {
+    left:300px;
+    width: 17.62px;
+    height: 25px;
+  }
+  .book-car-input button {
+    height: 60px;
+    width: 152.78px;
+    border-radius: var(--input-radius);
+    font-size:22px;
+    line-height: 26px;
+  }
+}
