@@ -17,4 +17,7 @@
   --input-background: #fff9f9;
   --input-radius: 26px;
   --input-border: 1px solid black;
+  --item-header-height:145.89px;
+  --item-header-background:#faf5f8;
+  --item-header-radius :21px 21px 0px 0px;
 }
