@@ -6,3 +6,29 @@
   font-style: var(--text-font-style);
 }
 
+.service {
+  display: grid;
+  height: 214.05px;
+  background-color: aqua;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+  grid-template-areas:
+    ". . rights"
+    "lefts centers rights"
+    "lefts centers rights"
+    "lefts centers rights"
+  ;
+}
+.service-left {
+  background-color: beige;
+  grid-area: lefts;
+}
+.service-center {
+  background-color: brown;
+  grid-area: centers;
+}
+.service-right {
+  background-color: yellow;
+  grid-area: rights;
+}
+
