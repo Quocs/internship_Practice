@@ -26,10 +26,10 @@
   line-height: 19px;
   text-transform: capitalize;
   color: #081630;
-  width: 195px;
+  height: 21px;
 }
 .book-car p {
-  width: 289px;
+  width: 75%;
   height: 50px;
   font-family: var(--text-font-family);
   font-style: var(--text-font-style);
@@ -55,6 +55,7 @@ input {
   display: inline-flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 }
 .book-car-input input {
   margin-right: 20px;
