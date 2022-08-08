@@ -38,25 +38,25 @@
   align-items: center;
 }
 .car-price-list-item-header h3 {
-    height: 33px;
-    font-family: var(--title-font-family);
-    font-size: var(--title-font-size);
-    line-height: var(--title-line-height);
-    text-transform: capitalize;
-    color: var(--button-background-color);
+  height: 33px;
+  font-family: var(--title-font-family);
+  font-size: var(--title-font-size);
+  line-height: var(--title-line-height);
+  text-transform: capitalize;
+  color: var(--button-background-color);
 }
-.car-price-list-item-body{
-    height: 229.18px;
-    background-color: #C4C4C4;
-    position: relative;
+.car-price-list-item-body {
+  height: 229.18px;
+  background-color: #c4c4c4;
+  position: relative;
 }
 .car-price-list-item-body img {
-    height: 285px;
-    position: absolute;
-    left:-50;
+  height: 285px;
+  position: absolute;
+  left: -50;
 }
 .car-price-list-item-footer {
-    height: 124.93px;
-    background: var(--button-color);
-    border-radius: var(--item-header-radius);
+  height: 124.93px;
+  background: var(--button-color);
+  border-radius: var(--item-header-radius);
 }
