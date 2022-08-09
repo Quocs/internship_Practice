@@ -1,2 +1,54 @@
 @import url("../bases/fonts.css");
 @import url("../bases/refactor.css");
+
+.brand {
+  margin-top: 59px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.brand h2 {
+  text-align: center;
+  height: 32px;
+  font-family: "DM Serif Display";
+  font-style: var(--text-font-style);
+  font-weight: var(--text-font-weight);
+  font-size: var(--title-font-size);
+  line-height: var(--title-line-height);
+  text-transform: capitalize;
+  color: var(--title-color);
+}
+.brand-list {
+  margin-top: 19.53px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 0.5fr 1fr;
+}
+.brand-list-item {
+  display: flex;
+  height: 30.23px;
+  background-color: #c4c4c4;
+  border-radius: 13px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.brand-list-item img {
+  width: 50px;
+  height: 43px;
+}
+.audi{
+    grid-area: audi;
+}
+.mer{
+    grid-area: mer;
+}
+.land-rover {
+    grid-area: land-rover;
+}
+.ferrari {
+    grid-area: ferrari;
+}
+.testla {
+    grid-area: testla;
+}
