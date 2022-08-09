@@ -1,10 +1,7 @@
 @import url("../bases/fonts.css");
 @import url("../bases/refactor.css");
 
-* {
-  font-family: var(--text-font-family);
-  font-style: var(--text-font-style);
-}
+
 .book-car {
   height: 140px;
   background-color: #c4c4c4;
