@@ -16,7 +16,7 @@
 }
 .car-price-list {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   gap: 30px;
 }
 .car-price-list-item {
@@ -52,9 +52,9 @@
   position: relative;
 }
 .car-price-list-item-body img {
-  height: 285px;
+  height: 260px;
   position: absolute;
-  left: -50;
+  left: -45;
 }
 .car-price-list-item-footer {
   height: 124.93px;
@@ -128,4 +128,42 @@
   font-family: "Roboto";
   font-weight:var(--text-font-weight);
   font-style: var(--text-font-style);
+}
+
+.Audi {
+  grid-area: Audi-grey;
+}
+.Adi {
+  grid-area: Audi-red;
+  display: none;
+}
+.Dodge {
+  grid-area: Dodge;
+  display: none;
+}
+.Range-Rover {
+  grid-area: Range-Rover;
+  display: none;
+}
+
+.car-price-link {
+  margin-top: 29.94px;
+  display: inline-flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+}
+.car-price-link a {
+  text-decoration: none;
+  font-family: "DM Serif Display";
+  font-style: var(--text-font-style);
+  font-weight: var(--text-font-weight);
+  font-size: 15px;
+  line-height: 21px;
+  text-transform: capitalize;
+  color: var(--title-color);
+}
+.car-price-link img {
+  width: 19px;
+  height: 8px;
 }
