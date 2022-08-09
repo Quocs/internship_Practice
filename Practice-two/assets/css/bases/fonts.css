@@ -6,3 +6,7 @@
     font-family: "DM Serif Display";
     src: url('../../fonts/DMSerifDisplay-Regular.ttf');
 }
+@font-face {
+    font-family: "Bodoni MT";
+    src: url('../../fonts/LibreBodoni-Regular.ttf');
+}
