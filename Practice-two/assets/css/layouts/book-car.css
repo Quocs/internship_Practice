@@ -16,7 +16,7 @@
   align-content: flex-start;
 }
 .book-car h2 {
-  font-family: var(--title-font-family);
+  font-family: "DM Serif Display";
   font-style: var(--text-font-style);
   font-size: var(--subtitle-line-height);
   font-weight: var(--text-font-weight);
@@ -28,11 +28,11 @@
 .book-car p {
   width: 75%;
   height: 50px;
-  font-family: var(--text-font-family);
   font-style: var(--text-font-style);
   font-weight: var(--text-font-weight);
   font-size: var(--text-font-size);
   line-height: var(--text-line-height);
+  font-family: "Roboto";
   color: rgba(0, 0, 0, 0.6);
 }
 input {
@@ -66,7 +66,7 @@ input {
   font-family: var(--text-font-family);
   font-style: var(--text-font-style);
   font-weight: var(--text-font-weight);
-  font-family: var(--text-font-family);
+  font-family: "Roboto";
 }
 
 @media screen and (min-width: 908px) {
