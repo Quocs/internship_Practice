@@ -21,6 +21,7 @@
 .car-price-list {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 30px;
 }
 .car-price-list-item {
   margin-top: 29px;
