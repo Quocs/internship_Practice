@@ -55,6 +55,7 @@
   height: 260px;
   position: absolute;
   left: -45;
+  width: 140%;
 }
 .car-price-list-item-footer {
   height: 124.93px;
@@ -180,13 +181,13 @@
     height: 50px;
   }
   .car-price-list {
-    display: grid;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    grid-template-columns: 0.4fr 0.4fr;
+    gap: 5px;
     grid-template-areas:
       "Dodge Audi-grey"
       "Audi-red Range-Rover";
+    justify-content: center;
   }
 
   .Adi {
@@ -199,21 +200,62 @@
     display: block;
   }
   .car-price-list-item-body img {
-    width: 357px;
-    height: 229.17px;
     position: absolute;
-    left: 0;
+    top:38px;
+    left:-30px;
+    width: 125%;
+
   }
-  .car-price-list-item-header{
-    height: 
-    143px;
+  .car-price-list-item-header {
+    height: 143px;
   }
   .car-price-list-item {
     height: 565px;
   }
-
+  .car-price-list-item-body {
+    height: 278px;
+  }
   .car-price-list-item-footer {
     bottom: 0;
     height: 143px;
+  }
+  .car-price-list-item-header {
+    border-radius: 0px 0px 0px 0px;
+  }
+  .car-price-list-item-header h3 {
+    font-family: "Bodoni MT";
+    font-style: var(--text-font-style);
+    font-weight: var(--text-font-weight);
+    font-size: 34px;
+    line-height: 41px;
+    text-transform: capitalize;
+  }
+  .car-price-list-item-footer-parameter button {
+    font-size: 25px;
+    line-height: 29px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .car-price-link {
+    display: none;
+  }
+  .car-price h2 {
+    height: 50px;
+    font-size: 45px;
+    line-height: 62px;
+  }
+  .car-price-list {
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr;
+    gap: 1px;
+    grid-template-areas: "Dodge Audi-grey Audi-red Range-Rover";
+    justify-content: center;
+  }
+  .car-price-list-item-header h3 {
+    font-family: "Bodoni MT";
+    font-style: var(--text-font-style);
+    font-weight: var(--text-font-weight);
+    font-size: 34px;
+    line-height: 41px;
   }
 }
