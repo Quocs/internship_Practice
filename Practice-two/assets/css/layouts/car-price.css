@@ -147,11 +147,12 @@
 }
 
 .car-price-link {
-  margin-top: 30px;
+  margin-top: 55px;
   display: inline-flex;
   justify-content: center;
   gap: 5px;
   align-items: center;
+  margin-left:30px;
 }
 .car-price-link a {
   text-decoration: none;
