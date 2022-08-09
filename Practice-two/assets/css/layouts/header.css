@@ -1,5 +1,5 @@
-@import url(../bases/fonts.css);
-@import url(../bases/refactor.css);
+@import url('../bases/fonts.css');
+@import url('../bases/refactor.css');
 
 .header-top {
   display: flex;
@@ -30,8 +30,8 @@ nav {
 .header-top-signed img {
   height: 15.83px;
 }
-.header-top h1 h2 {
-  font-family: var(--text-font-family);
+.header-top-title h1 h2 {
+  font-family: "Roboto",sans-serif;
   font-style: var(--text-font-style);
   font-weight: var(--text-font-weight);
   font-size: var(--title-font-size);
@@ -59,7 +59,7 @@ nav {
   justify-content: space-between;
 }
 .banner-title h2 {
-  font-family: var(--title-font-family);
+  font-family:"DM Serif Display";
   font-style: var(--text-font-style);
   font-weight: var(--text-font-weight);
   font-size: var(--text-font-size);
@@ -68,7 +68,7 @@ nav {
   color: var(--title-color);
 }
 .banner-title p {
-  font-family: var(--text-font-family);
+  font-family: "Roboto";
   font-style: var(--text-font-style);
   font-weight: var(--text-font-weight);
   font-size: var(--text-font-size);
@@ -79,7 +79,7 @@ nav {
   width: 41px;
   height: 12px;
   font-size: 6px;
-  font-family: var(--text-font-family);
+  font-family: "Roboto";
   font-style: var(--text-font-style);
   font-weight: var(--text-font-weight);
   line-height: 7px;
