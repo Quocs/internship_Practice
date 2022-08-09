@@ -1,6 +1,4 @@
 :root {
-  --text-font-family: "Roboto";
-  --title-font-family: "DM serif Display";
   --text-font-size: 10px;
   --text-line-height: 12px;
   --text-font-style: "normal";
@@ -17,4 +15,8 @@
   --input-background: #fff9f9;
   --input-radius: 26px;
   --input-border: 1px solid black;
+  --item-header-height: 145.89px;
+  --item-header-background: #faf5f8;
+  --item-header-radius: 21px 21px 0px 0px;
+  --list-item-height: 23px;
 }

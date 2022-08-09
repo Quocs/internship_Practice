@@ -1,11 +1,6 @@
 @import url("../bases/fonts.css");
 @import url("../bases/refactor.css");
 
-* {
-  font-family: var(--text-font-family);
-  font-style: var(--text-font-style);
-  font-weight: var(--text-font-weight);
-}
 
 .service {
   display: grid;
@@ -41,13 +36,17 @@
 }
 .service-right h2 {
   height: 21px;
-  font-family: var(--title-font-family);
+  font-family: "DM Serif Display";
+  font-style:var(--text-font-style);
+  font-weight: var(--text-font-weight);
   font-size: 15px;
   line-height: 21px;
   color: var(--button-background-color);
 }
 .service-right-content h3 {
-  font-family: var(--title-font-family);
+  font-family: "DM Serif Display";
+  font-style:var(--text-font-style);
+  font-weight: var(--text-font-weight);
   font-size: var(--text-font-size);
   line-height: 13.71px;
   color: var(--title-color);
@@ -55,6 +54,9 @@
 .service-right-content p {
   font-size: 8px;
   line-height: 9.38px;
+  font-family: "Roboto";
+  font-style:var(--text-font-style);
+  font-weight: var(--text-font-weight);
 }
 .service-center {
   display: flex;
