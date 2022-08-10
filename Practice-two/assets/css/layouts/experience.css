@@ -6,3 +6,67 @@
     margin-left:37px;
     margin-right:37px;
 }
+.experience h2 {
+    font-family: "DM Serif Display";
+    font-style: var(--text-font-style);
+    font-weight: var(--text-font-weight);
+    font-size:var(--title-font-size);
+    line-height: var(--title-line-height);
+    text-align: center;
+    color: var(--title-color);
+    height: 54px;
+    width: 65%;
+    margin:0 auto;
+}
+.experience-list{
+    margin-top: 46px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "book . setting"
+        ". author ."
+    ;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+.book{
+    grid-area: book;
+}
+.setg{
+    grid-area: setting;
+}
+.author {
+    grid-area: author;
+}
+.experience-list-item-background{
+    background-image: url(../../imgs/experiences/background-img.png);
+    height: 61px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.experience-list-item-logo {
+    height: 24px;
+    position: relative;
+    top:20px;
+    left:23px;
+}
+.experience-list h3 {
+    font-family: "DM Serif Display";
+    font-style: var(--text-font-style);
+    font-weight: var(--text-font-weight);
+    font-size: var(--text-font-size);
+    line-height: var(--subtitle-line-height);
+    text-align: center;
+    color: var(--title-color);
+}
+.experience-list p {
+    font-family: "Roboto";
+    font-style: var(--text-font-style);
+    font-weight: var(--text-font-weight);
+    font-size: var(--text-font-size);
+    line-height: var(--text-line-height);
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+}
