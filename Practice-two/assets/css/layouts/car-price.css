@@ -176,8 +176,8 @@
     display: none;
   }
   .car-price h2 {
-    font-size: 35px;
-    line-height: 48px;
+    font-size: var(--tablet-font-size);
+    line-height: var(--tablet-line-height);
     height: 50px;
   }
   .car-price-list {
@@ -240,8 +240,8 @@
   }
   .car-price h2 {
     height: 50px;
-    font-size: 45px;
-    line-height: 62px;
+    font-size: var(--desktop-size);
+    line-height: var(--desktop-height);
   }
   .car-price-list {
     grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
