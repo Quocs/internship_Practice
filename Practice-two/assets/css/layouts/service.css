@@ -85,9 +85,9 @@
     height: 51px;
   }
   .service-right h2 {
-    height: 48px;
-    font-size: 35px;
-    line-height: 48px;
+    height: var(--tablet-line-height);
+    font-size: var(--tablet-font-size);
+    line-height: var(---tablet-line-height);
   }
   .service-right-content {
     justify-content: space-evenly;
@@ -116,9 +116,9 @@
     height: 80px;
   }
   .service-right h2 {
-    height: 62px;
-    font-size: 45px;
-    line-height: 62px;
+    height: var(--desktop-height);
+    font-size: var(--desktop-size);
+    line-height: var(--desktop-height);
   }
   .service-right-content h3 {
     font-size: 26px;
