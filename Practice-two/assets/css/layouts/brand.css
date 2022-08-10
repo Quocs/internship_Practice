@@ -35,7 +35,7 @@
   border-radius: 13px;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 95%;
 }
 .brand-list-item img {
   width: 31px;
@@ -68,4 +68,96 @@
 }
 .testla {
   grid-area: testla;
+}
+
+.brand-store {
+  margin-top:30px;
+  text-align: center;
+}
+.brand-store a {
+  display: block;
+  font-family: 'Roboto';
+  font-style: var(--text-font-style);
+  font-weight: var(--text-font-weight);
+  font-size: 15px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--title-color);
+  height: 17px;
+}
+.brand-store img {
+  position: relative;
+  top:-10;
+}
+
+@media screen and (min-width:908px) {
+  .brand h2 {
+    height: 50px;
+    font-size: var(--tablet-font-size);
+    line-height: var(--tablet-line-height);
+  }
+  .brand-list{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+      "audi mer land-rover ferrari testla"
+    ;
+  }
+  .brand-list-item{
+    height: 39px;
+  }
+  .mer{
+    position: initial;
+  }
+  .audi {
+    position: initial;
+  }
+  .brand-list-item h3 {
+    font-size: var(--title-font-size);
+    line-height: var(--item-brand-height);
+
+  }
+  .brand-list-item img {
+    width: 37px;
+    height: 37px;
+  }
+  .brand-store a {
+    font-size: 25px;
+    line-height: 29px;
+    height: 31px;
+  }
+  .brand {
+    margin-left:30px;
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width:1440px) {
+  .brand {
+    margin-left:100px;
+    margin-right: 100px;
+  }
+  .brand h2 {
+    font-size: var(--desktop-size);
+    line-height: var(--desktop-height);
+  }
+  .brand-list-item {
+    border-radius: 13px;
+    height: 55px;
+  }
+  .brand-list-item h3 {
+    font-size: 22px;
+    line-height: var(--input-radius);
+  }
+  .brand-list-item img{
+    width: 63px;
+    height: 50px;
+  }
+  .brand-store a {
+    font-size: 25px;
+    line-height: 29px;
+  }
+  .brand-store img{
+    top:-5;
+  }
 }
