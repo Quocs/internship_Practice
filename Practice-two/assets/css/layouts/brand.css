@@ -21,7 +21,7 @@
 .brand-list {
   margin-top: 19.53px;
   display: grid;
-  grid-template-columns: 1fr 1.1fr 0.9fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1.1fr 0.9fr 1.6fr 0.1fr 1.7fr 1fr 1fr 1fr; 
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
     ". audi audi audi . mer mer mer ."
@@ -52,9 +52,13 @@
 }
 .audi {
   grid-area: audi;
+  position: relative;
+  left: 20px;
 }
 .mer {
   grid-area: mer;
+  position: relative;
+  right: 20px;
 }
 .land-rover {
   grid-area: land-rover;
