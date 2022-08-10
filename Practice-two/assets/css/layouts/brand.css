@@ -103,6 +103,7 @@
     grid-template-areas: 
       "audi mer land-rover ferrari testla"
     ;
+    margin-top: 27px;
   }
   .brand-list-item{
     height: 39px;
@@ -126,6 +127,7 @@
     font-size: 25px;
     line-height: 29px;
     height: 31px;
+    margin-top:27px;
   }
   .brand {
     margin-left:30px;
@@ -140,6 +142,9 @@
   .brand h2 {
     font-size: var(--desktop-size);
     line-height: var(--desktop-height);
+  }
+  .brand-list{
+    margin-top:63px;
   }
   .brand-list-item {
     border-radius: 13px;
@@ -156,6 +161,7 @@
   .brand-store a {
     font-size: 25px;
     line-height: 29px;
+    margin-top: 50px;
   }
   .brand-store img{
     top:-5;
