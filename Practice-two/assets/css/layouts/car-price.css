@@ -202,8 +202,8 @@
   .car-price-list-item-body img {
     position: absolute;
     top: 38px;
-    left: -30px;
-    width: 125%;
+    left: 0;
+    width: 100%;
   }
   .car-price-list-item-header {
     height: 143px;

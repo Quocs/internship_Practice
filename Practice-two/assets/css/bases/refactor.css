@@ -19,4 +19,9 @@
   --item-header-background: #faf5f8;
   --item-header-radius: 21px 21px 0px 0px;
   --list-item-height: 23px;
+  --tablet-font-size:35px;
+  --tablet-line-height:48px;
+  --item-brand-height:23px;
+  --desktop-size:45px;
+  --desktop-height:62px;
 }
