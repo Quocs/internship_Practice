@@ -54,8 +54,8 @@
 .car-price-list-item-body img {
   height: 260px;
   position: absolute;
-  left: -45;
-  width: 140%;
+  right: -35px;
+  width: 368px;
 }
 .car-price-list-item-footer {
   height: 124.93px;
@@ -188,6 +188,7 @@
       "Dodge Audi-grey"
       "Audi-red Range-Rover";
     justify-content: center;
+    margin-top: 70px;
   }
 
   .Adi {
@@ -199,11 +200,23 @@
   .Range-Rover {
     display: block;
   }
+
+  .Audi .car-price-list-item-body img {
+    width: 401px;
+  }
+  .Dodge .car-price-list-item-body img {
+    width: 314px;
+  }
+  .Adi .car-price-list-item-body img {
+    width: 332px;
+  }
+  .Range-Rover .car-price-list-item-body img {
+    width: 404px;
+  }
   .car-price-list-item-body img {
     position: absolute;
     top: 38px;
-    left: 0;
-    width: 100%;
+    left: -18px;
   }
   .car-price-list-item-header {
     height: 143px;
@@ -256,5 +269,22 @@
     font-weight: var(--text-font-weight);
     font-size: 34px;
     line-height: 41px;
+  }
+  .car-price-list-item-body img {
+    position: relative;
+    top: 38px;
+    left: -13px;
+  }
+  .Audi .car-price-list-item-body img {
+    width: 350px;
+  }
+  .Dodge .car-price-list-item-body img {
+    width: 289px;
+  }
+  .Adi .car-price-list-item-body img {
+    width: 309px;
+  }
+  .Range-Rover .car-price-list-item-body img {
+    width: 331px;
   }
 }
