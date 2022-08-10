@@ -21,8 +21,12 @@
 .brand-list {
   margin-top: 19.53px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
-  grid-template-rows: 1fr 0.5fr 1fr;
+  grid-template-columns: 1fr 1.1fr 0.9fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    ". audi audi audi . mer mer mer ."
+    "land-rover land-rover land-rover ferrari ferrari ferrari testla testla testla";
+  gap: 39.2px 28px;
 }
 .brand-list-item {
   display: flex;
@@ -34,21 +38,30 @@
   width: 100%;
 }
 .brand-list-item img {
-  width: 50px;
-  height: 43px;
+  width: 31px;
+  height: 27px;
 }
-.audi{
-    grid-area: audi;
+.brand-list-item h3 {
+  font-family: "Roboto";
+  font-style: var(--text-font-style);
+  font-weight: var(--text-font-weight);
+  font-size: var(--text-font-size);
+  line-height: var(--text-line-height);
+  text-transform: capitalize;
+  color: var(--title-color);
 }
-.mer{
-    grid-area: mer;
+.audi {
+  grid-area: audi;
+}
+.mer {
+  grid-area: mer;
 }
 .land-rover {
-    grid-area: land-rover;
+  grid-area: land-rover;
 }
 .ferrari {
-    grid-area: ferrari;
+  grid-area: ferrari;
 }
 .testla {
-    grid-area: testla;
+  grid-area: testla;
 }
