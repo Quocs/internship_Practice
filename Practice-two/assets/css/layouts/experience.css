@@ -1,72 +1,138 @@
 @import url("../bases/fonts.css");
 @import url("../bases/refactor.css");
 
-.experience{
-    margin-top:130px;
-    margin-left:37px;
-    margin-right:37px;
+.experience {
+  margin-top: 130px;
+  margin-left: 37px;
+  margin-right: 37px;
 }
 .experience h2 {
-    font-family: "DM Serif Display";
-    font-style: var(--text-font-style);
-    font-weight: var(--text-font-weight);
-    font-size:var(--title-font-size);
-    line-height: var(--title-line-height);
-    text-align: center;
-    color: var(--title-color);
-    height: 54px;
-    width: 65%;
-    margin:0 auto;
+  font-family: "DM Serif Display";
+  font-style: var(--text-font-style);
+  font-weight: var(--text-font-weight);
+  font-size: var(--title-font-size);
+  line-height: var(--title-line-height);
+  text-align: center;
+  color: var(--title-color);
+  height: 54px;
+  width: 65%;
+  margin: 0 auto;
 }
-.experience-list{
-    margin-top: 46px;
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-        "book . setting"
-        ". author ."
-    ;
-    justify-items: center;
-    align-items: center;
-    gap: 10px;
+.experience-list {
+  margin-top: 46px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "book . setting"
+    ". author .";
+  justify-content: center;
 }
-.book{
-    grid-area: book;
+.book {
+  grid-area: book;
 }
-.setg{
-    grid-area: setting;
+.setg {
+  grid-area: setting;
 }
 .author {
-    grid-area: author;
+  grid-area: author;
 }
-.experience-list-item-background{
-    background-image: url(../../imgs/experiences/background-img.png);
-    height: 61px;
-    background-repeat: no-repeat;
-    background-size: contain;
+.experience-list-item-background {
+  height: 61px;
+  position: relative;
+  z-index: 1;
 }
 .experience-list-item-logo {
-    height: 24px;
-    position: relative;
-    top:20px;
-    left:23px;
+  height: 24px;
+  position: relative;
+  bottom: 40px;
+  z-index: 3;
 }
 .experience-list h3 {
-    font-family: "DM Serif Display";
-    font-style: var(--text-font-style);
-    font-weight: var(--text-font-weight);
-    font-size: var(--text-font-size);
-    line-height: var(--subtitle-line-height);
-    text-align: center;
-    color: var(--title-color);
+  font-family: "DM Serif Display";
+  font-style: var(--text-font-style);
+  font-weight: var(--text-font-weight);
+  font-size: var(--text-font-size);
+  line-height: var(--subtitle-line-height);
+  text-align: center;
+  color: var(--title-color);
 }
 .experience-list p {
-    font-family: "Roboto";
-    font-style: var(--text-font-style);
-    font-weight: var(--text-font-weight);
-    font-size: var(--text-font-size);
-    line-height: var(--text-line-height);
+  font-family: "Roboto";
+  font-style: var(--text-font-style);
+  font-weight: var(--text-font-weight);
+  font-size: var(--text-font-size);
+  line-height: var(--text-line-height);
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+  width: 130%;
+  height: 42px;
+}
+.experience-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 908px) {
+  .experience-list {
+    grid-template-columns: 0.3fr 0.3fr 0.3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "book setting author";
+    margin-top: 69px;
+  }
+
+  .experience h2 {
+    font-size: var(--tablet-font-size);
+    line-height: var(--tablet-line-height);
     text-align: center;
-    color: rgba(0, 0, 0, 0.6);
+    width: 50%;
+    height: 96px;
+  }
+  .experience-list-item-background {
+    height: 83px;
+  }
+  .experience-list-item-logo{
+    height: 32.46px;
+    bottom: 50px;
+  }
+  .experience-list-item h3 {
+    font-size: var(--title-font-size);
+    line-height: var(--title-line-height);
+  }
+  .experience-list-item p {
+    height: 42px;
+    font-size: 15px;
+    line-height: 18px;
+    width: 100%;
+  }
+}
+@media screen and (min-width:1440px) {
+
+    .experience-list {
+        margin-top: 75px;
+    }
+    .experience h2 {
+        height: 124px;
+        font-size: var(--desktop-size);
+        line-height: var(--desktop-height);
+        width: 40%;
+    }
+    .experience-list-item-background{
+        height: 120px
+    }
+    .experience-list-item-logo{
+        height: 46px;
+        bottom: 75px;
+    }
+    .experience-list-item h3 {
+        font-size:30px;
+        line-height: 41px;
+        height: 41px;
+    }
+    .experience-list-item p {
+        font-size: var(--title-font-size);
+        line-height: var(--list-item-height);
+        width: 80%;
+    }
 }
