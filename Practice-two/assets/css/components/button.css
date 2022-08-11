@@ -1,5 +1,5 @@
 
-button{
+button,input[type=submit]{
     height: 21px;
     width: 80px;
     background-color: var(--button-background-color);
