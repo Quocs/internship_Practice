@@ -13,6 +13,7 @@
     justify-content: space-around;
     align-items: flex-start;
     padding-left: 12px;
+    max-width: 100%;
 }
 
 .subscribe-top h2 {
@@ -24,10 +25,10 @@
     font-size:var(--title-font-size);
     line-height: var(--title-line-height);
     text-transform: capitalize;
-    width: 70%;
+    width: 80%;
 }
 
-.subscribe-top-form h3{
+.subscribe-body h3 {
     font-family: "Roboto";
     font-style: var(--text-font-style);
     font-weight: var(--text-font-weight);
@@ -35,4 +36,8 @@
     line-height: var(--text-line-height);
     text-transform: capitalize;
     color: var(--button-color);
+}
+.input[type=email]{
+    width: 100%;
+    padding: 12px;
 }
