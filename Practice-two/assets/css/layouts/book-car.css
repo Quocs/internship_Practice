@@ -35,17 +35,18 @@
   font-family: "Roboto";
   color: rgba(0, 0, 0, 0.6);
 }
-input {
+.book-car-input-item input[type=text] {
   width: var(--input-width);
   height: var(--input-height);
   background-color: var(--input-background);
   border-radius: var(--input-radius);
   border: var(--input-border);
-}
-.book-car-input img {
   position: relative;
-  left: 70px;
-  width: 5.83px;
+}
+.book-car-input-item img {
+  position: relative;
+  left: -44px;
+  width: 7.5px;
   height: 8.33px;
 }
 .book-car-input {
@@ -87,9 +88,15 @@ input {
     font-size: var(--title-font-size);
     line-height: 23px;
   }
-  .book-car-input input {
+  .book-car-input-item input[type=text] {
     width: 146.68px;
     height: 33.28px;
+  }
+  .book-car-input-item img {
+    left: -50px;
+    top: 3px;
+    width: 11.67px;
+    height: 16.67px;
   }
   .book-car-input button {
     height: 33.28px;
@@ -98,11 +105,7 @@ input {
     font-size: 18px;
     line-height: 21px;
   }
-  .book-car-input img {
-    left: 130.36px;
-    width: 11.67px;
-    height: 16.67px;
-  }
+  
 }
 @media screen and (min-width: 1440px) {
   .book-car {
@@ -126,12 +129,13 @@ input {
   .book-car-input {
     margin-top: 10px;
   }
-  .book-car-input input {
-    height: 60px;
+  .book-car-input-item input[type=text] {
     width: 309.54px;
+    height: 60px;
   }
-  .book-car-input img {
-    left: 300px;
+  .book-car-input-item img {
+    top: 6px;
+    left: -60px;
     width: 17.62px;
     height: 25px;
   }
