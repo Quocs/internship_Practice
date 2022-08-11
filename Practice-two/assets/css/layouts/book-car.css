@@ -63,7 +63,6 @@
   flex-wrap: nowrap;
   align-items: center;
 }
-
 .book-car-input button {
   width: 43px;
   height: var(--input-height);
