@@ -1,6 +1,5 @@
 @import url("../bases/fonts.css");
 @import url("../bases/refactor.css");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 .car-price {
   text-align: center;
@@ -257,9 +256,9 @@
     line-height: var(--desktop-height);
   }
   .car-price-list {
-    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-columns: 0.3fr 0.3fr 0.3fr 0.3fr;
     grid-template-rows: 1fr;
-    gap: 1px;
+    gap: -10px;
     grid-template-areas: "Dodge Audi-grey Audi-red Range-Rover";
     justify-content: center;
   }
