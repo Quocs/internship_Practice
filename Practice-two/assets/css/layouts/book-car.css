@@ -9,7 +9,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 12px;
   margin-left: 15px;
   margin-right: 15px;
   margin-top: 41px;
@@ -24,6 +23,7 @@
   text-transform: capitalize;
   color: #081630;
   height: 21px;
+  padding-left: 12px;
 }
 .book-car p {
   width: 75%;
@@ -34,6 +34,7 @@
   line-height: var(--text-line-height);
   font-family: "Roboto";
   color: rgba(0, 0, 0, 0.6);
+  padding-left: 12px;
 }
 .book-car-input-item input[type=text] {
   width: var(--input-width);
@@ -41,22 +42,26 @@
   background-color: var(--input-background);
   border-radius: var(--input-radius);
   border: var(--input-border);
+ 
+}
+
+.book-car-input-item{
   position: relative;
+  width: var(--input-width);
+  height: var(--input-height);
+  margin-left: 20px;
 }
 .book-car-input-item img {
-  position: relative;
-  left: -44px;
-  width: 7.5px;
+  position: absolute;
+  width: 5.5px;
   height: 8.33px;
+  right: 0px;
+  bottom: 3px;
 }
 .book-car-input {
   display: inline-flex;
   justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.book-car-input input {
-  margin-right: 20px;
+  flex-wrap: nowrap;
 }
 
 .book-car-input button {
@@ -68,6 +73,7 @@
   font-style: var(--text-font-style);
   font-weight: var(--text-font-weight);
   font-family: "Roboto";
+  margin-left: 20px;
 }
 
 @media screen and (min-width: 908px) {
@@ -88,13 +94,21 @@
     font-size: var(--title-font-size);
     line-height: 23px;
   }
+  .book-car-input{
+    height: 38px;
+  }
+  .book-car-input-item{
+    width: 146.68px;
+    height: 33.28px;
+    margin-left: 40px;
+  }
   .book-car-input-item input[type=text] {
     width: 146.68px;
     height: 33.28px;
   }
   .book-car-input-item img {
-    left: -50px;
-    top: 3px;
+    right: 1px;
+    top: 10px;
     width: 11.67px;
     height: 16.67px;
   }
@@ -104,6 +118,7 @@
     border-radius: var(--input-radius);
     font-size: 18px;
     line-height: 21px;
+    margin-left: 40px;
   }
   
 }
@@ -129,13 +144,17 @@
   .book-car-input {
     margin-top: 10px;
   }
+  .book-car-input-item{
+    width: 309.54px;
+    height: 60px;
+  }
   .book-car-input-item input[type=text] {
     width: 309.54px;
     height: 60px;
   }
   .book-car-input-item img {
-    top: 6px;
-    left: -60px;
+    top: 20px;
+    right: 0;
     width: 17.62px;
     height: 25px;
   }
