@@ -31,7 +31,7 @@
 }
 .service-left img {
   max-width: 100%;
-  height: 137px;
+  height: 182px;
   width: 125%;
 }
 .service-right h2 {
@@ -61,7 +61,7 @@
 .service-center {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 .service-center img {
@@ -74,11 +74,11 @@
     margin-right: 41px;
     height: 450px;
     grid-template-columns: 3fr 0.5fr 2fr;
-    grid-template-rows: 0.5fr 3fr;
+    grid-template-rows: 1fr 3fr;
   }
   .service-left img {
     width: 456px;
-    height: 270px;
+    height: 321px;
     max-width: 100%;
   }
   .service-center img {
@@ -90,7 +90,7 @@
     line-height: var(---tablet-line-height);
   }
   .service-right-content {
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
   .service-right-content h3 {
     font-size: var(--title-font-size);

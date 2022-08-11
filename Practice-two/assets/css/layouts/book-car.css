@@ -5,7 +5,6 @@
 .book-car {
   height: 140px;
   background-color: #c4c4c4;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -95,7 +94,7 @@
     line-height: 23px;
   }
   .book-car-input{
-    height: 38px;
+    height: 67px;
   }
   .book-car-input-item{
     width: 146.68px;
@@ -107,7 +106,7 @@
     height: 33.28px;
   }
   .book-car-input-item img {
-    right: 1px;
+    right: 7px;
     top: 10px;
     width: 11.67px;
     height: 16.67px;
@@ -144,6 +143,9 @@
   .book-car-input {
     margin-top: 10px;
   }
+  .book-car-input button{
+    margin-right: 10px;
+  }
   .book-car-input-item{
     width: 309.54px;
     height: 60px;
@@ -154,7 +156,7 @@
   }
   .book-car-input-item img {
     top: 20px;
-    right: 0;
+    right: 11px;
     width: 17.62px;
     height: 25px;
   }
