@@ -21,6 +21,7 @@
 .car-price-list-item {
   margin-top: 29px;
   height: 500px;
+
   margin-left: 41px;
   margin-right: 41px;
   background-color: #c4c4c4;
@@ -51,10 +52,10 @@
   position: relative;
 }
 .car-price-list-item-body img {
-  height: 260px;
   position: absolute;
-  right: -35px;
-  width: 368px;
+  right: -29px;
+  width: 362px;
+  height: 236px;
 }
 .car-price-list-item-footer {
   height: 124.93px;
@@ -171,6 +172,10 @@
 }
 
 @media screen and (min-width: 908px) {
+  .car-price-list-item {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
   .car-price-link {
     display: none;
   }
@@ -182,7 +187,7 @@
   .car-price-list {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 0.4fr 0.4fr;
-    gap: 5px;
+    gap: 30px;
     grid-template-areas:
       "Dodge Audi-grey"
       "Audi-red Range-Rover";
@@ -202,20 +207,24 @@
 
   .Audi .car-price-list-item-body img {
     width: 401px;
+    height: 245px;
   }
   .Dodge .car-price-list-item-body img {
     width: 314px;
+    height: 245px;
   }
   .Adi .car-price-list-item-body img {
     width: 332px;
+    height: 245px;
   }
   .Range-Rover .car-price-list-item-body img {
-    width: 404px;
+    width: 391px;
+    height: 245px;
   }
   .car-price-list-item-body img {
     position: absolute;
     top: 38px;
-    left: -18px;
+    left: 10px;
   }
   .car-price-list-item-header {
     height: 143px;
@@ -246,6 +255,7 @@
     line-height: 29px;
   }
 }
+
 @media screen and (min-width: 1440px) {
   .car-price-link {
     display: none;
@@ -256,10 +266,9 @@
     line-height: var(--desktop-height);
   }
   .car-price-list {
-    grid-template-columns: 0.3fr 0.3fr 0.3fr 0.3fr;
-    grid-template-rows: 1fr;
-    gap: -10px;
-    grid-template-areas: "Dodge Audi-grey Audi-red Range-Rover";
+    grid-template: "Dodge Audi-grey Audi-red Range-Rover" 0.1fr / 0.1fr 0.1fr 0.1fr 0.1fr;
+    justify-content: center;
+    gap: 10px;
     justify-content: center;
   }
   .car-price-list-item-header h3 {
@@ -272,18 +281,23 @@
   .car-price-list-item-body img {
     position: relative;
     top: 38px;
-    left: -13px;
+    left: 9px;
   }
+
   .Audi .car-price-list-item-body img {
     width: 350px;
+    height: 245px;
   }
   .Dodge .car-price-list-item-body img {
     width: 289px;
+    height: 245px;
   }
   .Adi .car-price-list-item-body img {
     width: 309px;
+    height: 245px;
   }
   .Range-Rover .car-price-list-item-body img {
     width: 331px;
+    height: 245px;
   }
 }
