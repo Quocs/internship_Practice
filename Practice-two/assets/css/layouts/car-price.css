@@ -21,7 +21,6 @@
 .car-price-list-item {
   margin-top: 29px;
   height: 500px;
-
   margin-left: 41px;
   margin-right: 41px;
   background-color: #c4c4c4;
@@ -53,9 +52,9 @@
 }
 .car-price-list-item-body img {
   position: absolute;
-  right: -29px;
-  width: 362px;
-  height: 236px;
+  right: -32px;
+  width: 368px;
+  height: 225px;
 }
 .car-price-list-item-footer {
   height: 124.93px;
