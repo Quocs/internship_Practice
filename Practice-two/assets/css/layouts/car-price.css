@@ -16,13 +16,12 @@
 .car-price-list {
   display: grid;
   grid-template-rows: 1fr;
-  gap: 30px;
 }
 .car-price-list-item {
   margin-top: 29px;
   height: 500px;
-  margin-left: 41px;
-  margin-right: 41px;
+  margin-left: 71px;
+  margin-right: 71px;
   background-color: #c4c4c4;
   box-shadow: 5px 10px 5px gray;
   border-radius: var(--item-header-radius);
@@ -52,7 +51,7 @@
 }
 .car-price-list-item-body img {
   position: absolute;
-  right: -32px;
+  right: -53px;
   width: 368px;
   height: 225px;
 }

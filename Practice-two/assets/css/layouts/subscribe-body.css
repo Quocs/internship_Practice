@@ -1,0 +1,99 @@
+@import url(../bases/fonts.css);
+@import url(../bases/refactor.css);
+
+.subscribe-body{
+    height: 160px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #f1bc00;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.subscribe-body h2 {
+    height: 36px;
+    font-family: "DM Serif Display";
+    font-style: var(--text-font-style);
+    font-weight: var(--text-font-weight);
+    font-size: var(--title-font-size);
+    line-height: var(--title-line-height);
+    text-transform: capitalize;
+    color: var(--title-color);
+    text-align: center;
+}
+.subscribe-body-form input {
+    display: inline-block;
+    box-sizing: border-box;
+}
+.subscribe-body-form{
+    position: relative;
+    width: 90%;
+}
+  .subscribe-body-form input[type="email"] {
+    width: 90%;
+    height: 31px;
+    background: #e5e5e5;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-indent: 10px;
+    margin-left: 20px;
+    margin-right:20px;
+  }
+  
+  .subscribe-body-form input[type="submit"] {
+    position: absolute;
+    right: 46px;
+    top: 5px;
+    width: 56.53px;
+  }
+
+  @media screen and (min-width:908px) {
+    .subscribe-body{
+        height: 212px;
+        align-items: center;
+    }
+    .subscribe-body h2 {
+        height: 50px;
+        font-size: var(--tablet-font-size);
+        line-height: var(--tablet-line-height);
+        
+    }
+    .subscribe-body-form{
+        width: 50%;
+    }
+    .subscribe-body-form input[type="email"]{
+        width: 90%;
+        height: 41px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .subscribe-body-form input[type="submit"]{
+        height: 31px;
+        width: 76px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+  }
+  @media screen and (min-width:1440px) {
+    .subscribe-body{
+        height: 202px;
+    }
+    .subscribe-body-form{
+        width: 60%;
+        height: 61px;
+    }
+    .subscribe-body-form input[type="email"]{
+        height: 61px;
+        font-size:var(--title-font-size);
+        line-height: var(--list-item-height);
+    }
+    .subscribe-body-form input[type="submit"]{
+        height: 57px;
+        font-size:30px ;
+        line-height: var(--tablet-font-size);
+        width: 127px;
+        top:0px;
+        right:70px;
+    }
+  }
