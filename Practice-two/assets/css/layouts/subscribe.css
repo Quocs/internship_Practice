@@ -41,12 +41,15 @@
 }
 
 .subscribe-form input {
-  position: relative;
   display: inline-block;
   box-sizing: border-box;
 }
+.subscribe-form {
+  position: relative;
+  width: 80%;
+}
 .subscribe-form input[type="email"] {
-  width: 250px;
+  width: 90%;
   height: 27px;
   background: #e5e5e5;
   border-radius: 10px;
@@ -55,11 +58,11 @@
 }
 
 .subscribe-form input[type="submit"] {
-  position: relative;
-  left: -65px;
+  position: absolute;
   width: 55px;
   height: 21px;
-  bottom: 2px;
+  right: 40px;
+  top: 21px;
 }
 
 @media screen and (min-width: 908px) {
@@ -79,7 +82,6 @@
     margin-bottom: 14px;
   }
   .subscribe-form input[type="email"] {
-    width: 639px;
     height: 56px;
     font-size: var(--title-font-size);
     line-height: var(--item-brand-height);
@@ -87,8 +89,8 @@
   .subscribe-form input[type="submit"] {
     width: 105px;
     height: 42px;
-    left: -125px;
-    top: 2px;
+    top: 33px;
+    right: 70px;
     font-size: var(--title-font-size);
     line-height: var(--item-brand-height);
   }
@@ -110,7 +112,6 @@
     margin-bottom: 25px;
   }
   .subscribe-form input[type="email"] {
-    width: 958px;
     height: 93px;
     font-size: 30px;
     line-height: var(--tablet-font-size);
@@ -118,8 +119,8 @@
   .subscribe-form input[type="submit"] {
     width: 170px;
     height: 87px;
-    left: -200px;
-    bottom: 10px;
+    right: 119px;
+    top: 40px;
     font-size: 30px;
     line-height: 35px;
   }
