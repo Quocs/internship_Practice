@@ -28,7 +28,7 @@
 }
 .subscribe-body-form{
     position: relative;
-    width: 90%;
+    width: 100%;
 }
   .subscribe-body-form input[type="email"] {
     width: 90%;
