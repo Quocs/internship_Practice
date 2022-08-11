@@ -43,7 +43,7 @@
 
 ## How to run the project
 
-**Step one:** Dowload parcel
+**Step one:** Install parcel
 - open terminal
 - enter npm install --save-dev parcel
 
