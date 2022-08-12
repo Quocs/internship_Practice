@@ -1,5 +1,5 @@
-@import url('../bases/fonts.css');
-@import url('../bases/refactor.css');
+@import url("../bases/fonts.css");
+@import url("../bases/refactor.css");
 
 .header-top {
   display: flex;
@@ -31,7 +31,7 @@ nav {
   height: 15.83px;
 }
 .header-top-title h1 h2 {
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: var(--text-font-style);
   font-weight: var(--text-font-weight);
   font-size: var(--title-font-size);
@@ -59,7 +59,7 @@ nav {
   justify-content: space-between;
 }
 .banner-title h2 {
-  font-family:"DM Serif Display";
+  font-family: "DM Serif Display";
   font-style: var(--text-font-style);
   font-weight: var(--text-font-weight);
   font-size: var(--text-font-size);
@@ -153,12 +153,11 @@ nav {
   }
   .header-top {
     height: 71.92px;
-    margin-bottom: 34.8px;
   }
   .header-top-signed {
     order: 1;
   }
-  .header-top-menu ul  {
+  .header-top-menu ul {
     display: flex;
     order: 2;
   }
