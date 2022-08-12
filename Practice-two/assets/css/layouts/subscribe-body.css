@@ -52,6 +52,8 @@
     .subscribe-body{
         height: 212px;
         align-items: center;
+        margin-left: 0px;
+        margin-right:0px;
     }
     .subscribe-body h2 {
         height: 50px;
