@@ -124,7 +124,7 @@ footer {
   }
   .footer-body {
     margin-left: 168px;
-    margin-right:193px;
+    margin-right: 193px;
   }
   .footer-body h2 {
     font-size: 32px;
@@ -133,7 +133,7 @@ footer {
   .footer-body-group-img img {
     height: 40px;
   }
-  .footer-top-right-content-break{
+  .footer-top-right-content-break {
     display: none;
   }
 }
