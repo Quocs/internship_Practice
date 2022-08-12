@@ -1,12 +1,12 @@
 @font-face {
-    font-family: "Roboto";
-    src: url('../../fonts/Roboto-Light.ttf');
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto-Light.ttf");
 }
 @font-face {
-    font-family: "DM Serif Display";
-    src: url('../../fonts/DMSerifDisplay-Regular.ttf');
+  font-family: "DM Serif Display";
+  src: url("../../fonts/DMSerifDisplay-Regular.ttf");
 }
 @font-face {
-    font-family: "Bodoni MT";
-    src: url('../../fonts/LibreBodoni-Regular.ttf');
+  font-family: "Bodoni MT";
+  src: url("../../fonts/LibreBodoni-Regular.ttf");
 }
