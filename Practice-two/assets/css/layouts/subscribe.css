@@ -40,29 +40,27 @@
   height: 12px;
 }
 
-.subscribe-form input {
-  display: inline-block;
-  box-sizing: border-box;
-}
-.subscribe-form {
-  position: relative;
-  width: 80%;
-}
-.subscribe-form input[type="email"] {
-  width: 90%;
-  height: 27px;
+.subscribe-form-body{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   background: #e5e5e5;
+  height: 31px;
   border-radius: 10px;
-  border: 1px solid black;
+  width: 100%;
+}
+.subscribe-form-body input[type="email"] {
+  width: 100%;
+  outline: none;
+  border: none;
   text-indent: 10px;
 }
 
-.subscribe-form input[type="submit"] {
-  position: absolute;
-  width: 55px;
+.subscribe-form-body button {
+  width: 56.53px;
   height: 21px;
-  right: 40px;
-  top: 21px;
+  right: 0px;
+  margin-right: 10px;
 }
 
 @media screen and (min-width: 908px) {
@@ -81,16 +79,16 @@
     line-height: var(--item-brand-height);
     margin-bottom: 14px;
   }
-  .subscribe-form input[type="email"] {
+  .subscribe-form-body{
     height: 56px;
+  }
+  .subscribe-form-body input[type="email"] {
     font-size: var(--title-font-size);
     line-height: var(--item-brand-height);
   }
-  .subscribe-form input[type="submit"] {
+  .subscribe-form-body button {
     width: 105px;
     height: 42px;
-    top: 33px;
-    right: 70px;
     font-size: var(--title-font-size);
     line-height: var(--item-brand-height);
   }
@@ -111,16 +109,17 @@
     line-height: 35px;
     margin-bottom: 25px;
   }
-  .subscribe-form input[type="email"] {
+  .subscribe-form-body{
     height: 93px;
+  }
+  .subscribe-form input[type="email"] {
     font-size: 30px;
     line-height: var(--tablet-font-size);
+    width: 958px;
   }
-  .subscribe-form input[type="submit"] {
+  .subscribe-form-body button {
     width: 170px;
     height: 87px;
-    right: 119px;
-    top: 40px;
     font-size: 30px;
     line-height: 35px;
   }

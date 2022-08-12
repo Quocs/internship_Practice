@@ -1,7 +1,6 @@
 @import url("../bases/fonts.css");
 @import url("../bases/refactor.css");
 
-
 .book-car {
   height: 140px;
   background-color: #c4c4c4;
@@ -35,16 +34,15 @@
   color: rgba(0, 0, 0, 0.6);
   padding-left: 12px;
 }
-.book-car-input-item input[type=text] {
+.book-car-input-item input[type="text"] {
   width: var(--input-width);
   height: var(--input-height);
   background-color: var(--input-background);
   border-radius: var(--input-radius);
   border: var(--input-border);
- 
 }
 
-.book-car-input-item{
+.book-car-input-item {
   position: relative;
   width: var(--input-width);
   height: var(--input-height);
@@ -93,15 +91,15 @@
     font-size: var(--title-font-size);
     line-height: 23px;
   }
-  .book-car-input{
+  .book-car-input {
     height: 67px;
   }
-  .book-car-input-item{
+  .book-car-input-item {
     width: 146.68px;
     height: 33.28px;
     margin-left: 40px;
   }
-  .book-car-input-item input[type=text] {
+  .book-car-input-item input[type="text"] {
     width: 146.68px;
     height: 33.28px;
   }
@@ -119,7 +117,6 @@
     line-height: 21px;
     margin-left: 40px;
   }
-  
 }
 @media screen and (min-width: 1440px) {
   .book-car {
@@ -143,14 +140,14 @@
   .book-car-input {
     margin-top: 10px;
   }
-  .book-car-input button{
+  .book-car-input button {
     margin-right: 10px;
   }
-  .book-car-input-item{
+  .book-car-input-item {
     width: 309.54px;
     height: 60px;
   }
-  .book-car-input-item input[type=text] {
+  .book-car-input-item input[type="text"] {
     width: 309.54px;
     height: 60px;
   }

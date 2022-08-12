@@ -1,5 +1,5 @@
-@import url('../bases/fonts.css');
-@import url('../bases/refactor.css');
+@import url("../bases/fonts.css");
+@import url("../bases/refactor.css");
 
 .header-top {
   display: flex;
@@ -20,7 +20,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   width: 100px;
-  flex-grow: 2;
+  flex-grow: 1;
 }
 .header-top-signed {
   display: grid;
@@ -30,11 +30,12 @@ nav {
 .header-top-signed img {
   height: 15.83px;
 }
-.header-top-title h1 h2 {
-  font-family: "Roboto",sans-serif;
+.header-top-title h1,
+h2 {
+  font-family: "Roboto";
   font-style: var(--text-font-style);
   font-weight: var(--text-font-weight);
-  font-size: var(--title-font-size);
+  font-size: var(--text-font-size);
   line-height: var(--text-line-height);
   color: var(--title-color);
 }
@@ -47,6 +48,7 @@ nav {
 .banner img {
   width: 100%;
   max-width: 100%;
+  height: 200px;
 }
 .banner-title {
   position: absolute;
@@ -59,7 +61,7 @@ nav {
   justify-content: space-between;
 }
 .banner-title h2 {
-  font-family:"DM Serif Display";
+  font-family: "DM Serif Display";
   font-style: var(--text-font-style);
   font-weight: var(--text-font-weight);
   font-size: var(--text-font-size);
@@ -89,6 +91,10 @@ nav {
     font-size: 24px;
     line-height: 28px;
   }
+  .header-top-title h1 {
+    font-size: 24px;
+    line-height: 28px;
+  }
   .header-top-signed h2 {
     font-size: 24px;
     line-height: 28px;
@@ -99,6 +105,9 @@ nav {
   }
   .header-top {
     height: 60.26px;
+  }
+  .banner img {
+    height: 497px;
   }
   nav {
     justify-content: space-between;
@@ -153,12 +162,11 @@ nav {
   }
   .header-top {
     height: 71.92px;
-    margin-bottom: 34.8px;
   }
   .header-top-signed {
     order: 1;
   }
-  .header-top-menu ul  {
+  .header-top-menu ul {
     display: flex;
     order: 2;
   }
@@ -174,17 +182,18 @@ nav {
   }
   .header-top-menu ul li a {
     text-decoration: none;
-    color: #000;
+    color: var(--title-color);
     font-weight: var(--title-font-weight);
-    font-style: normal;
+    font-style: var(--text-font-style);
     line-height: 14px;
+    font-family: "Roboto";
   }
   .active {
     border-bottom: 2px solid #f1bc00;
   }
   nav {
+    flex-grow: 2;
     align-items: center;
-    justify-content: center;
   }
   .header-top-title {
     flex: 30%;
@@ -198,6 +207,9 @@ nav {
     bottom: 117px;
     height: 200px;
     width: 180px;
+  }
+  .banner img {
+    height: 600px;
   }
   .banner-title h2 {
     height: 85px;
