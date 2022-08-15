@@ -21,7 +21,8 @@
 	padding-left: 12px;
 }
 .book-car p {
-	width: 75%;
+	/*width: 75%;*/
+	width: 289px;
 	height: 50px;
 	font-style: var(--text-font-style);
 	font-weight: var(--text-font-weight);
