@@ -12,7 +12,7 @@
 	text-align: center;
 	color: var(--title-color);
 	height: 54px;
-	width: 65%;
+	width: 215px;
 	margin: 0 auto;
 }
 .experience-list {
@@ -62,7 +62,6 @@
 	line-height: var(--text-line-height);
 	text-align: center;
 	color: rgba(0, 0, 0, 0.6);
-	width: 130%;
 	height: 42px;
 }
 .experience-list-item {
@@ -83,7 +82,7 @@
 		font-size: var(--tablet-font-size);
 		line-height: var(--tablet-line-height);
 		text-align: center;
-		width: 50%;
+		width: 375px;
 		height: 96px;
 	}
 	.experience-list-item-background {
@@ -101,7 +100,6 @@
 		height: 42px;
 		font-size: 15px;
 		line-height: 18px;
-		width: 100%;
 	}
 }
 @media screen and (min-width: 1440px) {
@@ -112,7 +110,7 @@
 		height: 124px;
 		font-size: var(--desktop-size);
 		line-height: var(--desktop-height);
-		width: 40%;
+		width: 482px;
 	}
 	.experience-list-item-background {
 		height: 120px;
@@ -129,6 +127,6 @@
 	.experience-list-item p {
 		font-size: var(--title-font-size);
 		line-height: var(--list-item-height);
-		width: 80%;
+		width: 359px;
 	}
 }
