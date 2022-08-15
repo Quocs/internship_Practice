@@ -2,163 +2,164 @@
 @import url("../bases/refactor.css");
 
 .book-car {
-	height: 140px;
-	background-color: #c4c4c4;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin-left: 15px;
-	margin-right: 15px;
-	margin-top: 41px;
-	align-content: flex-start;
+    height: 140px;
+    background-color: #c4c4c4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 41px;
+    align-content: flex-start;
 }
 .book-car h2 {
-	font-size: var(--subtitle-line-height);
-	line-height: 19px;
-	text-transform: var(--transform);
-	color: #081630;
-	height: var(--footer-height);
-	padding-left: 12px;
+    font-size: var(--subtitle-line-height);
+    line-height: 19px;
+    text-transform: var(--transform);
+    color: #081630;
+    height: var(--footer-height);
+    padding-left: 12px;
 }
 .book-car p {
-	/*width: 75%;*/
-	width: 289px;
-	height: 50px;
-	font-style: var(--text-font-style);
-	font-weight: var(--text-font-weight);
-	font-size: var(--text-font-size);
-	line-height: var(--text-line-height);
-	font-family: "Roboto";
-	color: rgba(0, 0, 0, 0.6);
-	padding-left: 12px;
+    /*width: 75%;*/
+    width: 289px;
+    height: 50px;
+    font-style: var(--text-font-style);
+    font-weight: var(--text-font-weight);
+    font-size: var(--text-font-size);
+    line-height: var(--text-line-height);
+    font-family: "Roboto";
+    color: rgba(0, 0, 0, 0.6);
+    padding-left: 12px;
 }
 .book-car-input-item input[type="text"] {
-	width: var(--input-width);
-	height: var(--input-height);
-	background-color: var(--input-background);
-	border-radius: var(--input-radius);
-	border: var(--input-border);
+    width: var(--input-width);
+    height: var(--input-height);
+    background-color: var(--input-background);
+    border-radius: var(--input-radius);
+    border: var(--input-border);
 }
 
 .book-car-input-item {
-	position: relative;
-	width: var(--input-width);
-	height: var(--input-height);
-	margin-left: 20px;
+    position: relative;
+    width: var(--input-width);
+    height: var(--input-height);
+    margin-left: 20px;
 }
 .book-car-input-item img {
-	position: absolute;
-	width: 5.5px;
-	height: 8.33px;
-	right: 0px;
-	bottom: 3px;
+    position: absolute;
+    width: 5.5px;
+    height: 8.33px;
+    right: 0px;
+    bottom: 3px;
 }
 .book-car-input {
-	display: inline-flex;
-	justify-content: flex-start;
-	flex-wrap: nowrap;
-	align-items: center;
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 .book-car-input button {
-	width: 43px;
-	height: var(--input-height);
-	font-size: 8px;
-	line-height: 9px;
-	font-family: var(--text-font-family);
-	font-style: var(--text-font-style);
-	font-weight: var(--text-font-weight);
-	font-family: "Roboto";
-	margin-left: 20px;
+    width: 43px;
+    height: var(--input-height);
+    font-size: 8px;
+    line-height: 9px;
+    font-family: var(--text-font-family);
+    font-style: var(--text-font-style);
+    font-weight: var(--text-font-weight);
+    font-family: "Roboto";
+    margin-left: 20px;
 }
 
 @media screen and (min-width: 908px) {
-	.book-car {
-		height: 248px;
-		margin-left: 41px;
-		margin-right: 41px;
-	}
-	.book-car h2 {
-		height: 43px;
-		font-size: 28px;
-		line-height: 38px;
-		width: 358px;
-	}
-	.book-car p {
-		width: 692px;
-		height: 84px;
-		font-size: var(--title-font-size);
-		line-height: 23px;
-	}
-	.book-car-input {
-		height: 67px;
-	}
-	.book-car-input-item {
-		width: 146.68px;
-		height: 33.28px;
-		margin-left: 40px;
-	}
-	.book-car-input-item input[type="text"] {
-		width: 146.68px;
-		height: 33.28px;
-	}
-	.book-car-input-item img {
-		right: 7px;
-		top: 10px;
-		width: 11.67px;
-		height: 16.67px;
-	}
-	.book-car-input button {
-		height: 33.28px;
-		width: 85.81px;
-		border-radius: var(--input-radius);
-		font-size: 18px;
-		line-height: 21px;
-		margin-left: 40px;
-	}
+    .book-car {
+        height: 248px;
+        margin-left: 41px;
+        margin-right: 41px;
+    }
+    .book-car h2 {
+        height: 43px;
+        font-size: 28px;
+        line-height: 38px;
+        width: 358px;
+    }
+    .book-car p {
+        width: 692px;
+        height: 84px;
+        font-size: var(--title-font-size);
+        line-height: 23px;
+    }
+    .book-car-input {
+        height: 67px;
+    }
+    .book-car-input-item {
+        width: 146.68px;
+        height: 33.28px;
+        margin-left: 40px;
+    }
+    .book-car-input-item input[type="text"] {
+        width: 146.68px;
+        height: 33.28px;
+    }
+    .book-car-input-item img {
+        right: 7px;
+        top: 10px;
+        width: 11.67px;
+        height: 16.67px;
+    }
+    .book-car-input button {
+        height: 33.28px;
+        width: 85.81px;
+        border-radius: var(--input-radius);
+        font-size: 18px;
+        line-height: 21px;
+        margin-left: 40px;
+    }
 }
 @media screen and (min-width: 1440px) {
-	.book-car {
-		height: 315px;
-		padding-left: 45px;
-		margin-left: 70px;
-		margin-right: 70px;
-	}
-	.book-car h2 {
-		font-size: 39px;
-		line-height: 53px;
-		height: 60px;
-	}
-	.book-car p {
-		height: 84px;
-		font-size: 24px;
-		line-height: 28px;
-		width: 754.24px;
-	}
-	.book-car-input {
-		margin-top: 10px;
-	}
-	.book-car-input button {
-		margin-right: 10px;
-	}
-	.book-car-input-item {
-		width: 309.54px;
-		height: 60px;
-	}
-	.book-car-input-item input[type="text"] {
-		width: 309.54px;
-		height: 60px;
-	}
-	.book-car-input-item img {
-		top: 20px;
-		right: 11px;
-		width: 17.62px;
-		height: 25px;
-	}
-	.book-car-input button {
-		height: 60px;
-		width: 152.78px;
-		border-radius: var(--input-radius);
-		font-size: 22px;
-		line-height: 26px;
-	}
+    .book-car {
+        height: 315px;
+        padding-left: 45px;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    .book-car h2 {
+        font-size: 39px;
+        line-height: 53px;
+        height: 60px;
+        width: 602.11px;
+    }
+    .book-car p {
+        height: 84px;
+        font-size: 24px;
+        line-height: 28px;
+        width: 754.24px;
+    }
+    .book-car-input {
+        margin-top: 10px;
+    }
+    .book-car-input button {
+        margin-right: 10px;
+    }
+    .book-car-input-item {
+        width: 309.54px;
+        height: 60px;
+    }
+    .book-car-input-item input[type="text"] {
+        width: 309.54px;
+        height: 60px;
+    }
+    .book-car-input-item img {
+        top: 20px;
+        right: 11px;
+        width: 17.62px;
+        height: 25px;
+    }
+    .book-car-input button {
+        height: 60px;
+        width: 152.78px;
+        border-radius: var(--input-radius);
+        font-size: 22px;
+        line-height: 26px;
+    }
 }

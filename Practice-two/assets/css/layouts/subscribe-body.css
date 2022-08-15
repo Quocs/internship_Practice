@@ -28,6 +28,7 @@
     background: #e5e5e5;
     height: 31px;
     border-radius: 10px;
+    width: 344px;
 }
 .subscribe-body-form input[type="email"] {
     outline: none;
@@ -56,11 +57,10 @@
         line-height: var(--tablet-line-height);
     }
     .subscribe-body-form {
-        width: 50%;
+        width: 381.12px;
         height: 50px;
     }
     .subscribe-body-form input[type="email"] {
-        width: 90%;
         font-size: 18px;
         line-height: 21px;
     }
@@ -76,7 +76,7 @@
         height: 202px;
     }
     .subscribe-body-form {
-        width: 60%;
+        width: 631px;
         height: 61px;
     }
     .subscribe-body-form input[type="email"] {

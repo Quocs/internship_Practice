@@ -2,295 +2,299 @@
 @import url("../bases/refactor.css");
 
 .car-price {
-	text-align: center;
-	margin-top: 99px;
+    text-align: center;
+    margin-top: 99px;
 }
 .car-price h2 {
-	font-size: var(--title-font-size);
-	line-height: var(--title-line-height);
-	text-transform: var(--transform);
-	color: var(--title-color);
-	height: 30px;
+    font-size: var(--title-font-size);
+    line-height: var(--title-line-height);
+    text-transform: var(--transform);
+    color: var(--title-color);
+    height: 30px;
 }
 .car-price-list {
-	display: grid;
-	grid-template-rows: 1fr;
+    display: grid;
+    grid-template-rows: 1fr;
 }
 .car-price-list-item {
-	margin-top: 29px;
-	height: 500px;
-	margin-left: 71px;
-	margin-right: 71px;
-	background-color: #c4c4c4;
-	box-shadow: 5px 10px 5px gray;
-	border-radius: var(--item-header-radius);
+    margin-top: 29px;
+    height: 500px;
+    margin-left: 71px;
+    margin-right: 71px;
+    background-color: #c4c4c4;
+    box-shadow: 5px 10px 5px gray;
+    border-radius: var(--item-header-radius);
 }
 .car-price-list-item-header {
-	height: var(--item-header-height);
-	background: var(--item-header-background);
-	border-radius: var(--item-header-radius);
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    height: var(--item-header-height);
+    background: var(--item-header-background);
+    border-radius: var(--item-header-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .car-price-list-item-header h3 {
-	height: 33px;
-	font-family: "DM serif Display";
-	font-style: var(--text-font-style);
-	font-weight: var(--text-font-weight);
-	font-size: var(--title-font-size);
-	line-height: var(--title-line-height);
-	text-transform: var(--transform);
-	color: var(--button-background-color);
+    height: 33px;
+    font-family: "DM serif Display";
+    font-style: var(--text-font-style);
+    font-weight: var(--text-font-weight);
+    font-size: var(--title-font-size);
+    line-height: var(--title-line-height);
+    text-transform: var(--transform);
+    color: var(--button-background-color);
 }
 .car-price-list-item-body {
-	height: 229.18px;
-	background-color: #c4c4c4;
-	position: relative;
+    height: 229.18px;
+    background-color: #c4c4c4;
+    position: relative;
 }
 .car-price-list-item-body img {
-	position: absolute;
-	right: -57px;
-	height: 225px;
+    position: absolute;
+    right: -52px;
+    width: 368px;
+    height: 225px;
 }
 .car-price-list-item-footer {
-	height: 124.93px;
-	background: var(--button-color);
-	border-radius: var(--item-header-radius);
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
-	justify-items: center;
-	align-items: center;
-	position: relative;
-	bottom: 0;
-	grid-template-areas:
-		"title . . "
-		"parameter parameter parameter"
-		". subtitle ."
-		". button .";
+    height: 124.93px;
+    background: var(--button-color);
+    border-radius: var(--item-header-radius);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    grid-template-areas:
+        "title . . "
+        "parameter parameter parameter"
+        ". subtitle ."
+        ". button .";
 }
 
 .car-price-list-item-footer h3 {
-	grid-area: title;
-	height: 20px;
-	font-size: var(--title-font-size);
-	line-height: var(--list-item-height);
-	text-transform: var(--transform);
-	color: var(--title-color);
-	font-family: "Roboto";
-	font-weight: var(--text-font-weight);
-	font-style: var(--text-font-style);
+    grid-area: title;
+    height: 20px;
+    font-size: var(--title-font-size);
+    line-height: var(--list-item-height);
+    text-transform: var(--transform);
+    color: var(--title-color);
+    font-family: "Roboto";
+    font-weight: var(--text-font-weight);
+    font-style: var(--text-font-style);
 }
 .car-price-list-item-footer-parameter {
-	display: flex;
-	width: 100%;
-	flex-direction: row;
-	justify-content: space-around;
-	grid-area: parameter;
-	text-align: center;
+    display: flex;
+    width: 200px;
+    flex-direction: row;
+    justify-content: space-around;
+    grid-area: parameter;
+    text-align: center;
 }
 .car-price-list-item-footer-parameter p {
-	font-size: 15px;
-	line-height: 18px;
-	text-transform: capitalize;
-	color: var(--title-color);
-	display: inline-flex;
-	align-items: center;
-	font-family: "Roboto";
-	font-weight: var(--text-font-weight);
-	font-style: var(--text-font-style);
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: capitalize;
+    color: var(--title-color);
+    display: inline-flex;
+    align-items: center;
+    font-family: "Roboto";
+    font-weight: var(--text-font-weight);
+    font-style: var(--text-font-style);
 }
 .car-price-list-item-footer h4 {
-	grid-area: subtitle;
-	font-size: var(--title-font-size);
-	line-height: var(--list-item-height);
-	text-transform: var(--transform);
-	color: var(--button-background-color);
-	font-family: "Roboto";
-	font-weight: var(--text-font-weight);
-	font-style: var(--text-font-style);
+    grid-area: subtitle;
+    font-size: var(--title-font-size);
+    line-height: var(--list-item-height);
+    text-transform: var(--transform);
+    color: var(--button-background-color);
+    font-family: "Roboto";
+    font-weight: var(--text-font-weight);
+    font-style: var(--text-font-style);
 }
 .car-price-list-item-footer button {
-	grid-area: button;
-	height: 34.93px;
-	width: 144px;
-	background: var(--button-background-color);
-	border-radius: 12px;
-	font-size: 22px;
-	line-height: var(--input-radius);
-	text-transform: var(--transform);
-	color: var(--button-color);
-	position: relative;
-	top: 15px;
-	font-family: "Roboto";
-	font-weight: var(--text-font-weight);
-	font-style: var(--text-font-style);
+    grid-area: button;
+    height: 34.93px;
+    width: 144px;
+    background: var(--button-background-color);
+    border-radius: 12px;
+    font-size: 22px;
+    line-height: var(--input-radius);
+    text-transform: var(--transform);
+    color: var(--button-color);
+    position: relative;
+    top: 15px;
+    font-family: "Roboto";
+    font-weight: var(--text-font-weight);
+    font-style: var(--text-font-style);
 }
 
 .audi-car {
-	grid-area: Audi-grey;
+    grid-area: Audi-grey;
 }
 .audi-car-red {
-	grid-area: Audi-red;
-	display: none;
+    grid-area: Audi-red;
+    display: none;
 }
 .dodge-car {
-	grid-area: Dodge;
-	display: none;
+    grid-area: Dodge;
+    display: none;
 }
 .range-rover-car {
-	grid-area: Range-Rover;
-	display: none;
+    grid-area: Range-Rover;
+    display: none;
 }
 
 .car-price-link {
-	margin-top: 55px;
-	display: inline-flex;
-	justify-content: center;
-	gap: 5px;
-	align-items: center;
-	margin-left: 30px;
+    margin-top: 55px;
+    display: inline-flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    margin-left: 30px;
 }
 .car-price-link a {
-	text-decoration: none;
-	font-family: "DM Serif Display";
-	font-style: var(--text-font-style);
-	font-weight: var(--text-font-weight);
-	font-size: 15px;
-	line-height: 21px;
-	text-transform: var(--transform);
-	color: var(--title-color);
+    text-decoration: none;
+    font-family: "DM Serif Display";
+    font-style: var(--text-font-style);
+    font-weight: var(--text-font-weight);
+    font-size: 15px;
+    line-height: 21px;
+    text-transform: var(--transform);
+    color: var(--title-color);
 }
 .car-price-link img {
-	width: 19px;
-	height: 8px;
+    width: 19px;
+    height: 8px;
 }
 
 @media screen and (min-width: 908px) {
-	.car-price-list-item {
-		margin-left: 0px;
-		margin-right: 0px;
-	}
-	.car-price-link {
-		display: none;
-	}
-	.car-price h2 {
-		font-size: var(--tablet-font-size);
-		line-height: var(--tablet-line-height);
-		height: 50px;
-	}
-	.car-price-list {
-		grid-template-rows: 1fr 1fr;
-		grid-template-columns: 0.4fr 0.4fr;
-		gap: 30px;
-		grid-template-areas:
-			"Dodge Audi-grey"
-			"Audi-red Range-Rover";
-		justify-content: center;
-		margin-top: 70px;
-	}
+    .car-price-list-item {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .car-price-link {
+        display: none;
+    }
+    .car-price h2 {
+        font-size: var(--tablet-font-size);
+        line-height: var(--tablet-line-height);
+        height: 50px;
+    }
+    .car-price-list {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 0.4fr 0.4fr;
+        gap: 30px;
+        grid-template-areas:
+            "Dodge Audi-grey"
+            "Audi-red Range-Rover";
+        justify-content: center;
+        margin-top: 70px;
+    }
 
-	.audi-car-red {
-		display: block;
-	}
-	.dodge-car {
-		display: block;
-	}
-	.range-rover-car {
-		display: block;
-	}
+    .audi-car-red {
+        display: block;
+    }
+    .dodge-car {
+        display: block;
+    }
+    .range-rover-car {
+        display: block;
+    }
 
-	.audi-car .car-price-list-item-body img {
-		height: 245px;
-	}
-	.dodge-car .car-price-list-item-body img {
-		height: 245px;
-	}
-	.audi-car-red .car-price-list-item-body img {
-		height: 245px;
-	}
-	.range-rover-car .car-price-list-item-body img {
-		width: 414px;
-		height: 245px;
-	}
-	.car-price-list-item-body img {
-		position: absolute;
-		top: 38px;
-		left: -12px;
-	}
-	.car-price-list-item-header {
-		height: 143px;
-	}
-	.car-price-list-item {
-		height: 565px;
-	}
-	.car-price-list-item-body {
-		height: 278px;
-	}
-	.car-price-list-item-footer {
-		bottom: 0;
-		height: 143px;
-	}
-	.car-price-list-item-header {
-		border-radius: 0px 0px 0px 0px;
-	}
-	.car-price-list-item-header h3 {
-		font-family: "Bodoni MT";
-		font-style: var(--text-font-style);
-		font-weight: var(--text-font-weight);
-		font-size: 34px;
-		line-height: 41px;
-		text-transform: var(--transform);
-	}
-	.car-price-list-item-footer-parameter button {
-		font-size: 25px;
-		line-height: 29px;
-	}
+    .audi-car .car-price-list-item-body img {
+        width: 401px;
+        height: 245px;
+    }
+    .dodge-car .car-price-list-item-body img {
+        width: 314px;
+        height: 254px;
+    }
+    .audi-car-red .car-price-list-item-body img {
+        width: 332px;
+        height: 213px;
+    }
+    .range-rover-car .car-price-list-item-body img {
+        width: 404px;
+        height: 221px;
+    }
+    .car-price-list-item-body img {
+        position: absolute;
+        top: 38px;
+        left: 5px;
+    }
+    .car-price-list-item-header {
+        height: 143px;
+    }
+    .car-price-list-item {
+        height: 565px;
+    }
+    .car-price-list-item-body {
+        height: 278px;
+    }
+    .car-price-list-item-footer {
+        bottom: 0;
+        height: 143px;
+    }
+    .car-price-list-item-header {
+        border-radius: 0px 0px 0px 0px;
+    }
+    .car-price-list-item-header h3 {
+        font-family: "Bodoni MT";
+        font-style: var(--text-font-style);
+        font-weight: var(--text-font-weight);
+        font-size: 34px;
+        line-height: 41px;
+        text-transform: var(--transform);
+    }
+    .car-price-list-item-footer-parameter button {
+        font-size: 25px;
+        line-height: 29px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
-	.car-price-link {
-		display: none;
-	}
-	.car-price h2 {
-		height: 50px;
-		font-size: var(--desktop-size);
-		line-height: var(--desktop-height);
-	}
-	.car-price-list {
-		grid-template: "Dodge Audi-red Audi-grey Range-Rover" 0.1fr / 0.1fr 0.1fr 0.1fr 0.1fr;
-		justify-content: center;
-		gap: 10px;
-		justify-content: center;
-	}
-	.car-price-list-item-header h3 {
-		font-family: "Bodoni MT";
-		font-style: var(--text-font-style);
-		font-weight: var(--text-font-weight);
-		font-size: 34px;
-		line-height: 41px;
-	}
-	.car-price-list-item-body img {
-		position: relative;
-		top: 38px;
-		left: 9px;
-	}
+    .car-price-link {
+        display: none;
+    }
+    .car-price h2 {
+        height: 50px;
+        font-size: var(--desktop-size);
+        line-height: var(--desktop-height);
+    }
+    .car-price-list {
+        grid-template: "Dodge Audi-red Audi-grey Range-Rover" 0.1fr / 0.1fr 0.1fr 0.1fr 0.1fr;
+        justify-content: center;
+        gap: 10px;
+        justify-content: center;
+    }
+    .car-price-list-item-header h3 {
+        font-family: "Bodoni MT";
+        font-style: var(--text-font-style);
+        font-weight: var(--text-font-weight);
+        font-size: 34px;
+        line-height: 41px;
+    }
+    .car-price-list-item-body img {
+        position: relative;
+        top: 38px;
+        left: 9px;
+    }
 
-	.audi-car .car-price-list-item-body img {
-		width: 309px;
-		height: 245px;
-	}
-	.dodge-car .car-price-list-item-body img {
-		width: 289px;
-		height: 245px;
-	}
-	.audi-car-red .car-price-list-item-body img {
-		width: 309px;
-		height: 245px;
-	}
-	.range-rover-car .car-price-list-item-body img {
-		width: 309px;
-		height: 245px;
-	}
+    .audi-car .car-price-list-item-body img {
+        width: 309px;
+        height: 245px;
+    }
+    .dodge-car .car-price-list-item-body img {
+        width: 289px;
+        height: 245px;
+    }
+    .audi-car-red .car-price-list-item-body img {
+        width: 309px;
+        height: 245px;
+    }
+    .range-rover-car .car-price-list-item-body img {
+        width: 309px;
+        height: 245px;
+    }
 }
