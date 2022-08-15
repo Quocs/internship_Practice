@@ -66,7 +66,7 @@ h3 {
 .banner-title h2 {
 	font-size: var(--text-font-size);
 	line-height: var(--subtitle-line-height);
-	text-transform: capitalize;
+	text-transform: var(--transform);
 	color: var(--title-color);
 }
 .banner-title p {
