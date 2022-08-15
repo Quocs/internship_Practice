@@ -34,11 +34,8 @@
 }
 .service-right h2 {
     height: 21px;
-    font-family: "DM Serif Display";
-    font-style: var(--text-font-style);
-    font-weight: var(--text-font-weight);
-    font-size: 15px;
-    line-height: 21px;
+    font-size: var(--footer-size);
+    line-height: var(--footer-height);
     color: var(--button-background-color);
 }
 .service-right-content h3 {
@@ -95,7 +92,7 @@
         line-height: var(--title-line-height);
     }
     .service-right-content p {
-        font-size: 15px;
+        font-size:var(--footer-size);
         line-height: 17.58px;
     }
 }
