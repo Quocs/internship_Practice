@@ -15,9 +15,9 @@
 .book-car h2 {
 	font-size: var(--subtitle-line-height);
 	line-height: 19px;
-	text-transform: capitalize;
+	text-transform: var(--transform);
 	color: #081630;
-	height: 21px;
+	height: var(--footer-height);
 	padding-left: 12px;
 }
 .book-car p {
