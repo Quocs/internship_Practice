@@ -128,18 +128,18 @@
 	font-style: var(--text-font-style);
 }
 
-.Audi {
+.audi {
 	grid-area: Audi-grey;
 }
-.Adi {
+.audi-red {
 	grid-area: Audi-red;
 	display: none;
 }
-.Dodge {
+.dodge {
 	grid-area: Dodge;
 	display: none;
 }
-.Range-Rover {
+.range-rover {
 	grid-area: Range-Rover;
 	display: none;
 }
