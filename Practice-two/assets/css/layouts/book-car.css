@@ -13,10 +13,7 @@
 	align-content: flex-start;
 }
 .book-car h2 {
-	font-family: "DM Serif Display";
-	font-style: var(--text-font-style);
 	font-size: var(--subtitle-line-height);
-	font-weight: var(--text-font-weight);
 	line-height: 19px;
 	text-transform: capitalize;
 	color: #081630;
