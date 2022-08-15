@@ -6,7 +6,6 @@
 	margin-top: 99px;
 }
 .car-price h2 {
-	font-family: "DM Serif Display";
 	font-size: var(--title-font-size);
 	line-height: var(--title-line-height);
 	text-transform: capitalize;
