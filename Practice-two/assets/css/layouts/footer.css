@@ -19,7 +19,7 @@ footer {
 .footer-top h2 {
 	font-size:var(--footer-size);
 	line-height: var(--footer-height);
-	text-transform: capitalize;
+	text-transform: var(--transform);
 	color: var(--button-color);
 	height: 30px;
 }
