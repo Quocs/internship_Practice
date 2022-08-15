@@ -1,0 +1,8 @@
+@import url(../bases/refactor.css);
+@import url(../bases/fonts.css);
+
+h2 {
+	font-family: "DM Serif Display";
+	font-style: var(--text-font-style);
+	font-weight: var(--text-font-weight);
+}
