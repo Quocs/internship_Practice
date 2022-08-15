@@ -31,7 +31,7 @@ nav {
 	height: 15.83px;
 }
 .header-top-title h1,
-h2 {
+h3 {
 	font-family: "Roboto";
 	font-style: var(--text-font-style);
 	font-weight: var(--text-font-weight);
@@ -64,9 +64,6 @@ h2 {
 	justify-content: space-between;
 }
 .banner-title h2 {
-	font-family: "DM Serif Display";
-	font-style: var(--text-font-style);
-	font-weight: var(--text-font-weight);
 	font-size: var(--text-font-size);
 	line-height: var(--subtitle-line-height);
 	text-transform: capitalize;
@@ -98,7 +95,7 @@ h2 {
 		font-size: 24px;
 		line-height: 28px;
 	}
-	.header-top-signed h2 {
+	.header-top-signed h3 {
 		font-size: 24px;
 		line-height: 28px;
 	}
@@ -146,7 +143,7 @@ h2 {
 	}
 }
 @media screen and (min-width: 1440px) {
-	.header-top-title h2 {
+	.header-top-title h3 {
 		font-size: 24px;
 		line-height: 28px;
 		width: 146px;
