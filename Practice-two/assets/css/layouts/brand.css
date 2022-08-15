@@ -12,7 +12,7 @@
 	height: 32px;
 	font-size: var(--title-font-size);
 	line-height: var(--title-line-height);
-	text-transform: capitalize;
+	text-transform: var(--transform);
 	color: var(--title-color);
 }
 .brand-list {
@@ -43,7 +43,7 @@
 	font-weight: var(--text-font-weight);
 	font-size: var(--text-font-size);
 	line-height: var(--text-line-height);
-	text-transform: capitalize;
+	text-transform: var(--transform);
 	color: var(--title-color);
 }
 .audi {
@@ -78,7 +78,7 @@
 	font-size: 15px;
 	line-height: 18px;
 	text-decoration: none;
-	text-transform: capitalize;
+	text-transform: var(--transform);
 	color: var(--title-color);
 	height: 17px;
 }
