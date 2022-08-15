@@ -21,7 +21,7 @@
 	color: var(--button-color);
 	font-size: var(--title-font-size);
 	line-height: var(--title-line-height);
-	text-transform: capitalize;
+	text-transform: var(--transform);
 	width: 80%;
 }
 
@@ -32,7 +32,7 @@
 	font-size: var(--text-font-size);
 	line-height: var(--text-line-height);
 	color: var(--button-color);
-	text-transform: capitalize;
+	text-transform: var(--transform);
 	margin-bottom: 6px;
 	height: 12px;
 }
