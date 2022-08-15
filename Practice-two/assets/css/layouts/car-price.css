@@ -128,18 +128,18 @@
 	font-style: var(--text-font-style);
 }
 
-.audi {
+.audi-car {
 	grid-area: Audi-grey;
 }
-.audi-red {
+.audi-car-red {
 	grid-area: Audi-red;
 	display: none;
 }
-.dodge {
+.dodge-car {
 	grid-area: Dodge;
 	display: none;
 }
-.range-rover {
+.range-rover-car {
 	grid-area: Range-Rover;
 	display: none;
 }
@@ -191,26 +191,29 @@
 		margin-top: 70px;
 	}
 
-	.Adi {
+	.audi-car-red {
 		display: block;
 	}
-	.Dodge {
+	.dodge-car {
 		display: block;
 	}
-	.Range-Rover {
+	.range-rover-car {
 		display: block;
 	}
 
-	.Audi .car-price-list-item-body img {
+	.audi-car .car-price-list-item-body img {
 		height: 245px;
 	}
-	.Dodge .car-price-list-item-body img {
+	.dodge-car .car-price-list-item-body img {
+		
 		height: 245px;
 	}
-	.Adi .car-price-list-item-body img {
+	.audi-car-red .car-price-list-item-body img {
+
 		height: 245px;
 	}
-	.Range-Rover .car-price-list-item-body img {
+	.range-rover-car .car-price-list-item-body img {
+		width: 414px;
 		height: 245px;
 	}
 	.car-price-list-item-body img {
@@ -276,19 +279,19 @@
 		left: 9px;
 	}
 
-	.Audi .car-price-list-item-body img {
+	.audi-car .car-price-list-item-body img {
 		width: 309px;
 		height: 245px;
 	}
-	.Dodge .car-price-list-item-body img {
+	.dodge-car .car-price-list-item-body img {
 		width: 289px;
 		height: 245px;
 	}
-	.Adi .car-price-list-item-body img {
+	.audi-car-red .car-price-list-item-body img {
 		width: 309px;
 		height: 245px;
 	}
-	.Range-Rover .car-price-list-item-body img {
+	.range-rover-car .car-price-list-item-body img {
 		width: 309px;
 		height: 245px;
 	}
