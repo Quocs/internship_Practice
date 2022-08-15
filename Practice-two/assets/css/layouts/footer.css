@@ -17,11 +17,8 @@ footer {
 	justify-content: space-evenly;
 }
 .footer-top h2 {
-	font-family: "DM Serif Display";
-	font-style: var(--text-font-style);
-	font-weight: var(--text-font-weight);
-	font-size: 15px;
-	line-height: 21px;
+	font-size:var(--footer-size);
+	line-height: var(--footer-height);
 	text-transform: capitalize;
 	color: var(--button-color);
 	height: 30px;
