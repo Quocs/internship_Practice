@@ -39,6 +39,9 @@ h2 {
 	line-height: var(--text-line-height);
 	color: var(--title-color);
 }
+.header-top-title a {
+	text-decoration: none;
+}
 .header-top-menu img {
 	height: 15px;
 }
