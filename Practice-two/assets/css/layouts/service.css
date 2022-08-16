@@ -36,13 +36,13 @@
     height: 21px;
     font-size: var(--footer-size);
     line-height: var(--footer-height);
-    color: var(--button-background-color);
+    color: var(--button-background);
 }
 .service-right-content h3 {
     font-family: "DM Serif Display";
-    font-style: var(--text-font-style);
-    font-weight: var(--text-font-weight);
-    font-size: var(--text-font-size);
+    font-style: var(--text-style);
+    font-weight: var(--text-weight);
+    font-size: var(--text-size);
     line-height: 13.71px;
     color: var(--title-color);
 }
@@ -50,8 +50,8 @@
     font-size: 8px;
     line-height: 9.38px;
     font-family: "Roboto";
-    font-style: var(--text-font-style);
-    font-weight: var(--text-font-weight);
+    font-style: var(--text-style);
+    font-weight: var(--text-weight);
 }
 .service-center {
     display: flex;
@@ -80,16 +80,16 @@
         height: 51px;
     }
     .service-right h2 {
-        height: var(--tablet-line-height);
-        font-size: var(--tablet-font-size);
-        line-height: var(---tablet-line-height);
+        height: var(--tablet-height);
+        font-size: var(--tablet-size);
+        line-height: var(---tablet-height);
     }
     .service-right-content {
         justify-content: space-around;
     }
     .service-right-content h3 {
-        font-size: var(--title-font-size);
-        line-height: var(--title-line-height);
+        font-size: var(--title-size);
+        line-height: var(--title-height);
     }
     .service-right-content p {
         font-size: var(--footer-size);
