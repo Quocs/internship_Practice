@@ -19,17 +19,17 @@
 .subscribe-header h2 {
     height: 77px;
     color: var(--button-color);
-    font-size: var(--title-font-size);
-    line-height: var(--title-line-height);
+    font-size: var(--title-size);
+    line-height: var(--title-height);
     text-transform: var(--transform);
 }
 
 .subscribe-form h3 {
     font-family: "Roboto";
-    font-style: var(--text-font-style);
-    font-weight: var(--text-font-weight);
-    font-size: var(--text-font-size);
-    line-height: var(--text-line-height);
+    font-style: var(--text-style);
+    font-weight: var(--text-weight);
+    font-size: var(--text-size);
+    line-height: var(--text-height);
     color: var(--button-color);
     text-transform: var(--transform);
     margin-bottom: 6px;
@@ -66,12 +66,12 @@
     }
     .subscribe-header h2 {
         height: 98px;
-        font-size: var(--tablet-font-size);
-        line-height: var(--tablet-line-height);
+        font-size: var(--tablet-size);
+        line-height: var(--tablet-height);
     }
     .subscribe-form h3 {
-        font-size: var(--title-font-size);
-        line-height: var(--item-brand-height);
+        font-size: var(--title-size);
+        line-height: var(--item-height);
         margin-bottom: 14px;
     }
     .subscribe-form-body {
@@ -80,14 +80,14 @@
         justify-content: space-between;
     }
     .subscribe-form-body input[type="email"] {
-        font-size: var(--title-font-size);
-        line-height: var(--item-brand-height);
+        font-size: var(--title-size);
+        line-height: var(--item-height);
     }
     .subscribe-form-body button {
         width: 105px;
         height: 42px;
-        font-size: var(--title-font-size);
-        line-height: var(--item-brand-height);
+        font-size: var(--title-size);
+        line-height: var(--item-height);
     }
 }
 @media screen and (min-width: 1440px) {
@@ -112,7 +112,7 @@
     }
     .subscribe-form input[type="email"] {
         font-size: 30px;
-        line-height: var(--tablet-font-size);
+        line-height: var(--tablet-size);
         width: 958px;
     }
     .subscribe-form-body button {
