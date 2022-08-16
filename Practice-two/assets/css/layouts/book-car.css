@@ -24,10 +24,10 @@
     /*width: 75%;*/
     width: 289px;
     height: 50px;
-    font-style: var(--text-font-style);
-    font-weight: var(--text-font-weight);
-    font-size: var(--text-font-size);
-    line-height: var(--text-line-height);
+    font-style: var(--text-style);
+    font-weight: var(--text-weight);
+    font-size: var(--text-size);
+    line-height: var(--text-height);
     font-family: "Roboto";
     color: rgba(0, 0, 0, 0.6);
     padding-left: 12px;
@@ -64,9 +64,8 @@
     height: var(--input-height);
     font-size: 8px;
     line-height: 9px;
-    font-family: var(--text-font-family);
-    font-style: var(--text-font-style);
-    font-weight: var(--text-font-weight);
+    font-style: var(--text-style);
+    font-weight: var(--text-weight);
     font-family: "Roboto";
     margin-left: 20px;
 }
@@ -86,7 +85,7 @@
     .book-car p {
         width: 692px;
         height: 84px;
-        font-size: var(--title-font-size);
+        font-size: var(--title-size);
         line-height: 23px;
     }
     .book-car-input {
