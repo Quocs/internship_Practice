@@ -34,10 +34,10 @@ nav {
 .header-top-title h1,
 h3 {
     font-family: "Roboto";
-    font-style: var(--text-font-style);
-    font-weight: var(--text-font-weight);
-    font-size: var(--text-font-size);
-    line-height: var(--text-line-height);
+    font-style: var(--text-style);
+    font-weight: var(--text-weight);
+    font-size: var(--text-size);
+    line-height: var(--text-height);
     color: var(--title-color);
 }
 .header-top-title a {
@@ -65,17 +65,17 @@ h3 {
     justify-content: space-between;
 }
 .banner-title h2 {
-    font-size: var(--text-font-size);
-    line-height: var(--subtitle-line-height);
+    font-size: var(--text-size);
+    line-height: var(--subtitle-height);
     text-transform: var(--transform);
     color: var(--title-color);
 }
 .banner-title p {
     font-family: "Roboto";
-    font-style: var(--text-font-style);
-    font-weight: var(--text-font-weight);
-    font-size: var(--text-font-size);
-    line-height: var(--text-line-height);
+    font-style: var(--text-style);
+    font-weight: var(--text-weight);
+    font-size: var(--text-size);
+    line-height: var(--text-height);
     color: var(--title-color);
 }
 .banner-title button {
@@ -83,8 +83,8 @@ h3 {
     height: 12px;
     font-size: 6px;
     font-family: "Roboto";
-    font-style: var(--text-font-style);
-    font-weight: var(--text-font-weight);
+    font-style: var(--text-style);
+    font-weight: var(--text-weight);
     line-height: 7px;
 }
 @media screen and (min-width: 908px) {
@@ -182,8 +182,8 @@ h3 {
     .header-top-menu ul li a {
         text-decoration: none;
         color: var(--title-color);
-        font-weight: var(--title-font-weight);
-        font-style: var(--text-font-style);
+        font-weight: var(--title-weight);
+        font-style: var(--text-style);
         line-height: 14px;
         font-family: "Roboto";
     }
