@@ -13,8 +13,8 @@
 }
 .subscribe-body h2 {
     height: 36px;
-    font-size: var(--title-font-size);
-    line-height: var(--title-line-height);
+    font-size: var(--title-size);
+    line-height: var(--title-height);
     text-transform: var(--transform);
     color: var(--title-color);
     text-align: center;
@@ -81,7 +81,7 @@
     }
     .subscribe-body-form input[type="email"] {
         font-size: var(--title-size);
-        line-height: var(--list-item-height);
+        line-height: var(--list-height);
     }
     .subscribe-body-form button {
         height: 57px;

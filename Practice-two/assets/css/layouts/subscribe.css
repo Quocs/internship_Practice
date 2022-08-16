@@ -81,13 +81,11 @@
     }
     .subscribe-form-body input[type="email"] {
         font-size: var(--title-size);
-        line-height: var(--item-height);
     }
     .subscribe-form-body button {
         width: 105px;
         height: 42px;
         font-size: var(--title-size);
-        line-height: var(--item-height);
     }
 }
 @media screen and (min-width: 1440px) {

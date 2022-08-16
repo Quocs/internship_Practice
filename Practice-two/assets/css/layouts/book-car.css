@@ -13,7 +13,7 @@
     align-content: flex-start;
 }
 .book-car h2 {
-    font-size: var(--subtitle-line-height);
+    font-size: var(--subtitle-height);
     line-height: 19px;
     text-transform: var(--transform);
     color: #081630;
@@ -64,6 +64,7 @@
     height: var(--input-height);
     font-size: 8px;
     line-height: 9px;
+    
     font-style: var(--text-style);
     font-weight: var(--text-weight);
     font-family: "Roboto";

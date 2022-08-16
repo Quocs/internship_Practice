@@ -10,8 +10,8 @@
 .brand h2 {
     text-align: center;
     height: 32px;
-    font-size: var(--title-font-size);
-    line-height: var(--title-line-height);
+    font-size: var(--title-size);
+    line-height: var(--title-height);
     text-transform: var(--transform);
     color: var(--title-color);
 }
@@ -39,10 +39,10 @@
 }
 .brand-list-item h3 {
     font-family: "Roboto";
-    font-style: var(--text-font-style);
-    font-weight: var(--text-font-weight);
-    font-size: var(--text-font-size);
-    line-height: var(--text-line-height);
+    font-style: var(--text-style);
+    font-weight: var(--text-weight);
+    font-size: var(--text-size);
+    line-height: var(--text-height);
     text-transform: var(--transform);
     color: var(--title-color);
 }
@@ -73,8 +73,8 @@
 .brand-store a {
     display: block;
     font-family: "Roboto";
-    font-style: var(--text-font-style);
-    font-weight: var(--text-font-weight);
+    font-style: var(--text-style);
+    font-weight: var(--text-weight);
     font-size: 15px;
     line-height: 18px;
     text-decoration: none;
@@ -90,8 +90,8 @@
 @media screen and (min-width: 908px) {
     .brand h2 {
         height: 50px;
-        font-size: var(--tablet-font-size);
-        line-height: var(--tablet-line-height);
+        font-size: var(--tablet-size);
+        line-height: var(--tablet-height);
     }
     .brand-list {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -109,8 +109,8 @@
         position: initial;
     }
     .brand-list-item h3 {
-        font-size: var(--title-font-size);
-        line-height: var(--item-brand-height);
+        font-size: var(--title-size);
+        line-height: var(--item-height);
     }
     .brand-list-item img {
         width: 37px;
