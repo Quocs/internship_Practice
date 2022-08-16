@@ -6,8 +6,8 @@
     margin-top: 99px;
 }
 .car-price h2 {
-    font-size: var(--title-size);
-    line-height: var(--title-height);
+    font-size: var(--title-font-size);
+    line-height: var(--title-line-height);
     text-transform: var(--transform);
     color: var(--title-color);
     height: 30px;
@@ -23,12 +23,12 @@
     margin-right: 71px;
     background-color: #c4c4c4;
     box-shadow: 5px 10px 5px gray;
-    border-radius: var(--item-radius);
+    border-radius: var(--item-header-radius);
 }
 .car-price-list-item-header {
-    height: var(--item-height);
-    background: var(--item-background);
-    border-radius: var(--item-radius);
+    height: var(--item-header-height);
+    background: var(--item-header-background);
+    border-radius: var(--item-header-radius);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,12 +36,12 @@
 .car-price-list-item-header h3 {
     height: 33px;
     font-family: "DM serif Display";
-    font-style: var(--text-style);
-    font-weight: var(--text-weight);
-    font-size: var(--title-size);
-    line-height: var(--title-height);
+    font-style: var(--text-font-style);
+    font-weight: var(--text-font-weight);
+    font-size: var(--title-font-size);
+    line-height: var(--title-line-height);
     text-transform: var(--transform);
-    color: var(--button-background);
+    color: var(--button-background-color);
 }
 .car-price-list-item-body {
     height: 229.18px;
@@ -57,7 +57,7 @@
 .car-price-list-item-footer {
     height: 124.93px;
     background: var(--button-color);
-    border-radius: var(--item-radius);
+    border-radius: var(--item-header-radius);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -75,13 +75,13 @@
 .car-price-list-item-footer h3 {
     grid-area: title;
     height: 20px;
-    font-size: var(--title-size);
-    line-height: var(--list-height);
+    font-size: var(--title-font-size);
+    line-height: var(--list-item-height);
     text-transform: var(--transform);
     color: var(--title-color);
     font-family: "Roboto";
-    font-weight: var(--text-weight);
-    font-style: var(--text-style);
+    font-weight: var(--text-font-weight);
+    font-style: var(--text-font-style);
 }
 .car-price-list-item-footer-parameter {
     display: flex;
@@ -99,24 +99,24 @@
     display: inline-flex;
     align-items: center;
     font-family: "Roboto";
-    font-weight: var(--text-weight);
-    font-style: var(--text-style);
+    font-weight: var(--text-font-weight);
+    font-style: var(--text-font-style);
 }
 .car-price-list-item-footer h4 {
     grid-area: subtitle;
-    font-size: var(--title-size);
-    line-height: var(--list-height);
+    font-size: var(--title-font-size);
+    line-height: var(--list-item-height);
     text-transform: var(--transform);
-    color: var(--button-background);
+    color: var(--button-background-color);
     font-family: "Roboto";
-    font-weight: var(--text-weight);
-    font-style: var(--text-style);
+    font-weight: var(--text-font-weight);
+    font-style: var(--text-font-style);
 }
 .car-price-list-item-footer button {
     grid-area: button;
     height: 34.93px;
     width: 144px;
-    background: var(--button-background);
+    background: var(--button-background-color);
     border-radius: 12px;
     font-size: 22px;
     line-height: var(--input-radius);
@@ -125,8 +125,8 @@
     position: relative;
     top: 15px;
     font-family: "Roboto";
-    font-weight: var(--text-weight);
-    font-style: var(--text-style);
+    font-weight: var(--text-font-weight);
+    font-style: var(--text-font-style);
 }
 
 .audi-car {
@@ -156,8 +156,8 @@
 .car-price-link a {
     text-decoration: none;
     font-family: "DM Serif Display";
-    font-style: var(--text-style);
-    font-weight: var(--text-weight);
+    font-style: var(--text-font-style);
+    font-weight: var(--text-font-weight);
     font-size: 15px;
     line-height: 21px;
     text-transform: var(--transform);
@@ -177,8 +177,8 @@
         display: none;
     }
     .car-price h2 {
-        font-size: var(--tablet-size);
-        line-height: var(--tablet-height);
+        font-size: var(--tablet-font-size);
+        line-height: var(--tablet-line-height);
         height: 50px;
     }
     .car-price-list {
@@ -241,8 +241,8 @@
     }
     .car-price-list-item-header h3 {
         font-family: "Bodoni MT";
-        font-style: var(--text-style);
-        font-weight: var(--text-weight);
+        font-style: var(--text-font-style);
+        font-weight: var(--text-font-weight);
         font-size: 34px;
         line-height: 41px;
         text-transform: var(--transform);
@@ -270,8 +270,8 @@
     }
     .car-price-list-item-header h3 {
         font-family: "Bodoni MT";
-        font-style: var(--text-style);
-        font-weight: var(--text-weight);
+        font-style: var(--text-font-style);
+        font-weight: var(--text-font-weight);
         font-size: 34px;
         line-height: 41px;
     }
