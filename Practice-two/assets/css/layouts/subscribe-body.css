@@ -53,8 +53,8 @@
     }
     .subscribe-body h2 {
         height: 50px;
-        font-size: var(--tablet-font-size);
-        line-height: var(--tablet-line-height);
+        font-size: var(--tablet-size);
+        line-height: var(--tablet-height);
     }
     .subscribe-body-form {
         width: 381.12px;
@@ -80,13 +80,13 @@
         height: 61px;
     }
     .subscribe-body-form input[type="email"] {
-        font-size: var(--title-font-size);
+        font-size: var(--title-size);
         line-height: var(--list-item-height);
     }
     .subscribe-body-form button {
         height: 57px;
         font-size: 30px;
-        line-height: var(--tablet-font-size);
+        line-height: var(--tablet-size);
         width: 127px;
         top: 0px;
         right: 80px;
