@@ -3,6 +3,6 @@
 
 h2 {
 	font-family: "DM Serif Display";
-	font-style: var(--text-font-style);
-	font-weight: var(--text-font-weight);
+	font-style: var(--text-style);
+	font-weight: var(--text-weight);
 }
