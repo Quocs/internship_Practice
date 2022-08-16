@@ -1,7 +1,7 @@
 @import url("../bases/fonts.css");
 @import url("../bases/refactor.css");
 
-.header-top {
+.header-menu {
     display: flex;
     height: 31px;
     justify-content: space-between;
@@ -9,10 +9,10 @@
     padding-left: 15px;
     padding-right: 15px;
 }
-.header-top-title {
+.header-menu-title {
     flex-grow: 1;
 }
-.header-top-menu ul {
+.header-menu-link ul {
     display: none;
 }
 nav {
@@ -23,15 +23,15 @@ nav {
     display: flex;
     gap: 30px;
 }
-.header-top-signed {
+.header-menu-signed {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
     align-items: center;
 }
-.header-top-signed img {
+.header-menu-signed img {
     height: 15.83px;
 }
-.header-top-title h1,
+.header-menu-title h1,
 h3 {
     font-family: "Roboto";
     font-style: var(--text-style);
@@ -40,10 +40,10 @@ h3 {
     line-height: var(--text-height);
     color: var(--title-color);
 }
-.header-top-title a {
+.header-menu-title a {
     text-decoration: none;
 }
-.header-top-menu img {
+.header-menu-link img {
     height: 15px;
 }
 .banner {
@@ -88,24 +88,24 @@ h3 {
     line-height: 7px;
 }
 @media screen and (min-width: 908px) {
-    .header-top-title {
+    .header-menu-title {
         font-size: 24px;
         line-height: 28px;
     }
-    .header-top-title h1 {
+    .header-menu-title h1 {
         font-size: 24px;
         line-height: 28px;
         width: 300px;
     }
-    .header-top-signed h3 {
+    .header-menu-signed h3 {
         font-size: 24px;
         line-height: 28px;
     }
-    .header-top-signed img {
+    .header-menu-signed img {
         height: 35.79px;
         align-items: center;
     }
-    .header-top {
+    .header-menu {
         height: 60.26px;
     }
     .banner img {
@@ -115,7 +115,7 @@ h3 {
         justify-content: space-between;
         align-items: center;
     }
-    .header-top-menu img {
+    .header-menu-link img {
         height: 25px;
     }
     .banner-title {
@@ -142,44 +142,44 @@ h3 {
     }
 }
 @media screen and (min-width: 1440px) {
-    .header-top-title h3 {
+    .header-menu-title h3 {
         font-size: 24px;
         line-height: 28px;
         width: 146px;
         height: 43px;
     }
-    .header-top-menu ul li {
+    .header-menu-link ul li {
         font-size: 24px;
         line-height: 28px;
     }
-    .header-top-signed h2 {
+    .header-menu-signed h2 {
         font-size: 24px;
         line-height: 28px;
     }
-    .header-top-signed img {
+    .header-menu-signed img {
         height: 33.33px;
     }
-    .header-top {
+    .header-menu {
         height: 71.92px;
     }
-    .header-top-signed {
+    .header-menu-signed {
         order: 1;
     }
-    .header-top-menu ul {
+    .header-menu-link ul {
         display: flex;
         order: 2;
     }
-    .header-top-menu img {
+    .header-menu-link img {
         display: none;
     }
-    .header-top-menu ul li {
+    .header-menu-link ul li {
         list-style: none;
         display: inline-block;
         padding: 20px;
         justify-content: space-between;
         align-items: center;
     }
-    .header-top-menu ul li a {
+    .header-menu-link ul li a {
         text-decoration: none;
         color: var(--title-color);
         font-weight: var(--title-weight);
