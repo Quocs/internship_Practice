@@ -25,10 +25,10 @@ footer {
 }
 .footer-top ul li a {
     font-family: "Roboto";
-    font-style: var(--text-font-style);
-    font-weight: var(--text-font-weight);
-    font-size: var(--text-font-size);
-    line-height: var(--text-line-height);
+    font-style: var(--text-style);
+    font-weight: var(--text-weight);
+    font-size: var(--text-size);
+    line-height: var(--text-height);
     text-decoration: none;
     color: var(--button-color);
 }
@@ -61,20 +61,14 @@ footer {
     /* flex: 80%; */
     height: 20px;
     font-family: "Roboto";
-    font-style: var(--text-font-style);
-    font-weight: var(--text-font-weight);
+    font-style: var(--text-style);
+    font-weight: var(--text-weight);
     font-size: 15px;
     line-height: 18px;
     color: var(--button-color);
     text-transform: uppercase;
 }
-.footer-body-group-img {
-    /* flex: 20%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between; 
-	margin:10px; */
-}
+
 .footer-body-group-img a {
     margin: 10px;
 }
