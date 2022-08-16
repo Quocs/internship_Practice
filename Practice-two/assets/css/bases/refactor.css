@@ -1,0 +1,34 @@
+:root {
+    --text-size: 10px;
+    --text-height: 12px;
+    --text-style: "normal";
+    --text-weight: 400;
+    --title-size: 20px;
+    --title-height: 27px;
+    --button-background: #21408e;
+    --button-radius: 10px;
+    --button-color: #fff;
+    --title-color: #000;
+    --subtitle-height: 14px;
+    --input-width: 69px;
+    --input-height: 16px;
+    --input-background: #fff9f9;
+    --input-radius: 26px;
+    --input-border: 1px solid black;
+    --item-height: 145.89px;
+    --item-background: #faf5f8;
+    --item-radius: 21px 21px 0px 0px;
+    --list-item-height: 23px;
+    --tablet-size: 35px;
+    --tablet-height: 48px;
+    --desktop-size: 45px;
+    --desktop-height: 62px;
+    --footer-tablet-size: 25px;
+    --footer-tablet-height: 29px;
+    --footer-desktop-height: 38px;
+    --footer-size: 15px;
+    --footer-height: 21px;
+    --transform: capitalize;
+    --tablet-breakpoint:908px;
+    --desktop-breakpoint:1440px;
+}
