@@ -1,27 +1,26 @@
 :root {
-    --text-font-size: 10px;
-    --text-line-height: 12px;
-    --text-font-style: "normal";
-    --text-font-weight: 400;
-    --title-font-size: 20px;
-    --title-line-height: 27px;
-    --button-background-color: #21408e;
-    --button-border-radius: 10px;
+    --text-size: 10px;
+    --text-height: 12px;
+    --text-style: "normal";
+    --text-weight: 400;
+    --title-size: 20px;
+    --title-height: 27px;
+    --button-background: #21408e;
+    --button-radius: 10px;
     --button-color: #fff;
     --title-color: #000;
-    --subtitle-line-height: 14px;
+    --subtitle-height: 14px;
     --input-width: 69px;
     --input-height: 16px;
     --input-background: #fff9f9;
     --input-radius: 26px;
     --input-border: 1px solid black;
-    --item-header-height: 145.89px;
-    --item-header-background: #faf5f8;
-    --item-header-radius: 21px 21px 0px 0px;
+    --item-height: 145.89px;
+    --item-background: #faf5f8;
+    --item-radius: 21px 21px 0px 0px;
     --list-item-height: 23px;
     --tablet-font-size: 35px;
     --tablet-line-height: 48px;
-    --item-brand-height: 23px;
     --desktop-size: 45px;
     --desktop-height: 62px;
     --footer-tablet-size: 25px;
@@ -30,4 +29,6 @@
     --footer-size: 15px;
     --footer-height: 21px;
     --transform: capitalize;
+    --tablet-breakpoint:908px;
+    --desktop-breakpoint:1440px;
 }
