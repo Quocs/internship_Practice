@@ -10,6 +10,7 @@
 
 - HTML5 / CSS3
 - RESPONSIVE
+- PARCEl
 
 ## Timeline
 
