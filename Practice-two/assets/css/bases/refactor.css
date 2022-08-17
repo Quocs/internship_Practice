@@ -29,6 +29,6 @@
     --footer-size: 15px;
     --footer-height: 21px;
     --transform: capitalize;
-    --tablet-breakpoint:908px;
-    --desktop-breakpoint:1440px;
+    --tablet-breakpoint: 908px;
+    --desktop-breakpoint: 1440px;
 }
