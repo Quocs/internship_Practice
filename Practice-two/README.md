@@ -45,8 +45,8 @@
 ## How to run the project
 
 **Step one:** Install parcel
-- open terminal
-- enter npm install --save-dev parcel
+- Open terminal
+- Enter npm install --save-dev parcel
 
 **Step two:** Open Website
-- enter npx parcel index.html
+- Enter npx parcel index.html
