@@ -1,10 +1,10 @@
-
-button,input[type=submit]{
+button,
+input[type="submit"] {
     height: 21px;
     width: 80px;
     background-color: var(--button-background);
     border-radius: var(--button-radius);
-    color:var(--button-color);
+    color: var(--button-color);
     border: 1px solid black;
     font-family: "Roboto";
     font-style: var(--text-style);

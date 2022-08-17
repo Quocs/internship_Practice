@@ -2,7 +2,7 @@
 @import url(../bases/fonts.css);
 
 h2 {
-	font-family: "DM Serif Display";
-	font-style: var(--text-style);
-	font-weight: var(--text-weight);
+    font-family: "DM Serif Display";
+    font-style: var(--text-style);
+    font-weight: var(--text-weight);
 }
