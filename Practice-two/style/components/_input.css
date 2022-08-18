@@ -1,0 +1,7 @@
+.subscribe-form-body,.subscribe-body-form{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #e5e5e5;
+	border-radius: 10px;
+}

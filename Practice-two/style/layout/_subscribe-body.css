@@ -1,5 +1,6 @@
 @import url("../base/_fonts.css");
 @import url("../abstracts/_variables.css");
+@import url(../components/_input.css);
 
 .subscribe-body {
 	height: 160px;
@@ -20,14 +21,14 @@
 	text-align: center;
 }
 .subscribe-body-form {
-	display: flex;
+	/* display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-between; */
 	margin-left: 20px;
 	margin-right: 20px;
-	background: #e5e5e5;
+	 /* background: #e5e5e5; */
 	height: 31px;
-	border-radius: 10px;
+	/* border-radius: 10px;  */
 	width: 344px;
 }
 .subscribe-body-form input[type="email"] {
@@ -90,5 +91,6 @@
 		width: 127px;
 		top: 0px;
 		right: 80px;
+		border-radius: 16px;
 	}
 }
