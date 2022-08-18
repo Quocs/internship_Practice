@@ -1,5 +1,5 @@
-@import url(../bases/refactor.css);
-@import url(../bases/fonts.css);
+@import url(../bases/_variables.css);
+@import url(../bases/_fonts.css);
 
 h2 {
     font-family: "DM Serif Display";

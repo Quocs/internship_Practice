@@ -1,5 +1,5 @@
-@import url("../bases/fonts.css");
-@import url("../bases/refactor.css");
+@import url("../bases/_fonts.css");
+@import url("../bases/_variables.css");
 
 .subscribe-header {
     height: 300px;
