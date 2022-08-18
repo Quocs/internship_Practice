@@ -1,5 +1,5 @@
-@import url("../bases/_fonts.css");
-@import url("../bases/_variables.css");
+@import url("../base/_fonts.css");
+@import url("../abstracts/_variables.css");
 
 .header-menu {
 	display: flex;
