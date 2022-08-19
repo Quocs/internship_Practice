@@ -15,7 +15,7 @@
 
 -   11 days (2022/04/08 – 2022/19/08)
 
-## Teamsize
+## Team-size
 
 -   1 dev
 
