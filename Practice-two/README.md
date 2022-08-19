@@ -30,14 +30,14 @@
 -   Learn how to make a responsive website
 -   Learn how to make a website that can cross-browser
 
-## REQUIREMENTS
+## Requirements
 
 -   Use the right HTMl tags
 -   Apply Flexbox and Grid
 -   Getting the code to work cross browsers latest version ( Chrome, Firefox, MS edge, Opera, Safari)(\*)
 -   Use Parcel
 
-## ESTIMATION DETAILS
+## Estimation details
 
 -   [Here](https://docs.google.com/document/d/1BElGkykplHMD45yw3yg_DseYeGyCU4gpz1cEM43TIhk/edit)
 
