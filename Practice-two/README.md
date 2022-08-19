@@ -2,7 +2,7 @@
 
 ## Overview
 
--   This document provides the requirement for HTML CSS practice twoo
+-   This document provides the requirement for HTML CSS practice two
 -   Design: [Figma](<https://www.figma.com/file/iIdoO9yA3JZGqSDqJwBGAy/CAR-RENTAL-WEBSITE-(RESOONSIVE-DESIGN)-(Community)>)
 
 ## Technical
