@@ -1,5 +1,5 @@
-@import url("../bases/fonts.css");
-@import url("../bases/refactor.css");
+@import url("../base/_fonts.css");
+@import url("../abstracts/_variables.css");
 
 footer {
 	height: 320px;

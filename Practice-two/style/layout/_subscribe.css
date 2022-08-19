@@ -1,11 +1,12 @@
-@import url("../bases/fonts.css");
-@import url("../bases/refactor.css");
+@import url(../base/_fonts.css);
+@import url(../abstracts/_variables.css);
 
+@import url(../components/_input.css);
 .subscribe-header {
     height: 300px;
     margin-left: 15px;
     margin-right: 15px;
-    background-image: url("../../imgs/subcribe-top/subcribe-img.png");
+    background-image: url("../../assets/imgs/subcribe-top/subcribe-img.svg");
     background-repeat: no-repeat;
     margin-top: 64px;
     display: flex;
@@ -14,6 +15,7 @@
     align-items: flex-start;
     padding-left: 12px;
     max-width: 100%;
+	background-size: cover;
 }
 
 .subscribe-header h2 {
@@ -23,7 +25,11 @@
     line-height: var(--title-height);
     text-transform: var(--transform);
 }
-
+.subscribe-form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
 .subscribe-form h3 {
     font-family: "Roboto";
     font-style: var(--text-style);
@@ -32,7 +38,7 @@
     line-height: var(--text-height);
     color: var(--button-color);
     text-transform: var(--transform);
-    margin-bottom: 6px;
+	margin-bottom: 20px;
     height: 12px;
 }
 
@@ -41,8 +47,8 @@
     align-items: center;
     justify-content: space-around;
     background: #e5e5e5;
-    height: 31px;
-    border-radius: 10px;
+    height: 31px; 
+    border-radius: 10px; 
     width: 250px;
 }
 .subscribe-form-body input[type="email"] {
@@ -72,7 +78,7 @@
     .subscribe-form h3 {
         font-size: var(--title-size);
         line-height: var(--item-height);
-        margin-bottom: 14px;
+        margin-bottom: 88px;
     }
     .subscribe-form-body {
         width: 639px;
@@ -101,7 +107,7 @@
     .subscribe-form h3 {
         font-size: 30px;
         line-height: 35px;
-        margin-bottom: 25px;
+        margin-bottom: 46px;
     }
     .subscribe-form-body {
         width: 958px;
