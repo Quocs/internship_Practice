@@ -16,3 +16,5 @@ anotherTodo.textContent='Pay bills';
 todolist.insertBefore(anotherTodo,todolist.firstElementChild);
 
 //remove
+
+todolist.removeChild(todolist.lastElementChild);
