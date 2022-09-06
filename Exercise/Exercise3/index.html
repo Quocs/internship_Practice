@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            display:block;
+            margin-top: 20px;
+        }
+        input{
+            margin-top: 20px;
+        }
+        span{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Sign Up Page
+    </h1>
+    <form action="" id="myForm">
+        <label for="Email">Email</label>
+        <input type="text" name="Email" id="Email" onkeydown="checkEmail()">
+        <span id="checkEmai"></span>
+        
+        <label for="UserName">UserName</label>
+        <input type="text" name="UserName" id="UserName" onkeydown="checkUser()">
+        <span id="checkUserName"></span>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" onkeydown="checkPass()">
+        <span id="checkPassWord"></span>
+
+        <label for="confirm_password">Confirm Password</label>
+        <input type="password" name="confirmpassword" id="confirmpassword" onkeydown="checkConfirmPassword()">
+        <span id="checkConfirm"></span>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="reset">
+        <div id="showMessage"></div>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
