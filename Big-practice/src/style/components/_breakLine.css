@@ -1,0 +1,7 @@
+@import url("../abstracts/_variable.css");
+
+hr{
+    border-color: #c5c5c5;
+    border-style: dashed;
+    margin: 20px 0px;
+}
