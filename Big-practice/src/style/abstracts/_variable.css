@@ -1,0 +1,13 @@
+:root{
+    --font:"Helvetica Neue";
+    --sizeText:14px;
+    --sizeTitle:24px;
+    --lineHeader:16.8px;
+    --lineFooter:21.6px;
+    --lineBreak:19.6px;
+    --colorLink:#b83f45;
+    --colorLinkHover:#787e7e;
+    --colorText:#4d4d4d;
+    --weightText:300;
+    --weightTitle:500;
+}
