@@ -1,8 +1,30 @@
 /*
-    VARIABLE
+    GET VARIABLE
 */
 const taskInput = document.querySelector('.new-todo');
 let todos = JSON.parse(localStorage.getItem("todo-list"));
+const taskBox = document.querySelector('.todo-list')
+
+/**
+ * Show Task saved in localStorage
+ */
+const showTask = () => {
+    let li = "";
+    if (todos) {
+        todos.forEach((todo, id) => {
+            li += 
+            `<li>
+                <div class="view">
+                    <input class="toggle" type="checkbox" id=${id}>
+                    <label>${todo.task}</label>
+                    <button class="destroy"></button>
+                </div>
+                <input class="edit" value="Rule the web">         
+            </li>`
+        });
+    }
+    taskBox.innerHTML=li;
+}
 /*
     Save task in localStorage
 */
@@ -20,8 +42,8 @@ taskInput.addEventListener('keyup', e => {
         };
         todos.push(taskInfo);
         localStorage.setItem("todo-list", JSON.stringify(todos));
-        showTodo();
+        showTask();
     }
-    
+
 })
 
