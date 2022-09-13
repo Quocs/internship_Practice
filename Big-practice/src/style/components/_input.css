@@ -1,13 +1,13 @@
 .todoapp input::-webkit-input-placeholder {
-	font-style: italic;
-	font-weight: var(--weightText);
-	color: var(--colorInput);
+    font-style: italic;
+    font-weight: var(--weightText);
+    color: var(--colorInput);
 }
 
 .todoapp input::-moz-placeholder {
-	font-style: italic;
-	font-weight: var(--weightText);
-	color: var(--colorInput);
+    font-style: italic;
+    font-weight: var(--weightText);
+    color: var(--colorInput);
 }
 
 /* .todoapp input::input-placeholder {

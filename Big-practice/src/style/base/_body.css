@@ -1,13 +1,12 @@
-
 body {
-	font: var(--font);
-	line-height: 1.4em;
-	background: var(--colorBackground);
-	color: var(--colorText);
-	min-width: 230px;
-	max-width: 550px;
-	margin: 0 auto;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	font-weight: var(--weightText);
+    font: var(--font);
+    line-height: 1.4em;
+    background: var(--colorBackground);
+    color: var(--colorText);
+    min-width: 230px;
+    max-width: 550px;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: var(--weightText);
 }
