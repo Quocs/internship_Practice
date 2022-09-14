@@ -4,10 +4,13 @@
 const taskInput = document.querySelector('.new-todo');
 let todos = JSON.parse(localStorage.getItem("todo-list"));
 const taskBox = document.querySelector('.todo-list');
-const inputText = document.querySelector('.edit');
+let list = taskBox.childNodes;
+let editId;
+
 /**
  * Show Task saved in localStorage
  */
+
 const showTask = () => {
     let li = "";
     if (todos) {
@@ -18,10 +21,10 @@ const showTask = () => {
                 `<li class="${isTaskCompleted}">
                 <div class="view">
                     <input onclick="updateStatus(this,${id})" class="toggle" type="checkbox" id="${id}" ${isCompleted}>
-                    <label class="hello">${todo.task}</label>
+                    <label ondblclick="getEdit(${id},'${todo.task}')">${todo.task}</label>
                     <button class="destroy" onclick="deleteTask(${id})"></button>
                 </div>
-                <input class="edit" value="Rule the web">         
+                <input class="edit">         
             </li>`;
         });
     }
@@ -31,6 +34,7 @@ const showTask = () => {
 /**
  * Update status after click check box
  */
+
 const updateStatus = (selectedTask, id) => {
     // console.log(id)
     let taskName = taskBox.childNodes[id];
@@ -48,6 +52,7 @@ const updateStatus = (selectedTask, id) => {
 /**
  * Delete Task
  */
+
 const deleteTask = (deletedId) => {
     // console.log(deletedId);
     todos.splice(deletedId, 1);
@@ -56,8 +61,31 @@ const deleteTask = (deletedId) => {
 }
 
 /**
+ *  Edit Task 
+ */
+
+const getEdit = (taskId, taskName) => {
+    let listInput = list[taskId].lastElementChild;
+    listInput.style.display = 'block';
+    listInput.value = taskName;
+    //console.log(listItem.value);
+    editId = taskId;
+    listInput.addEventListener('keyup', e => {
+        let editInputTask = listInput.value.trim();
+        if (e.key == "Enter" && editInputTask) {
+            todos[editId].task = listInput.value;
+            localStorage.setItem("todo-list", JSON.stringify(todos));
+            // console.log(todos[editId].task)
+            showTask();
+        }
+    })
+}
+
+
+/**
  *  SAVE TASK IN LOCALSTORAGE
  */
+
 taskInput.addEventListener('keyup', e => {
     let userTask = taskInput.value.trim();
     if (e.key == "Enter" && userTask) {
