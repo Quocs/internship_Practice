@@ -16,7 +16,7 @@
         </header>
         <!-- This section should be hidden by default and shown when there are todos -->
         <section class="main">
-            <input id="toggle-all" class="toggle-all" type="checkbox">
+            <input id="toggle-all" class="toggle-all" type="checkbox" onclick="checkAll()">
             <label for="toggle-all">Mark all as complete</label>
             <ul class="todo-list">
                 
@@ -29,13 +29,13 @@
             <!-- Remove this if you don't implement routing -->
             <ul class="filters">
                 <li>
-                    <a class="selected" href="#/">All</a>
+                    <a class="selected" href="javascript:void(0)" id="All">All</a>
                 </li>
                 <li>
-                    <a href="#/active">Active</a>
+                    <a href="javascript:void(0)" id="pedding">peding</a>
                 </li>
                 <li>
-                    <a href="#/completed">Completed</a>
+                    <a href="#/completed" id="completed">completed</a>
                 </li>
             </ul>
             <!-- Hidden if no completed items are left ↓ -->

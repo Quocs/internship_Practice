@@ -6,30 +6,10 @@ let todos = JSON.parse(localStorage.getItem("todo-list"));
 const taskBox = document.querySelector('.todo-list');
 let list = taskBox.childNodes;
 let editId;
-
-/**
- * Show Task saved in localStorage
- */
-
-const showTask = () => {
-    let li = "";
-    if (todos) {
-        todos.forEach((todo, id) => {
-            let isCompleted = todo.status == "completed" ? "checked" : "";
-            let isTaskCompleted = todo.status == "completed" ? "completed" : "";
-            li +=
-                `<li class="${isTaskCompleted}">
-                <div class="view">
-                    <input onclick="updateStatus(this,${id})" class="toggle" type="checkbox" id="${id}" ${isCompleted}>
-                    <label ondblclick="getEdit(${id},'${todo.task}')">${todo.task}</label>
-                    <button class="destroy" onclick="deleteTask(${id})"></button>
-                </div>
-                <input class="edit">         
-            </li>`;
-        });
-    }
-    taskBox.innerHTML = li;
-}
+const filter = document.querySelectorAll('.filters a');
+const isAllTask=document.querySelector('#All');
+const isPedding=document.querySelector('#pedding');
+const isCompleted=document.querySelector('#completed');
 
 /**
  * Update status after click check box
@@ -81,7 +61,42 @@ const getEdit = (taskId, taskName) => {
     })
 }
 
+/**
+ * Filter task of the list
+ */
 
+filter.forEach(btn => {
+    btn.addEventListener('click', () => {
+        //console.log(btn)
+        document.querySelector("a.selected").classList.remove("selected");
+        btn.classList.add("selected");
+        }
+    )
+})
+
+/**
+ * Show Task saved in localStorage
+ */
+
+const showTask = () => {
+    let li = "";
+    if (todos) {
+        todos.forEach((todo, id) => {
+            let isCompleted = todo.status == "completed" ? "checked" : "";
+            let isTaskCompleted = todo.status == "completed" ? "completed" : "";
+                li +=
+                    `<li class="${isTaskCompleted}">
+                <div class="view">
+                    <input onclick="updateStatus(this,${id})" class="toggle" type="checkbox" id="${id}" ${isCompleted}>
+                    <label ondblclick="getEdit(${id},'${todo.task}')">${todo.task}</label>
+                    <button class="destroy" onclick="deleteTask(${id})"></button>
+                </div>
+                <input class="edit">         
+            </li>`;
+        });
+    }
+    taskBox.innerHTML = li;
+}
 /**
  *  SAVE TASK IN LOCALSTORAGE
  */
