@@ -38,7 +38,7 @@ const deleteTask = (deletedId) => {
     // console.log(deletedId);
     todos.splice(deletedId, 1);
     localStorage.setItem("todo-list", JSON.stringify(todos));
-    showTask();
+    showTask("all");
 }
 
 /**
@@ -57,7 +57,7 @@ const getEdit = (taskId, taskName) => {
             todos[editId].task = listInput.value;
             localStorage.setItem("todo-list", JSON.stringify(todos));
             // console.log(todos[editId].task)
-            showTask();
+            showTask("all");
         }
     })
 }
@@ -120,7 +120,7 @@ taskInput.addEventListener('keyup', e => {
         };
         todos.push(taskInfo);
         localStorage.setItem("todo-list", JSON.stringify(todos));
-        showTask();
+        showTask("all");
     }
 
 })
