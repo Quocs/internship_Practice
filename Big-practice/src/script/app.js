@@ -11,7 +11,8 @@ const filters = document.querySelectorAll('.filters span');
 //  getting localstorage todo-list
 let todos = JSON.parse(localStorage.getItem("todo-list"));
 //  getting button clear completed
-let clearAll = document.querySelector('.clear-completed');
+const clearAll = document.querySelector('.clear-completed');
+const todoCount = document.querySelector('strong');
 
 /**
  * Update status after click check box
@@ -91,11 +92,26 @@ filters.forEach(btn => {
 })
 
 /**
- * Show Task saved in localStorage
+ *  Count Item
  */
+// todoCount.addEventListener('load',()=>{
+
+//     if (todos) {
+//         todos.forEach((todo, id) => {
+//             if(todo.status=="pending"){
+//                 count++;
+//             }
+//         })
+//         todoCount.innerHTML=count;
+//     }
+// })
+/**
+* Show Task saved in localStorage
+*/
 
 const showTask = (Filter) => {
     let li = "";
+    let count = 0;
     if (todos) {
         todos.forEach((todo, id) => {
             //if todostatus is completed set input is checked
@@ -112,8 +128,13 @@ const showTask = (Filter) => {
                 </div>
                 <input class="edit">         
             </li>`;
+            };
+            if (todo.status == "pending") {
+                count++;
             }
+
         });
+        todoCount.innerHTML = count;
     }
     taskBox.innerHTML = li;
 }
