@@ -10,7 +10,8 @@ let editId;
 const filters = document.querySelectorAll('.filters span');
 //  getting localstorage todo-list
 let todos = JSON.parse(localStorage.getItem("todo-list"));
-
+//  getting button clear completed
+let clearAll = document.querySelector('.clear-completed');
 
 /**
  * Update status after click check box
@@ -61,6 +62,22 @@ const getEdit = (taskId, taskName) => {
         }
     })
 }
+/**
+ *  Clear all task completed
+ */
+clearAll.addEventListener('click', () => {
+    if (todos) {
+        todos.forEach((todo, id) => {
+            //console.log(todo.status)
+            if (todo.status == "completed") {
+                //console.log(id);
+                todos.splice(id, 1);
+            }
+            localStorage.setItem("todo-list", JSON.stringify(todos));
+            showTask("all");
+        })
+    }
+})
 
 /**
  * Filter task of the list
