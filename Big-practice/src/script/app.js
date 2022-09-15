@@ -65,14 +65,13 @@ const getEdit = (taskId, taskName) => {
 /**
  *  Clear all task completed
  */
-clearAll.addEventListener('click',()=>{
+clearAll.addEventListener('click', () => {
     if (todos) {
         todos.forEach((todo, id) => {
             //console.log(todo.status)
-            if(todo.status=="completed"){
+            if (todo.status == "completed") {
                 //console.log(id);
-                todos.splice(id,1);
-                
+                todos.splice(id, 1);
             }
             localStorage.setItem("todo-list", JSON.stringify(todos));
             showTask("all");
