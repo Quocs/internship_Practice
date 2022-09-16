@@ -63,6 +63,7 @@ const getEdit = (taskId, taskName) => {
         }
     })
 }
+
 /**
  *  Clear all task completed
  */
@@ -72,7 +73,7 @@ clearAll.addEventListener('click', () => {
             //console.log(todo.status)
             if (todo.status == "completed") {
                 //console.log(id);
-                todos.splice(id, 1);
+                todos.splice(id,1);
             }
             localStorage.setItem("todo-list", JSON.stringify(todos));
             showTask("all");
@@ -83,6 +84,7 @@ clearAll.addEventListener('click', () => {
 /**
  * Filter task of the list
  */
+
 filters.forEach(btn => {
     btn.addEventListener('click', () => {
         document.querySelector("span.selected").classList.remove("selected");
@@ -90,24 +92,6 @@ filters.forEach(btn => {
         showTask(btn.id);
     })
 })
-
-/**
- *  Count Item
- */
-// todoCount.addEventListener('load',()=>{
-
-//     if (todos) {
-//         todos.forEach((todo, id) => {
-//             if(todo.status=="pending"){
-//                 count++;
-//             }
-//         })
-//         todoCount.innerHTML=count;
-//     }
-// })
-/**
-* Show Task saved in localStorage
-*/
 
 const showTask = (Filter) => {
     let li = "";
@@ -121,17 +105,17 @@ const showTask = (Filter) => {
             if (Filter == todo.status || Filter == "all") {
                 li +=
                     `<li class="${isTaskCompleted}">
-                <div class="view">
-                    <input onclick="updateStatus(this,${id})" class="toggle" type="checkbox" id="${id}" ${isCompleted}>
-                    <label ondblclick="getEdit(${id},'${todo.task}')">${todo.task}</label>
-                    <button class="destroy" onclick="deleteTask(${id})"></button>
-                </div>
-                <input class="edit">         
-            </li>`;
+                        <div class="view">
+                        <input onclick="updateStatus(this,${id})" class="toggle" type="checkbox" id="${id}" ${isCompleted}>
+                        <label ondblclick="getEdit(${id},'${todo.task}')">${todo.task}</label>
+                        <button class="destroy" onclick="deleteTask(${id})"></  button>
+                        </div>
+                        <input class="edit">         
+                    </li>`;
+                if (todo.status == "pending") {
+                    count++;
+                }
             };
-            if (todo.status == "pending") {
-                count++;
-            }
 
         });
         todoCount.innerHTML = count;
