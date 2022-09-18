@@ -73,7 +73,7 @@ clearAll.addEventListener('click', () => {
             //console.log(todo.status)
             if (todo.status == "completed") {
                 //console.log(id);
-                todos.splice(id,1);
+                todos.splice(id);
             }
             localStorage.setItem("todo-list", JSON.stringify(todos));
             showTask("all");
