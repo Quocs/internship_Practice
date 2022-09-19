@@ -1,0 +1,9 @@
+.learn a {
+    font-weight: normal;
+    text-decoration: none;
+    color: var(--colorLink);
+}
+.learn a:hover {
+    text-decoration: underline;
+    color: var(--colorLinkHover);
+}
