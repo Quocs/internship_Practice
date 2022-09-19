@@ -1,0 +1,43 @@
+.quote {
+    border: none;
+    margin: 20px 0 60px;
+}
+
+.quote p {
+    font-style: italic;
+}
+
+.quote p:before {
+    content: '';
+    font-size: var(--sizeQuote);
+    opacity: 0.15;
+    position: absolute;
+    top: -20px;
+    left: 3px;
+}
+
+.quote p:after {
+    content: '';
+    font-size: var(--sizeQuote);
+    opacity: 0.15;
+    position: absolute;
+    bottom: -42px;
+    right: 3px;
+}
+
+.quote a {
+    margin-left: 5px;
+}
+
+.speech-bubble {
+    position: relative;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 5px;
+}
+
+.quote footer{
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+}
