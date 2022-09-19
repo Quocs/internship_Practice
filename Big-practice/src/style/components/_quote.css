@@ -28,3 +28,16 @@
 .quote a {
     margin-left: 5px;
 }
+
+.speech-bubble {
+    position: relative;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 5px;
+}
+
+.quote footer{
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+}

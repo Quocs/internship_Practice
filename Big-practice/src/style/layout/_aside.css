@@ -1,0 +1,23 @@
+.learn-bar > .learn {
+	position: absolute;
+	width: 272px;
+	top: 8px;
+	left: -300px;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, .6);
+	transition-property: left;
+	transition-duration: 500ms;
+    float: left;
+}
+
+@media (min-width: 899px) {
+	.learn-bar {
+		width: auto;
+		padding-left: 300px;
+	}
+
+	.learn-bar > .learn {
+		left: 8px;
+	}
+}
