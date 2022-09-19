@@ -1,6 +1,7 @@
 /** 
  *  GET VARIABLE
 */
+
 const taskInput = document.querySelector('.new-todo');
 //  getting ul element
 const taskBox = document.querySelector('.todo-list');
@@ -13,6 +14,7 @@ let todos = JSON.parse(localStorage.getItem("todo-list"));
 //  getting button clear completed
 const clearAll = document.querySelector('.clear-completed');
 const todoCount = document.querySelector('strong');
+const clickAll = document.querySelector('#toggle-all');
 
 /**
  * Update status after click check box
@@ -73,7 +75,7 @@ clearAll.addEventListener('click', () => {
             //console.log(todo.status)
             if (todo.status == "completed") {
                 //console.log(id);
-                todos.splice(id,id);
+                todos.splice(id, id);
             }
             localStorage.setItem("todo-list", JSON.stringify(todos));
             showTask("all");
@@ -93,6 +95,22 @@ filters.forEach(btn => {
     })
 })
 
+/**
+ *  Select all Task
+ */
+clickAll.addEventListener('click', e => {
+    if (todos) {
+        todos.forEach((todo, id) => {
+            todo.status = "completed";
+            // console.log(todo.status);
+        })
+        localStorage.setItem("todo-list", JSON.stringify(todos));
+        showTask("all");
+    }
+})
+/**
+ * ShowTask 
+ */
 const showTask = (Filter) => {
     let li = "";
     let count = 0;
@@ -127,7 +145,6 @@ showTask("all");
 /**
  *  SAVE TASK IN LOCALSTORAGE
  */
-
 taskInput.addEventListener('keyup', e => {
     let userTask = taskInput.value.trim();
     if (e.key == "Enter" && userTask) {
@@ -144,6 +161,5 @@ taskInput.addEventListener('keyup', e => {
         localStorage.setItem("todo-list", JSON.stringify(todos));
         showTask("all");
     }
-
 })
 
