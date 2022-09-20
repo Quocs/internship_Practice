@@ -44,10 +44,12 @@
 -   User can check or uncheck all todos
 
 ## Development environment
+
 -   Node: v16.16.0
 -   npm: v8.11.0
 -   Parcel: v2.7.0
--   Prettier: v2.7.1 
+-   Prettier: v2.7.1
+
 ## Estimation details
 
 -   [Here](https://docs.google.com/document/d/1RRXo4uTTMMn2L32HTMmyaj8FoVtvBUt6tM3lDp-SybA/edit#heading=h.wpo9uvo0ojfm)

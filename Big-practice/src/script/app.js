@@ -1,20 +1,20 @@
-/** 
+/**
  *  GET VARIABLE
-*/
+ */
 
-const taskInput = document.querySelector('.new-todo');
+const taskInput = document.querySelector(".new-todo");
 //  getting ul element
-const taskBox = document.querySelector('.todo-list');
+const taskBox = document.querySelector(".todo-list");
 //  getting li element
 let list = taskBox.childNodes;
 let editId;
-const filters = document.querySelectorAll('.filters span');
+const filters = document.querySelectorAll(".filters span");
 //  getting localstorage todo-list
 let todos = JSON.parse(localStorage.getItem("todo-list"));
 //  getting button clear completed
-const clearAll = document.querySelector('.clear-completed');
-const todoCount = document.querySelector('strong');
-const clickAll = document.querySelector('#toggle-all');
+const clearAll = document.querySelector(".clear-completed");
+const todoCount = document.querySelector("strong");
+const clickAll = document.querySelector("#toggle-all");
 
 /**
  * Update status after click check box
@@ -24,15 +24,14 @@ const updateStatus = (selectedTask, id) => {
     // console.log(id)
     let taskName = taskBox.childNodes[id];
     if (selectedTask.checked) {
-        taskName.classList.add('completed');
+        taskName.classList.add("completed");
         todos[selectedTask.id].status = "completed";
-    }
-    else {
-        taskName.classList.remove('completed');
+    } else {
+        taskName.classList.remove("completed");
         todos[selectedTask.id].status = "pending";
     }
     localStorage.setItem("todo-list", JSON.stringify(todos));
-}
+};
 
 /**
  * Delete Task
@@ -43,19 +42,19 @@ const deleteTask = (deletedId) => {
     todos.splice(deletedId, 1);
     localStorage.setItem("todo-list", JSON.stringify(todos));
     showTask("all");
-}
+};
 
 /**
- *  Edit Task 
+ *  Edit Task
  */
 
 const getEdit = (taskId, taskName) => {
     let listInput = list[taskId].lastElementChild;
-    listInput.style.display = 'block';
+    listInput.style.display = "block";
     listInput.value = taskName;
     //console.log(listItem.value);
     editId = taskId;
-    listInput.addEventListener('keyup', e => {
+    listInput.addEventListener("keyup", (e) => {
         let editInputTask = listInput.value.trim();
         if (e.key == "Enter" && editInputTask) {
             todos[editId].task = listInput.value;
@@ -63,53 +62,53 @@ const getEdit = (taskId, taskName) => {
             // console.log(todos[editId].task)
             showTask("all");
         }
-    })
-}
+    });
+};
 
 /**
  *  Clear all task completed
  */
-clearAll.addEventListener('click', () => {
+clearAll.addEventListener("click", () => {
     if (todos) {
         todos.forEach((todo, id) => {
             //console.log(todo.status)
             if (todo.status == "completed") {
                 //console.log(id);
-                todos.splice(id, id);
+                todos.splice(id, 1);
             }
             localStorage.setItem("todo-list", JSON.stringify(todos));
             showTask("all");
-        })
+        });
     }
-})
+});
 
 /**
  * Filter task of the list
  */
 
-filters.forEach(btn => {
-    btn.addEventListener('click', () => {
+filters.forEach((btn) => {
+    btn.addEventListener("click", () => {
         document.querySelector("span.selected").classList.remove("selected");
         btn.classList.add("selected");
         showTask(btn.id);
-    })
-})
+    });
+});
 
 /**
  *  Select all Task
  */
-clickAll.addEventListener('click', e => {
+clickAll.addEventListener("click", (e) => {
     if (todos) {
         todos.forEach((todo, id) => {
             todo.status = "completed";
             // console.log(todo.status);
-        })
+        });
         localStorage.setItem("todo-list", JSON.stringify(todos));
         showTask("all");
     }
-})
+});
 /**
- * ShowTask 
+ * ShowTask
  */
 const showTask = (Filter) => {
     let li = "";
@@ -121,8 +120,7 @@ const showTask = (Filter) => {
             //if todostatus is completed set class li element id completed
             let isTaskCompleted = todo.status == "completed" ? "completed" : "";
             if (Filter == todo.status || Filter == "all") {
-                li +=
-                    `<li class="${isTaskCompleted}">
+                li += `<li class="${isTaskCompleted}">
                         <div class="view">
                         <input onclick="updateStatus(this,${id})" class="toggle" type="checkbox" id="${id}" ${isCompleted}>
                         <label ondblclick="getEdit(${id},'${todo.task}')">${todo.task}</label>
@@ -133,19 +131,18 @@ const showTask = (Filter) => {
                 if (todo.status == "pending") {
                     count++;
                 }
-            };
-
+            }
         });
         todoCount.innerHTML = count;
     }
     taskBox.innerHTML = li;
-}
+};
 showTask("all");
 
 /**
  *  SAVE TASK IN LOCALSTORAGE
  */
-taskInput.addEventListener('keyup', e => {
+taskInput.addEventListener("keyup", (e) => {
     let userTask = taskInput.value.trim();
     if (e.key == "Enter" && userTask) {
         if (!todos) {
@@ -155,11 +152,10 @@ taskInput.addEventListener('keyup', e => {
 
         let taskInfo = {
             task: userTask,
-            status: "pending"
+            status: "pending",
         };
         todos.push(taskInfo);
         localStorage.setItem("todo-list", JSON.stringify(todos));
         showTask("all");
     }
-})
-
+});
