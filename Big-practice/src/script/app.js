@@ -32,6 +32,7 @@ const updateStatus = (selectedTask, id) => {
         todos[selectedTask.id].status = 'pending';
     }
     localStorage.setItem('todo-list', JSON.stringify(todos));
+    showTask("all");
 };
 
 /**
@@ -43,7 +44,6 @@ const deleteTask = (deletedId) => {
     // console.log(deletedId);
     todos.splice(deletedId, 1);
     localStorage.setItem('todo-list', JSON.stringify(todos));
-    // eslint-disable-next-line no-use-before-define
     showTask('all');
 };
 
@@ -64,7 +64,6 @@ const getEdit = (taskId, taskName) => {
             todos[editId].task = listInput.value;
             localStorage.setItem('todo-list', JSON.stringify(todos));
             // console.log(todos[editId].task)
-            // eslint-disable-next-line no-use-before-define
             showTask('all');
         }
     });
@@ -77,11 +76,11 @@ clearAll.addEventListener('click', () => {
     if (todos) {
         todos.forEach((todo, id) => {
             // console.log(todo.status)
-            // eslint-disable-next-line eqeqeq
             if (todo.status == 'completed') {
-                // console.log(id);
-                todos.splice(id, 1);
+                console.log(id);
+                todos.splice(id,1);
             }
+            
             localStorage.setItem('todo-list', JSON.stringify(todos));
             showTask('all');
         });

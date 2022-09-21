@@ -1,103 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Template • TodoMVC</title>
-        <link rel="stylesheet" href="src/style/main.css" />
-    </head>
 
-    <body class="learn-bar">
-        <aside class="learn">
-            <header>
-                <h3>React</h3>
-                <span> </span>
-            </header>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Template • TodoMVC</title>
+    <link rel="stylesheet" href="src/style/main.css" />
+</head>
+
+<body class="learn-bar">
+    <aside class="learn">
+        <header>
+            <h3>React</h3>
+            <span> </span>
+        </header>
+        <hr />
+        <blockquote class="quote speech-bubble">
+        </blockquote>
+        <hr />
+        <div class="recource">
+
+        </div>
+        <footer>
             <hr />
-            <blockquote class="quote speech-bubble">
-                <p>
-                    React is a JavaScript library for creating user interfaces.
-                    Its core principles are declarative code, efficiency, and
-                    flexibility. Simply specify what your component looks like
-                    and React will keep it up-to-date when the underlying data
-                    changes.
-                </p>
-                <footer>
-                    <a href="">React</a>
-                </footer>
-            </blockquote>
-            <hr />
-            <div class="recource">
-                <h4>Official Resources</h4>
-                <ul>
-                    <li><a href="">Tutorial</a></li>
-                    <li><a href="">Philosophy</a></li>
-                    <li><a href="">Support</a></li>
-                    <li><a href="">Flux architecture example</a></li>
-                </ul>
-                <h4>Community</h4>
-                <ul>
-                    <li><a href="">ReactJS on Stack Overflow</a></li>
-                    <li><a href="">Google Groups Mailing List</a></li>
-                    <li><a href="">ICR</a></li>
-                </ul>
-            </div>
-            <footer>
-                <hr />
-                <em>
-                    If you have other helpful links to share, or find any of the
-                    links above no longer work, please
-                    <a href="">let us know</a>.
-                </em>
-            </footer>
-        </aside>
-        <section class="todoapp">
-            <header class="header">
-                <h1>todos</h1>
-                <input
-                    class="new-todo"
-                    placeholder="What needs to be done?"
-                    autofocus
-                />
-            </header>
-            <!-- This section should be hidden by default and shown when there are todos -->
-            <section class="main">
-                <input id="toggle-all" class="toggle-all" type="checkbox" />
-                <label for="toggle-all">Mark all as complete</label>
-                <ul class="todo-list"></ul>
-            </section>
-            <!-- This footer should hidden by default and shown when there are todos -->
-            <footer class="footer">
-                <!-- This should be `0 items left` by default -->
-                <span class="todo-count"><strong>0</strong> item left</span>
-                <!-- Remove this if you don't implement routing -->
-                <ul class="filters">
-                    <li>
-                        <span class="selected" id="all">All</span>
-                    </li>
-                    <li>
-                        <span id="pending">Pending</span>
-                    </li>
-                    <li>
-                        <span id="completed">Completed</span>
-                    </li>
-                </ul>
-                <!-- Hidden if no completed items are left ↓ -->
-                <button class="clear-completed">Clear completed</button>
-            </footer>
-        </section>
-        <footer class="info">
-            <p>Double-click to edit a todo</p>
-            <!-- Remove the below line ↓ -->
-            <p>
-                Template by <a href="http://sindresorhus.com">Sindre Sorhus</a>
-            </p>
-            <!-- Change this out with your name and url ↓ -->
-            <p>Created by <a href="http://todomvc.com">you</a></p>
-            <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+            <em>
+                If you have other helpful links to share, or find any of the
+                links above no longer work, please
+                <a href="">let us know</a>.
+            </em>
         </footer>
+    </aside>
+    <section class="todoapp">
+        <header class="header">
+            <h1>todos</h1>
+            <input class="new-todo" placeholder="What needs to be done?" autofocus />
+        </header>
+        <!-- This section should be hidden by default and shown when there are todos -->
+        <section class="main">
+            <input id="toggle-all" class="toggle-all" type="checkbox" />
+            <label for="toggle-all">Mark all as complete</label>
+            <ul class="todo-list"></ul>
+        </section>
+        <!-- This footer should hidden by default and shown when there are todos -->
+        <footer class="footer">
+            <!-- This should be `0 items left` by default -->
+            <span class="todo-count"><strong>0</strong> item left</span>
+            <!-- Remove this if you don't implement routing -->
+            <ul class="filters">
+                <li>
+                    <span class="selected" id="all">All</span>
+                </li>
+                <li>
+                    <span id="pending">Pending</span>
+                </li>
+                <li>
+                    <span id="completed">Completed</span>
+                </li>
+            </ul>
+            <!-- Hidden if no completed items are left ↓ -->
+            <button class="clear-completed">Clear completed</button>
+        </footer>
+    </section>
+    <footer class="info">
+        <p>Double-click to edit a todo</p>
+        <!-- Remove the below line ↓ -->
+        <p>
+            Template by <a href="http://sindresorhus.com">Sindre Sorhus</a>
+        </p>
+        <!-- Change this out with your name and url ↓ -->
+        <p>Created by <a href="http://todomvc.com">you</a></p>
+        <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+    </footer>
 
-        <script src="src/script/app.js"></script>
-        <script src="src/script/getData.js"></script>
-    </body>
+    <script src="src/script/app.js"></script>
+    <script src="src/script/getData.js"></script>
+</body>
+
 </html>

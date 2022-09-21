@@ -45,8 +45,8 @@
         {
             "id": 1,
             "description": "React is a JavaScript library for creating user interfaces",
-            "description-2": " Its core principles are declarative code,efficiency, and flexibility",
-            "description-3": "Simply specify what your component looks like and React will keep it up-to-date when the underlying data changes."
+            "description2": " Its core principles are declarative code,efficiency, and flexibility",
+            "description3": "Simply specify what your component looks like and React will keep it up-to-date when the underlying data changes."
         },
         {
             "id": 2,
@@ -59,16 +59,17 @@
             "id": 1,
             "title": "Official Resources",
             "list": "Tutorial",
-            "list-1": "Philosophy",
-            "list-2": "Support",
-            "list-3": "Flux architecture example"
+            "list1": "Philosophy",
+            "list2": "Support",
+            "list3": "Flux architecture example"
         },
         {
             "id": 2,
             "title": "Community",
             "list": "ReactJS on Stack Overflow",
-            "list-1": "Google Groups Mailing List",
-            "list-2": "ICR"
+            "list1": "Google Groups Mailing List",
+            "list2": "ICR",
+            "list3":""
         }
     ]
 }
