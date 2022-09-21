@@ -1,9 +1,19 @@
 {
+  "name": "big-practice",
+  "version": "1.0.0",
+  "description": "-   This document provides the requirement for Javascript Big practice\r -   Build the [TodoMVC Web application](https://todomvc.com/examples/react/#/)",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch db.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  },
   "devDependencies": {
-    "eslint": "^8.23.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "parcel": "^2.7.0",
-    "prettier": "2.7.1"
+    "eslint": "^8.23.1",
+    "parcel": "^2.7.0"
   }
 }

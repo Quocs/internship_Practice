@@ -8,7 +8,7 @@
 }
 
 .quote p:before {
-    content: '';
+    content: "";
     font-size: var(--sizeQuote);
     opacity: 0.15;
     position: absolute;
@@ -17,7 +17,7 @@
 }
 
 .quote p:after {
-    content: '';
+    content: "";
     font-size: var(--sizeQuote);
     opacity: 0.15;
     position: absolute;
@@ -36,7 +36,7 @@
     border-radius: 5px;
 }
 
-.quote footer{
+.quote footer {
     position: absolute;
     bottom: -40px;
     right: 0;
