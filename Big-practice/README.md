@@ -15,7 +15,7 @@
 
 ## Timeline
 
--   11 Day (09/08/2022 - 09/22/2022)
+-   12 Day (09/08/2022 - 09/23/2022)
 
 ## Team-size
 
@@ -55,3 +55,27 @@
 -   [Here](https://docs.google.com/document/d/1RRXo4uTTMMn2L32HTMmyaj8FoVtvBUt6tM3lDp-SybA/edit#heading=h.wpo9uvo0ojfm)
 
 ## How to run the project
+-   Clone Repo:
+    -   HTTPS:
+        ```
+        $ git clone https://github.com/Quocs/internship_Practice.git
+        ```
+-   Switch to branch feature/big-practice
+        ```
+        $ git checkout feat/big-practice
+        ```
+-   Move To Big Practice folder
+        ```
+         $ cd ./Big-practice
+        ```
+-   Install npm
+        ```
+        npm install
+        ```
+-   Install JSON Server
+        ```
+        npm install -g json-server
+        ```
+-   Run Project
+    - "npm run start" to run JSON server
+    - "npx parcel index.html" to run web
