@@ -11,5 +11,9 @@ module.exports = {
         "ecmaVersion": "latest"
     },
     "rules": {
-    }
+    },
+    "extends": [
+        "some-other-config-you-use",
+        "prettier"
+    ]
 }
