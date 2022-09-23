@@ -34,9 +34,9 @@ async function getDataAsideQuote() {
 
 async function getDataAsideList() {
     const response = await fetch(api_list);
-    const data= await response.json();
-    data.forEach((element)=>{
-        listx +=`
+    const data = await response.json();
+    data.forEach((element) => {
+        listx += `
             <h4>${element.title}</h4>
             <ul>
                 <li>${element.list}</li>
@@ -46,7 +46,7 @@ async function getDataAsideList() {
             </ul>
         `
     })
-    document.querySelector('.recource').innerHTML=listx;
+    document.querySelector('.recource').innerHTML = listx;
 }
 
 getDataAsideList();
