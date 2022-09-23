@@ -74,16 +74,12 @@ const getEdit = (taskId, taskName) => {
  */
 clearAll.addEventListener('click', () => {
     if (todos) {
-        todos.forEach((todo, id) => {
-            // console.log(todo.status)
-            if (todo.status == 'completed') {
-                console.log(id);
-                todos.splice(id,1);
-            }
-            
-            localStorage.setItem('todo-list', JSON.stringify(todos));
-            showTask('all');
+        let filteredList = todos.filter(todo => {
+            return todo.status !== 'completed';
         });
+        todos = filteredList;
+        localStorage.setItem('todo-list', JSON.stringify(todos));
+        showTask('all');
     }
 });
 
