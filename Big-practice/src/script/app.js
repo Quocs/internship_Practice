@@ -77,7 +77,7 @@ clearAll.addEventListener('click', () => {
         let filteredList = todos.filter(todo => {
             return todo.status !== 'completed';
         });
-        todos=filteredList;
+        todos = filteredList;
         localStorage.setItem('todo-list', JSON.stringify(todos));
         showTask('all');
     }
