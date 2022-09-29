@@ -49,6 +49,8 @@
 -   npm: v8.11.0
 -   Parcel: v2.7.0
 -   Prettier: v2.7.1
+-   Eslint: ^8.23.1
+-   Json-server :^0.17.0
 
 ## Estimation details
 
