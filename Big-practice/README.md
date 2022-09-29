@@ -62,11 +62,11 @@
         ```
 -   Switch to branch feature/big-practice
         ```
-        $ git checkout feat/big-practice
+        $ git checkout feature/big-practice
         ```
 -   Move To Big Practice folder
         ```
-         $ cd ./Big-practice
+        $ cd ./Big-practice
         ```
 -   Install npm
         ```
