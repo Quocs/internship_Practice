@@ -145,12 +145,14 @@ showTask('all');
  */
 taskInput.addEventListener('keyup', (e) => {
     const userTask = taskInput.value.trim();
+    if (taskInput.value == '') {
+        alert("task must be filled out");
+    }
     if (e.key == 'Enter' && userTask) {
         if (!todos) {
             todos = [];
         }
         taskInput.value = '';
-
         const taskInfo = {
             task: userTask,
             status: 'pending',
