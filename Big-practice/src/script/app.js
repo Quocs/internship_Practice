@@ -16,6 +16,7 @@ let todos = JSON.parse(localStorage.getItem('todo-list'));
 const clearAll = document.querySelector('.clear-completed');
 const todoCount = document.querySelector('strong');
 const clickAll = document.querySelector('#toggle-all');
+const errorMessage = document.querySelector('#error-Message');
 /**
  * Update status after click check box
  */
@@ -145,10 +146,15 @@ showTodo('all');
 /**
  *  SAVE TASK IN LOCALSTORAGE
  */
+
 taskInput.addEventListener('keyup', (e) => {
     const userTask = taskInput.value.trim();
-    if (taskInput.value == '') {
-        alert("task must be filled out");
+    if (taskInput.value == '' || taskInput.value == null) {
+        errorMessage.style.display = 'block';
+        errorMessage.style.color = 'red';
+        errorMessage.textContent = 'Task must be filled out';
+    }else{
+        errorMessage.style.display='none';
     }
     if (e.key == 'Enter' && userTask) {
         if (!todos) {
