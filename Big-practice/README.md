@@ -74,10 +74,5 @@
         ```
         npm install
         ```
--   Install JSON Server
-        ```
-        npm install -g json-server
-        ```
 -   Run Project
-    - "npm run start" to run JSON server
     - "npx parcel index.html" to run web
