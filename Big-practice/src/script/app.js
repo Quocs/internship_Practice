@@ -16,13 +16,11 @@ let todos = JSON.parse(localStorage.getItem('todo-list'));
 const clearAll = document.querySelector('.clear-completed');
 const todoCount = document.querySelector('strong');
 const clickAll = document.querySelector('#toggle-all');
-
 /**
  * Update status after click check box
  */
 
 const updateStatus = (selectedTask, id) => {
-    // console.log(id)
     const taskName = taskBox.childNodes[id];
     if (selectedTask.checked) {
         taskName.classList.add('completed');
@@ -32,31 +30,27 @@ const updateStatus = (selectedTask, id) => {
         todos[selectedTask.id].status = 'pending';
     }
     localStorage.setItem('todo-list', JSON.stringify(todos));
-    showTask("all");
+    showTodo("all");
 };
 
 /**
  * Delete Task
  */
 
-// eslint-disable-next-line no-unused-vars
 const deleteTask = (deletedId) => {
-    // console.log(deletedId);
     todos.splice(deletedId, 1);
     localStorage.setItem('todo-list', JSON.stringify(todos));
-    showTask('all');
+    showTodo('all');
 };
 
 /**
  *  Edit Task
  */
 
-// eslint-disable-next-line no-unused-vars
-const getEdit = (taskId, taskName) => {
+const editTask = (taskId, taskName) => {
     const listInput = list[taskId].lastElementChild;
     listInput.style.display = 'block';
     listInput.value = taskName;
-    // console.log(listItem.value);
     editId = taskId;
     listInput.addEventListener('keyup', (e) => {
         const editInputTask = listInput.value.trim();
@@ -64,7 +58,7 @@ const getEdit = (taskId, taskName) => {
             todos[editId].task = listInput.value;
             localStorage.setItem('todo-list', JSON.stringify(todos));
             // console.log(todos[editId].task)
-            showTask('all');
+            showTodo('all');
         }
     });
 };
@@ -72,6 +66,7 @@ const getEdit = (taskId, taskName) => {
 /**
  *  Clear all task completed
  */
+
 clearAll.addEventListener('click', () => {
     if (todos) {
         let filteredList = todos.filter(todo => {
@@ -79,39 +74,45 @@ clearAll.addEventListener('click', () => {
         });
         todos = filteredList;
         localStorage.setItem('todo-list', JSON.stringify(todos));
-        showTask('all');
+        showTodo('all');
     }
 });
 
 /**
- * Filter task of the list
+ * FILTER TASK OF THE LIST
  */
 
 filters.forEach((btn) => {
     btn.addEventListener('click', () => {
         document.querySelector('span.selected').classList.remove('selected');
         btn.classList.add('selected');
-        showTask(btn.id);
+        showTodo(btn.id);
     });
 });
 
 /**
- *  Select all Task
+ *  SELECT ALL TASK
  */
+
 clickAll.addEventListener('click', () => {
     if (todos) {
         todos.forEach((todo) => {
-            todo.status = 'completed';
-            // console.log(todo.status);
+            if (clickAll.checked) {
+                todo.status = 'completed';
+            } else {
+                todo.status = 'pending'
+            }
         });
         localStorage.setItem('todo-list', JSON.stringify(todos));
-        showTask('all');
+        showTodo('all');
     }
 });
+
 /**
- * ShowTask
+ *  SHOWING ALL TASK FROM LOCAL STORAGE
  */
-const showTask = (Filter) => {
+
+const showTodo = (filter) => {
     let li = '';
     let count = 0;
     if (todos) {
@@ -120,15 +121,16 @@ const showTask = (Filter) => {
             const isCompleted = todo.status == 'completed' ? 'checked' : '';
             // if todostatus is completed set class li element id completed
             const isTaskCompleted = todo.status == 'completed' ? 'completed' : '';
-            if (Filter == todo.status || Filter == 'all') {
+            if (filter == todo.status || filter == 'all') {
                 li += `<li class="${isTaskCompleted}">
                         <div class="view">
                         <input onclick="updateStatus(this,${id})" class="toggle" type="checkbox" id="${id}" ${isCompleted}>
-                        <label ondblclick="getEdit(${id},'${todo.task}')">${todo.task}</label>
+                        <label ondblclick="editTask(${id},'${todo.task}')">${todo.task}</label>
                         <button class="destroy" onclick="deleteTask(${id})"></  button>
                         </div>
                         <input class="edit">         
                     </li>`;
+                //  Count item has status is pending
                 if (todo.status == 'pending') {
                     count++;
                 }
@@ -138,7 +140,7 @@ const showTask = (Filter) => {
     }
     taskBox.innerHTML = li;
 };
-showTask('all');
+showTodo('all');
 
 /**
  *  SAVE TASK IN LOCALSTORAGE
@@ -159,6 +161,6 @@ taskInput.addEventListener('keyup', (e) => {
         };
         todos.push(taskInfo);
         localStorage.setItem('todo-list', JSON.stringify(todos));
-        showTask('all');
+        showTodo('all');
     }
 });
