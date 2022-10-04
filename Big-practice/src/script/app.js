@@ -17,6 +17,7 @@ const clearAll = document.querySelector('.clear-completed');
 const todoCount = document.querySelector('strong');
 const clickAll = document.querySelector('#toggle-all');
 const errorMessage = document.querySelector('#error-Message');
+
 /**
  * Update status after click check box
  */
@@ -31,24 +32,23 @@ const updateStatus = (selectedTask, id) => {
         todos[selectedTask.id].status = 'pending';
     }
     localStorage.setItem('todo-list', JSON.stringify(todos));
-    showTodo("all");
 };
 
 /**
  * Delete Task
  */
 
-const deleteTask = (deletedId) => {
+const deleteTask = (deletedId, filter) => {
     todos.splice(deletedId, 1);
     localStorage.setItem('todo-list', JSON.stringify(todos));
-    showTodo('all');
+    showTodo(filter);
 };
 
 /**
  *  Edit Task
  */
 
-const editTask = (taskId, taskName) => {
+const editTask = (taskId, taskName, filter) => {
     const listInput = list[taskId].lastElementChild;
     listInput.style.display = 'block';
     listInput.value = taskName;
@@ -58,8 +58,7 @@ const editTask = (taskId, taskName) => {
         if (e.key === 'Enter' && editInputTask) {
             todos[editId].task = listInput.value;
             localStorage.setItem('todo-list', JSON.stringify(todos));
-            // console.log(todos[editId].task)
-            showTodo('all');
+            showTodo(filter);
         }
     });
 };
@@ -75,7 +74,7 @@ clearAll.addEventListener('click', () => {
         });
         todos = filteredList;
         localStorage.setItem('todo-list', JSON.stringify(todos));
-        showTodo('all');
+        showTodo();
     }
 });
 
@@ -83,29 +82,28 @@ clearAll.addEventListener('click', () => {
  * FILTER TASK OF THE LIST
  */
 
-filters.forEach((btn) => {
-    btn.addEventListener('click', () => {
-        document.querySelector('span.selected').classList.remove('selected');
-        btn.classList.add('selected');
+filters.forEach(btn => {
+    btn.addEventListener("click", () => {
+        document.querySelector("span.selected").classList.remove("selected");
+        btn.classList.add("selected");
         showTodo(btn.id);
     });
 });
-
 /**
  *  SELECT ALL TASK
  */
 
-clickAll.addEventListener('click', () => {
+clickAll.addEventListener('click', (filter) => {
     if (todos) {
         todos.forEach((todo) => {
             if (clickAll.checked) {
                 todo.status = 'completed';
             } else {
-                todo.status = 'pending'
+                todo.status = 'pending';
             }
         });
         localStorage.setItem('todo-list', JSON.stringify(todos));
-        showTodo('all');
+        showTodo(filter);
     }
 });
 
@@ -122,12 +120,12 @@ const showTodo = (filter) => {
             const isCompleted = todo.status == 'completed' ? 'checked' : '';
             // if todostatus is completed set class li element id completed
             const isTaskCompleted = todo.status == 'completed' ? 'completed' : '';
-            if (filter == todo.status || filter == 'all') {
+            if (filter == todo.status || filter == "all") {
                 li += `<li class="${isTaskCompleted}">
                         <div class="view">
                         <input onclick="updateStatus(this,${id})" class="toggle" type="checkbox" id="${id}" ${isCompleted}>
-                        <label ondblclick="editTask(${id},'${todo.task}')">${todo.task}</label>
-                        <button class="destroy" onclick="deleteTask(${id})"></  button>
+                        <label ondblclick="editTask(${id},'${todo.task}','${filter}')">${todo.task}</label>
+                        <button class="destroy" onclick="deleteTask(${id},'${filter}')"></  button>
                         </div>
                         <input class="edit">         
                     </li>`;
@@ -141,7 +139,7 @@ const showTodo = (filter) => {
     }
     taskBox.innerHTML = li;
 };
-showTodo('all');
+showTodo("all");
 
 /**
  *  SAVE TASK IN LOCALSTORAGE
@@ -153,8 +151,8 @@ taskInput.addEventListener('keyup', (e) => {
         errorMessage.style.display = 'block';
         errorMessage.style.color = 'red';
         errorMessage.textContent = 'Task must be filled out';
-    }else{
-        errorMessage.style.display='none';
+    } else {
+        errorMessage.style.display = 'none';
     }
     if (e.key == 'Enter' && userTask) {
         if (!todos) {
@@ -165,8 +163,8 @@ taskInput.addEventListener('keyup', (e) => {
             task: userTask,
             status: 'pending',
         };
-        todos.push(taskInfo);
+        todos.push(taskInfo)
         localStorage.setItem('todo-list', JSON.stringify(todos));
-        showTodo('all');
+        showTodo(document.querySelector("span.selected").id);
     }
 });
