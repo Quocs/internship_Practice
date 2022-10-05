@@ -17,6 +17,7 @@ const clearAll = document.querySelector('.clear-completed');
 const todoCount = document.querySelector('strong');
 const clickAll = document.querySelector('#toggle-all');
 const errorMessage = document.querySelector('#error-Message');
+const api = 'http://localhost:3000/todolist';
 
 /**
  * Update status after click check box
@@ -81,6 +82,7 @@ clearAll.addEventListener('click', () => {
 /**
  * FILTER TASK OF THE LIST
  */
+
 filters.forEach(btn => {
     btn.addEventListener("click", () => {
         document.querySelector("span.selected").classList.remove("selected");
@@ -88,6 +90,7 @@ filters.forEach(btn => {
         showTodo(btn.id);
     });
 });
+
 /**
  *  SELECT ALL TASK
  */
@@ -140,6 +143,23 @@ const showTodo = (filter) => {
 };
 showTodo("all");
 
+/**
+ * Fetch API
+ */
+function fetchData() {
+    fetch(api)
+        .then(res => {
+            return res.json();
+        })
+        .then(data => {
+            console.log(data);
+        })
+        .catch(error => {
+            console.log(error);
+        })
+}
+
+fetchData();
 /**
  *  SAVE TASK IN LOCALSTORAGE
  */
