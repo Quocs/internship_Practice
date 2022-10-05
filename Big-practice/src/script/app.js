@@ -74,14 +74,13 @@ clearAll.addEventListener('click', () => {
         });
         todos = filteredList;
         localStorage.setItem('todo-list', JSON.stringify(todos));
-        showTodo();
+        showTodo('all');
     }
 });
 
 /**
  * FILTER TASK OF THE LIST
  */
-
 filters.forEach(btn => {
     btn.addEventListener("click", () => {
         document.querySelector("span.selected").classList.remove("selected");
