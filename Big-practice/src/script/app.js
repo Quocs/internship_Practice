@@ -1,8 +1,8 @@
+
 /**
  *  GET VARIABLE
  */
 
-// eslint-disable-next-line quotes
 const taskInput = document.querySelector('.new-todo');
 //  getting ul element
 const taskBox = document.querySelector('.todo-list');
@@ -119,6 +119,7 @@ const showTodo = (filter) => {
     if (todos) {
         todos.forEach((todo, id) => {
             // if todostatus is completed set input is checked
+            // console.log(filter)
             const isCompleted = todo.status == 'completed' ? 'checked' : '';
             // if todostatus is completed set class li element id completed
             const isTaskCompleted = todo.status == 'completed' ? 'completed' : '';
@@ -152,21 +153,25 @@ function fetchData() {
             return res.json();
         })
         .then(data => {
-            console.log(data);
+            data.map(element => {
+                todos.push(element);
+            })
+            localStorage.setItem('todo-list', JSON.stringify(todos));
+            showTodo(document.querySelector("span.selected").id);
         })
         .catch(error => {
             console.log(error);
         })
 }
-
 fetchData();
+
 /**
  *  SAVE TASK IN LOCALSTORAGE
  */
 
 taskInput.addEventListener('keyup', (e) => {
     const userTask = taskInput.value.trim();
-    if (taskInput.value == '' || taskInput.value == null) {
+    if (taskInput.value == '' || taskInput.value == null || taskInput.value == ' ') {
         errorMessage.style.display = 'block';
         errorMessage.style.color = 'red';
         errorMessage.textContent = 'Task must be filled out';
