@@ -1,4 +1,4 @@
-class getData {
+class ToDo {
     constructor(api) {
         this.api = api;
     }
@@ -164,8 +164,8 @@ showTodo("all");
  * Fetch API
  */
 
- const employee = new getData(api);
- employee.fetchData();
+ const getData = new ToDo(api);
+ getData.fetchData();
 
 /**
  *  SAVE TASK IN LOCALSTORAGE
