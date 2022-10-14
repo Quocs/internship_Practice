@@ -1,18 +1,35 @@
-
+class getData {
+    constructor(api) {
+        this.api = api;
+    }
+    fetchData() {
+        fetch(this.api)
+            .then(res => {
+                return res.json();
+            })
+            .then(data => {
+                data.map(element => {
+                    //console.log(element);
+                    todos.push(element);
+                })
+                localStorage.setItem('todo-list', JSON.stringify(todos));
+                showTodo(document.querySelector("span.selected").id);
+            })
+            .catch(error => {
+                console.log(error);
+            })
+    }
+}
 /**
  *  GET VARIABLE
  */
 
 const taskInput = document.querySelector('.new-todo');
-//  getting ul element
 const taskBox = document.querySelector('.todo-list');
-//  getting li element
 const list = taskBox.childNodes;
 let editId;
 const filters = document.querySelectorAll('.filters span');
-//  getting localstorage todo-list
 let todos = JSON.parse(localStorage.getItem('todo-list'));
-//  getting button clear completed
 const clearAll = document.querySelector('.clear-completed');
 const todoCount = document.querySelector('strong');
 const clickAll = document.querySelector('#toggle-all');
@@ -119,7 +136,6 @@ const showTodo = (filter) => {
     if (todos) {
         todos.forEach((todo, id) => {
             // if todostatus is completed set input is checked
-            // console.log(filter)
             const isCompleted = todo.status == 'completed' ? 'checked' : '';
             // if todostatus is completed set class li element id completed
             const isTaskCompleted = todo.status == 'completed' ? 'completed' : '';
@@ -147,23 +163,9 @@ showTodo("all");
 /**
  * Fetch API
  */
-function fetchData() {
-    fetch(api)
-        .then(res => {
-            return res.json();
-        })
-        .then(data => {
-            data.map(element => {
-                todos.push(element);
-            })
-            localStorage.setItem('todo-list', JSON.stringify(todos));
-            showTodo(document.querySelector("span.selected").id);
-        })
-        .catch(error => {
-            console.log(error);
-        })
-}
-fetchData();
+
+ const employee = new getData(api);
+ employee.fetchData();
 
 /**
  *  SAVE TASK IN LOCALSTORAGE
@@ -171,6 +173,7 @@ fetchData();
 
 taskInput.addEventListener('keyup', (e) => {
     const userTask = taskInput.value.trim();
+    //Form validation
     if (taskInput.value == '' || taskInput.value == null || taskInput.value == ' ') {
         errorMessage.style.display = 'block';
         errorMessage.style.color = 'red';
