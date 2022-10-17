@@ -2,14 +2,17 @@ class ToDo {
     constructor(api) {
         this.api = api;
     }
+    constructor(task, status) {
+        this.task = task;
+        this.status = status;
+    }
     fetchData() {
-        fetch(this.api)
+        fetch(api)
             .then(res => {
                 return res.json();
             })
             .then(data => {
                 data.map(element => {
-                    //console.log(element);
                     todos.push(element);
                 })
                 localStorage.setItem('todo-list', JSON.stringify(todos));
@@ -35,7 +38,6 @@ const todoCount = document.querySelector('strong');
 const clickAll = document.querySelector('#toggle-all');
 const errorMessage = document.querySelector('#error-Message');
 const api = 'http://localhost:3000/todolist';
-
 /**
  * Update status after click check box
  */
@@ -51,6 +53,7 @@ const updateStatus = (selectedTask, id) => {
     }
     localStorage.setItem('todo-list', JSON.stringify(todos));
 };
+
 
 /**
  * Delete Task
@@ -164,8 +167,8 @@ showTodo("all");
  * Fetch API
  */
 
- const getData = new ToDo(api);
- getData.fetchData();
+const getData = new ToDo(api);
+getData.fetchData();
 
 /**
  *  SAVE TASK IN LOCALSTORAGE
