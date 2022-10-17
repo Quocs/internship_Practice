@@ -3,8 +3,8 @@ class ToDo {
         this.api = api;
     }
     constructor(task, status) {
-        this.task = task;
-        this.status = status;
+        Object.assign(this,task);
+        Object.assign(this.status);
     }
     fetchData() {
         fetch(api)
