@@ -62,7 +62,6 @@ class ToDo {
     /**
      * CLEAR ALL TASK
      */
-
     clearAllTask() {
         this.clearAll.addEventListener('click', () => {
             if (this.todos) {
