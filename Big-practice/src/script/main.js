@@ -122,7 +122,6 @@ class ToDo {
         localStorage.setItem('todo-list', JSON.stringify(todos));
         showTodo(document.querySelector("span.selected").id);
     }
-    
 }
 
 taskInput.addEventListener('keyup', (e) => {
@@ -146,3 +145,27 @@ taskInput.addEventListener('keyup', (e) => {
     }
 })
 
+class Data{
+    constructor(api){
+        this.api=api;
+    }
+    getData(){
+        fetch(this.api)
+        .then(res=>{
+            return res.json();
+        })
+        .then(data=>{
+            data.map(element=>{
+                todos.push(element);
+            })
+            localStorage.setItem('todo-list', JSON.stringify(todos));
+            showTodo(document.querySelector("span.selected").id);
+        })
+        .catch(error=>{
+            console.log(error);
+        })
+    }
+}
+
+const data1=new Data('http://localhost:3000/todolist');
+data1.getData();
