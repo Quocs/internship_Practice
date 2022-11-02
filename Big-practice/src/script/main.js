@@ -9,7 +9,6 @@ const errorMessage = document.querySelector('#error-Message');
 let todos = JSON.parse(localStorage.getItem('todo-list'));
 let editId;
 
-
 const setItem = () => {
     localStorage.setItem('todo-list', JSON.stringify(todos));
 }
@@ -47,8 +46,6 @@ clearAll.addEventListener('click', () => {
     }
 })
 
-
-
 filters.forEach(btn => {
     btn.addEventListener('click', () => {
         document.querySelector('span.selected').classList.remove('selected');
@@ -56,8 +53,6 @@ filters.forEach(btn => {
         showTodo(btn.id);
     })
 })
-
-
 
 clickAll.addEventListener('click', (filter) => {
     if (todos) {
@@ -126,7 +121,7 @@ class ToDo {
 
 taskInput.addEventListener('keyup', (e) => {
     const userTask = taskInput.value.trim();
-    if (taskInput.value == '' || taskInput.value == null || taskInput.value == '') {
+    if (taskInput.value == '' || taskInput.value == null || taskInput.value == ' ') {
         errorMessage.style.display = 'block';
         errorMessage.style.color = 'red';
         errorMessage.textContent = 'Task must be filled out';
@@ -139,33 +134,33 @@ taskInput.addEventListener('keyup', (e) => {
             todos = [];
         }
         taskInput.value = '';
-        const test1 = new ToDo(userTask, 'pending');
-        todos.push(test1);
-        test1.addToDo();
+        const todolist = new ToDo(userTask, 'pending');
+        todos.push(todolist);
+        todolist.addToDo();
     }
 })
 
-class Data{
-    constructor(api){
-        this.api=api;
+class Data {
+    constructor(api) {
+        this.api = api;
     }
-    getData(){
+    getData() {
         fetch(this.api)
-        .then(res=>{
-            return res.json();
-        })
-        .then(data=>{
-            data.map(element=>{
-                todos.push(element);
+            .then(res => {
+                return res.json();
             })
-            localStorage.setItem('todo-list', JSON.stringify(todos));
-            showTodo(document.querySelector("span.selected").id);
-        })
-        .catch(error=>{
-            console.log(error);
-        })
+            .then(data => {
+                data.map(element => {
+                    todos.push(element);
+                })
+                localStorage.setItem('todo-list', JSON.stringify(todos));
+                showTodo(document.querySelector("span.selected").id);
+            })
+            .catch(error => {
+                console.log(error);
+            })
     }
 }
 
-const data1=new Data('http://localhost:3000/todolist');
-data1.getData();
+const data = new Data('http://localhost:3000/todolist');
+data.getData();
