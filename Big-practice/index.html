@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Template • TodoMVC</title>
+    <link rel="stylesheet" href="src/style/main.css" />
+</head>
+
+<body>
+    <section class="todoapp">
+        <header class="header">
+            <h1>todos</h1>
+            <input class="new-todo" placeholder="What needs to be done?" autofocus />
+        </header>
+        <div id="error-Message"></div>
+        <section class="main">
+            <input id="toggle-all" class="toggle-all" type="checkbox" />
+            <label for="toggle-all">Mark all as complete</label>
+            <ul class="todo-list"></ul>
+        </section>
+        <footer class="footer">
+            <span class="todo-count"><strong>0</strong> item left</span>
+            <ul class="filters">
+                <li>
+                    <span class="selected" id="all">All</span>
+                </li>
+                <li>
+                    <span id="pending">Pending</span>
+                </li>
+                <li>
+                    <span id="completed">Completed</span>
+                </li>
+            </ul>
+            <button class="clear-completed">Clear completed</button>
+        </footer>
+    </section>
+    <footer class="info">
+        <p>Double-click to edit a todo</p>
+        <p>
+            Template by <a href="http://sindresorhus.com">Sindre Sorhus</a>
+        </p>
+        <p>Created by <a href="http://todomvc.com">you</a></p>
+        <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+    </footer>
+    <script src="src/script/main.js"></script>
+</body>
+
+</html>

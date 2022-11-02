@@ -1,0 +1,20 @@
+{
+    "todolist": [
+        {
+            "task": "Thanh",
+            "status": "pending"
+        },
+        {
+            "task": "Quoc",
+            "status": "pending"
+        },
+        {
+            "task": "Hellot",
+            "status": "completed"
+        },
+        {
+            "task": "Haha",
+            "status": "pending"
+        }
+    ]
+}
